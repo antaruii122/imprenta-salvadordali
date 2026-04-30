@@ -1,0 +1,39 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import './index.css'
+
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+
+import Home from './pages/Home'
+import Portafolio from './pages/Portafolio'
+import Tienda from './pages/Tienda'
+import TiendaCategory from './pages/TiendaCategory'
+import QuienesSomos from './pages/QuienesSomos'
+import Blog from './pages/Blog'
+import Contacto from './pages/Contacto'
+
+function ScrollToTop() {
+  const { pathname } = window.location
+  return null
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/portafolio" element={<Portafolio />} />
+        <Route path="/tienda" element={<Tienda />} />
+        <Route path="/tienda/stickers" element={<TiendaCategory category="stickers" />} />
+        <Route path="/tienda/tarjeteria" element={<TiendaCategory category="tarjeteria" />} />
+        <Route path="/tienda/publicidad" element={<TiendaCategory category="publicidad" />} />
+        <Route path="/tienda/utiles-escolares" element={<TiendaCategory category="utiles-escolares" />} />
+        <Route path="/quienes-somos" element={<QuienesSomos />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contacto" element={<Contacto />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  )
+}
