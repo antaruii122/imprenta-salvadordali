@@ -1,6 +1,9 @@
 # Imprenta Salvador Dalí — Website Guide
 
 > Complete reference for the redesigned website. Use this as the source of truth for all future development.
+>
+> **RULE:** Always read this file before starting work. Always update this file AND [checklist.md](checklist.md) when finishing any task.
+> **Task tracking:** See [checklist.md](checklist.md) for what's done, in progress, and pending.
 
 ---
 
@@ -221,6 +224,9 @@ To add a product: edit `src/data/products.js` — add an object with `id`, `name
 | 2026-05-04 | Created `src/data/servicios.js` and `src/data/comunas.js` |
 | 2026-05-04 | Added `/servicios/:slug` and `/imprenta/:slug` routes to App.jsx |
 | 2026-05-04 | MapSection present on all service and comunas pages |
+| 2026-05-04 | Navbar redesigned — 4 dropdowns: Nuestro Trabajo / Servicios / Nosotros / Cobertura |
+| 2026-05-04 | Footer updated — Servicios + Cobertura link sections added |
+| 2026-05-04 | Created `checklist.md` — task tracking file linked to website.md |
 
 ---
 
