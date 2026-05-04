@@ -58,9 +58,21 @@ export default function Footer() {
 
         {/* Links + Contact */}
         <div>
-          <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-5">Páginas</h4>
-          <div className="flex flex-wrap gap-x-4 gap-y-2 mb-8">
+          <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">Páginas</h4>
+          <div className="flex flex-wrap gap-x-4 gap-y-2 mb-5">
             {[['/', 'Inicio'], ['/portafolio', 'Portafolio'], ['/tienda', 'Tienda'], ['/quienes-somos', 'Quiénes Somos'], ['/blog', 'Blog'], ['/contacto', 'Contacto']].map(([to, label]) => (
+              <Link key={to} to={to} className="text-sm text-gray-400 hover:text-white transition-colors">{label}</Link>
+            ))}
+          </div>
+          <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">Servicios</h4>
+          <div className="flex flex-wrap gap-x-4 gap-y-2 mb-5">
+            {[['/servicios/stickers','Stickers'],['/servicios/tarjetas-presentacion','Tarjetas'],['/servicios/volantes','Volantes'],['/servicios/pendones','Pendones']].map(([to, label]) => (
+              <Link key={to} to={to} className="text-sm text-gray-400 hover:text-white transition-colors">{label}</Link>
+            ))}
+          </div>
+          <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">Cobertura</h4>
+          <div className="flex flex-wrap gap-x-4 gap-y-2 mb-5">
+            {[['/imprenta/las-condes','Las Condes'],['/imprenta/providencia','Providencia'],['/imprenta/vitacura','Vitacura'],['/imprenta/santiago-centro','Santiago'],['/imprenta/nunoa','Ñuñoa'],['/imprenta/la-florida','La Florida']].map(([to, label]) => (
               <Link key={to} to={to} className="text-sm text-gray-400 hover:text-white transition-colors">{label}</Link>
             ))}
           </div>

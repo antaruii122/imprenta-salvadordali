@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { useState, useEffect, useRef } from 'react'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 
 const LOGO = 'https://imprentasalvadordali.cl/wp-content/uploads/2023/08/logo-04.jpg'
 const WA = 'https://wa.me/56964123098?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar'
@@ -10,10 +10,143 @@ const WaIcon = () => (
   </svg>
 )
 
+const ChevronDown = () => (
+  <svg className="w-3 h-3 inline-block ml-0.5 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+  </svg>
+)
+
+const menus = {
+  trabajo: {
+    label: 'Nuestro Trabajo',
+    sections: [
+      {
+        title: 'Portafolio & Tienda',
+        links: [
+          { to: '/portafolio', label: '🖼️ Portafolio', desc: 'Ver trabajos realizados' },
+          { to: '/tienda', label: '🛍️ Tienda', desc: 'Todos los productos' },
+        ],
+      },
+      {
+        title: 'Categorías',
+        links: [
+          { to: '/tienda/stickers', label: 'Stickers' },
+          { to: '/tienda/tarjeteria', label: 'Tarjetería' },
+          { to: '/tienda/publicidad', label: 'Publicidad' },
+          { to: '/tienda/utiles-escolares', label: 'Útiles Escolares' },
+        ],
+      },
+    ],
+  },
+  servicios: {
+    label: 'Servicios',
+    sections: [
+      {
+        title: 'Lo que hacemos',
+        links: [
+          { to: '/servicios/stickers', label: '🎯 Stickers Personalizados', desc: 'Adhesivos en todo formato' },
+          { to: '/servicios/tarjetas-presentacion', label: '🪪 Tarjetas de Presentación', desc: 'Acabados premium' },
+          { to: '/servicios/volantes', label: '📄 Volantes y Flyers', desc: '1.000 desde $20.000' },
+          { to: '/servicios/pendones', label: '🚩 Pendones Publicitarios', desc: 'Gran formato express' },
+        ],
+      },
+    ],
+  },
+  nosotros: {
+    label: 'Nosotros',
+    sections: [
+      {
+        title: 'La imprenta',
+        links: [
+          { to: '/quienes-somos', label: '🏢 Quiénes Somos', desc: 'Nuestra historia' },
+          { to: '/blog', label: '📝 Blog', desc: 'Tips y novedades' },
+          { to: '/contacto', label: '💬 Contacto', desc: 'Escríbenos' },
+        ],
+      },
+    ],
+  },
+  cobertura: {
+    label: 'Cobertura',
+    sections: [
+      {
+        title: 'Comunas principales',
+        links: [
+          { to: '/imprenta/las-condes', label: 'Las Condes', desc: 'Nuestra ubicación' },
+          { to: '/imprenta/providencia', label: 'Providencia' },
+          { to: '/imprenta/vitacura', label: 'Vitacura' },
+          { to: '/imprenta/santiago-centro', label: 'Santiago Centro' },
+          { to: '/imprenta/nunoa', label: 'Ñuñoa' },
+          { to: '/imprenta/la-florida', label: 'La Florida' },
+        ],
+      },
+      {
+        title: 'Más comunas',
+        links: [
+          { to: '/imprenta/maipu', label: 'Maipú' },
+          { to: '/imprenta/san-miguel', label: 'San Miguel' },
+          { to: '/imprenta/macul', label: 'Macul' },
+          { to: '/imprenta/quilicura', label: 'Quilicura' },
+          { to: '/imprenta/pudahuel', label: 'Pudahuel' },
+          { to: '/imprenta/san-bernardo', label: 'San Bernardo' },
+        ],
+      },
+    ],
+  },
+}
+
+function Dropdown({ menuKey, data, activeMenu, setActiveMenu }) {
+  const ref = useRef(null)
+  const location = useLocation()
+  const isOpen = activeMenu === menuKey
+
+  useEffect(() => { setActiveMenu(null) }, [location.pathname])
+
+  useEffect(() => {
+    const handler = (e) => { if (ref.current && !ref.current.contains(e.target)) setActiveMenu(null) }
+    document.addEventListener('mousedown', handler)
+    return () => document.removeEventListener('mousedown', handler)
+  }, [])
+
+  return (
+    <div ref={ref} className="relative"
+      onMouseEnter={() => setActiveMenu(menuKey)}
+      onMouseLeave={() => setActiveMenu(null)}>
+      <button
+        className={`px-3 py-1.5 text-sm font-medium transition-all duration-200 rounded-full flex items-center gap-1 ${
+          isOpen ? 'text-brand bg-beige font-semibold' : 'text-gray-600 hover:text-brand hover:bg-beige'
+        }`}>
+        {data.label} <ChevronDown />
+      </button>
+
+      {isOpen && (
+        <div className="absolute top-full left-0 mt-1 bg-white rounded-2xl shadow-card-hover border border-gray-100 py-3 z-50 animate-fade-up"
+          style={{ minWidth: data.sections.length > 1 ? '420px' : '240px' }}>
+          <div className={`grid gap-0 ${data.sections.length > 1 ? 'grid-cols-2 divide-x divide-gray-100' : 'grid-cols-1'}`}>
+            {data.sections.map((section) => (
+              <div key={section.title} className="px-4 py-1">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 px-2 mb-2">{section.title}</p>
+                {section.links.map(({ to, label, desc }) => (
+                  <Link key={to} to={to}
+                    className="flex flex-col px-2 py-2 rounded-xl hover:bg-beige transition-colors group">
+                    <span className="text-sm font-medium text-gray-700 group-hover:text-brand transition-colors">{label}</span>
+                    {desc && <span className="text-xs text-gray-400 mt-0.5">{desc}</span>}
+                  </Link>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
+
 export default function Navbar() {
-  const [tiendaOpen, setTiendaOpen] = useState(false)
+  const [activeMenu, setActiveMenu] = useState(null)
   const [mobileOpen, setMobileOpen] = useState(false)
+  const [mobileExpanded, setMobileExpanded] = useState(null)
   const [scrolled, setScrolled] = useState(false)
+  const location = useLocation()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50)
@@ -21,12 +154,7 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  const linkClass = ({ isActive }) =>
-    `px-3 py-1.5 text-sm font-medium transition-all duration-200 rounded-full ${
-      isActive
-        ? 'text-brand bg-beige font-semibold'
-        : 'text-gray-600 hover:text-brand hover:bg-beige'
-    }`
+  useEffect(() => { setMobileOpen(false); setMobileExpanded(null) }, [location.pathname])
 
   return (
     <header className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-sm shadow-md' : 'bg-white border-b border-gray-100'}`}>
@@ -37,39 +165,20 @@ export default function Navbar() {
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-1">
-          <NavLink to="/" end className={linkClass}>Inicio</NavLink>
-          <NavLink to="/portafolio" className={linkClass}>Portafolio</NavLink>
+          <NavLink to="/" end className={({ isActive }) =>
+            `px-3 py-1.5 text-sm font-medium transition-all duration-200 rounded-full ${isActive ? 'text-brand bg-beige font-semibold' : 'text-gray-600 hover:text-brand hover:bg-beige'}`
+          }>Inicio</NavLink>
 
-          <div className="relative" onMouseEnter={() => setTiendaOpen(true)} onMouseLeave={() => setTiendaOpen(false)}>
-            <NavLink to="/tienda" className={linkClass}>
-              Tienda <span className="text-xs">▾</span>
-            </NavLink>
-            {tiendaOpen && (
-              <div className="absolute top-full left-0 mt-1 bg-white rounded-xl shadow-card-hover border border-gray-100 min-w-[180px] py-1 z-50 animate-fade-up">
-                {[
-                  ['/tienda/stickers', 'Stickers'],
-                  ['/tienda/tarjeteria', 'Tarjetería'],
-                  ['/tienda/publicidad', 'Publicidad'],
-                  ['/tienda/utiles-escolares', 'Útiles Escolares'],
-                ].map(([to, label]) => (
-                  <Link key={to} to={to}
-                    className="block px-4 py-2.5 text-sm text-gray-600 hover:text-brand hover:bg-beige transition-colors">
-                    {label}
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
-
-          <NavLink to="/quienes-somos" className={linkClass}>Quiénes Somos</NavLink>
-          <NavLink to="/blog" className={linkClass}>Blog</NavLink>
-          <NavLink to="/contacto" className={linkClass}>Contacto</NavLink>
+          {Object.entries(menus).map(([key, data]) => (
+            <Dropdown key={key} menuKey={key} data={data} activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
+          ))}
         </nav>
 
         <a href={WA} target="_blank" rel="noopener noreferrer" className="hidden lg:flex btn-wsp">
           <WaIcon /> Cotizar por WhatsApp
         </a>
 
+        {/* Mobile hamburger */}
         <button className="lg:hidden p-2 rounded-lg hover:bg-beige transition-colors" onClick={() => setMobileOpen(!mobileOpen)}>
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {mobileOpen
@@ -79,20 +188,43 @@ export default function Navbar() {
         </button>
       </div>
 
+      {/* Mobile menu */}
       {mobileOpen && (
-        <div className="lg:hidden bg-white border-t border-gray-100 shadow-lg">
+        <div className="lg:hidden bg-white border-t border-gray-100 shadow-lg max-h-[80vh] overflow-y-auto">
           <div className="max-w-6xl mx-auto px-4 py-3 space-y-1">
-            {[
-              ['/', 'Inicio'], ['/portafolio', 'Portafolio'], ['/tienda', 'Tienda'],
-              ['/tienda/stickers', '  ↳ Stickers'], ['/tienda/tarjeteria', '  ↳ Tarjetería'],
-              ['/tienda/publicidad', '  ↳ Publicidad'], ['/tienda/utiles-escolares', '  ↳ Útiles Escolares'],
-              ['/quienes-somos', 'Quiénes Somos'], ['/blog', 'Blog'], ['/contacto', 'Contacto'],
-            ].map(([to, label]) => (
-              <Link key={to} to={to} onClick={() => setMobileOpen(false)}
-                className="block px-3 py-2.5 text-sm text-gray-700 hover:text-brand hover:bg-beige rounded-lg transition-colors">
-                {label}
-              </Link>
+            <Link to="/" className="block px-3 py-2.5 text-sm font-medium text-gray-700 hover:text-brand hover:bg-beige rounded-lg transition-colors">
+              Inicio
+            </Link>
+
+            {Object.entries(menus).map(([key, data]) => (
+              <div key={key}>
+                <button
+                  onClick={() => setMobileExpanded(mobileExpanded === key ? null : key)}
+                  className="w-full flex items-center justify-between px-3 py-2.5 text-sm font-medium text-gray-700 hover:text-brand hover:bg-beige rounded-lg transition-colors">
+                  {data.label}
+                  <svg className={`w-4 h-4 transition-transform duration-200 ${mobileExpanded === key ? 'rotate-180' : ''}`}
+                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {mobileExpanded === key && (
+                  <div className="ml-4 mt-1 space-y-1 border-l-2 border-beige-dark pl-3">
+                    {data.sections.map(section => (
+                      <div key={section.title}>
+                        <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 px-2 py-1">{section.title}</p>
+                        {section.links.map(({ to, label }) => (
+                          <Link key={to} to={to}
+                            className="block px-2 py-2 text-sm text-gray-600 hover:text-brand hover:bg-beige rounded-lg transition-colors">
+                            {label}
+                          </Link>
+                        ))}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
+
             <div className="pt-2 pb-1">
               <a href={WA} target="_blank" rel="noopener noreferrer" className="btn-wsp w-full justify-center">
                 <WaIcon /> Cotizar por WhatsApp
