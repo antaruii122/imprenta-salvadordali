@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import MapSection from '../components/MapSection'
 
-const HERO_IMG   = 'https://imprentasalvadordali.cl/wp-content/uploads/2026/01/img_polera_Mesa-de-trabajo-1-2-scaled.png'
+const HERO_IMG   = 'https://imprentasalvadordali.cl/wp-content/uploads/2023/09/fotos_producto-stickers-12-300x300.jpg'
 const OVAL       = 'https://imprentasalvadordali.cl/wp-content/uploads/2023/08/Oval.png'
 const ABOUT_IMG  = 'https://imprentasalvadordali.cl/wp-content/uploads/2023/09/inicio_nosotros_dali-58-scaled.jpg'
 const WA         = 'https://wa.me/56964123098?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar'
@@ -12,7 +12,7 @@ const WaIcon = () => (
   </svg>
 )
 
-const services = ['Stickers', 'DTF Textil', 'Tarjetas', 'Volantes', 'Pendones', 'Publicidad', 'Útiles Escolares']
+const services = ['Stickers', 'Tarjetas', 'Volantes', 'Pendones', 'Etiquetas', 'Publicidad', 'Útiles Escolares']
 
 const highlights = [
   { icon: '⚡', title: 'Imprenta express', body: 'Entrega en 48 horas, ideal para trabajos urgentes con excelente calidad.' },
@@ -49,7 +49,7 @@ export default function Home() {
               SALVADOR<br /><span className="text-brand">DALÍ</span>
             </h1>
             <p className="text-gray-500 text-lg mb-6 leading-relaxed max-w-md">
-              Adhesivos · Útiles Escolares · DTF Textil · Stickers · Tarjetas · Volantes · Pendones · Publicidad
+              Stickers · Tarjetas · Volantes · Pendones · Etiquetas · Publicidad · Útiles Escolares
             </p>
             {/* tags */}
             <div className="flex flex-wrap gap-2 mb-8">
@@ -75,7 +75,7 @@ export default function Home() {
               {/* card glow */}
               <div className="absolute -inset-4 bg-gradient-to-tr from-brand/20 to-transparent rounded-3xl blur-xl" />
               <div className="relative rounded-3xl overflow-hidden shadow-hero">
-                <img src={HERO_IMG} alt="Impresión DTF en camiseta"
+                <img src={HERO_IMG} alt="Stickers personalizados - Imprenta Salvador Dalí Las Condes"
                   className="w-full object-cover hover:scale-105 transition-transform duration-700" />
               </div>
               {/* floating oval badge */}

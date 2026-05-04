@@ -12,6 +12,8 @@ import TiendaCategory from './pages/TiendaCategory'
 import QuienesSomos from './pages/QuienesSomos'
 import Blog from './pages/Blog'
 import Contacto from './pages/Contacto'
+import ServicioPage from './pages/ServicioPage'
+import ComunaPage from './pages/ComunaPage'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -35,6 +37,8 @@ export default function App() {
         <Route path="/quienes-somos" element={<QuienesSomos />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contacto" element={<Contacto />} />
+        <Route path="/servicios/:slug" element={<ServicioPage />} />
+        <Route path="/imprenta/:slug" element={<ComunaPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
