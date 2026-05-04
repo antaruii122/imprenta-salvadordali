@@ -1,7 +1,8 @@
-import { createBrowserRouter, RouterProvider, Outlet, ScrollRestoration } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
 
 import Home from './pages/Home'
 import Portafolio from './pages/Portafolio'
@@ -16,7 +17,7 @@ import ComunaPage from './pages/ComunaPage'
 function Layout() {
   return (
     <>
-      <ScrollRestoration />
+      <ScrollToTop />
       <Navbar />
       <Outlet />
       <Footer />

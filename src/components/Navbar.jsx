@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import { Link, NavLink, useLocation } from 'react-router-dom'
+import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
 
 const LOGO = 'https://imprentasalvadordali.cl/wp-content/uploads/2023/08/logo-04.jpg'
 const WA = 'https://wa.me/56964123098?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar'
@@ -95,29 +95,19 @@ const menus = {
 }
 
 function Dropdown({ menuKey, data, activeMenu, setActiveMenu }) {
-  const ref = useRef(null)
-  const location = useLocation()
+  const navigate = useNavigate()
   const isOpen = activeMenu === menuKey
 
-  useEffect(() => { setActiveMenu(null) }, [location.pathname])
-
   useEffect(() => {
-    const handler = (e) => {
-      if (ref.current && !ref.current.contains(e.target)) setActiveMenu(null)
-    }
     const keyHandler = (e) => {
       if (e.key === 'Escape') setActiveMenu(null)
     }
-    document.addEventListener('mousedown', handler)
     document.addEventListener('keydown', keyHandler)
-    return () => {
-      document.removeEventListener('mousedown', handler)
-      document.removeEventListener('keydown', keyHandler)
-    }
-  }, [])
+    return () => document.removeEventListener('keydown', keyHandler)
+  }, [setActiveMenu])
 
   return (
-    <div ref={ref} className="relative">
+    <div className="relative">
       <button
         aria-expanded={isOpen}
         aria-haspopup="true"
@@ -129,42 +119,47 @@ function Dropdown({ menuKey, data, activeMenu, setActiveMenu }) {
       </button>
 
       {isOpen && (
-        <div className="absolute top-full left-0 mt-1 bg-white rounded-2xl shadow-card-hover border border-gray-100 py-3 z-50 animate-fade-up"
-          style={{ minWidth: data.sections.length > 1 ? '420px' : '240px' }}>
-          <div className={`grid gap-0 ${data.sections.length > 1 ? 'grid-cols-2 divide-x divide-gray-100' : 'grid-cols-1'}`}>
-            {data.sections.map((section) => (
-              <div key={section.title} className="px-4 py-1">
-                <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 px-2 mb-2">{section.title}</p>
-                {section.links.map(({ to, label, desc }) => (
-                  <Link key={to} to={to}
-                    className="flex flex-col px-2 py-2 rounded-xl hover:bg-beige transition-colors group">
-                    <span className="text-sm font-medium text-gray-700 group-hover:text-brand transition-colors">{label}</span>
-                    {desc && <span className="text-xs text-gray-400 mt-0.5">{desc}</span>}
-                  </Link>
-                ))}
-              </div>
-            ))}
+        <>
+          <div className="fixed inset-0 z-40" onClick={() => setActiveMenu(null)} />
+          <div className="absolute top-full left-0 mt-1 bg-white rounded-2xl shadow-card-hover border border-gray-100 py-3 z-50 animate-fade-up"
+            style={{ minWidth: data.sections.length > 1 ? '420px' : '240px' }}>
+            <div className={`grid gap-0 ${data.sections.length > 1 ? 'grid-cols-2 divide-x divide-gray-100' : 'grid-cols-1'}`}>
+              {data.sections.map((section) => (
+                <div key={section.title} className="px-4 py-1">
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 px-2 mb-2">{section.title}</p>
+                  {section.links.map(({ to, label, desc }) => (
+                    <a key={to} href={to}
+                      onClick={(e) => {
+                        e.preventDefault()
+                        setActiveMenu(null)
+                        navigate(to)
+                      }}
+                      className="flex flex-col px-2 py-2 rounded-xl hover:bg-beige transition-colors group relative z-50">
+                      <span className="text-sm font-medium text-gray-700 group-hover:text-brand transition-colors">{label}</span>
+                      {desc && <span className="text-xs text-gray-400 mt-0.5">{desc}</span>}
+                    </a>
+                  ))}
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
+        </>
       )}
     </div>
   )
 }
 
 export default function Navbar() {
+  const navigate = useNavigate()
   const [activeMenu, setActiveMenu] = useState(null)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [mobileExpanded, setMobileExpanded] = useState(null)
   const [scrolled, setScrolled] = useState(false)
-  const location = useLocation()
-
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50)
     window.addEventListener('scroll', onScroll)
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
-
-  useEffect(() => { setMobileOpen(false); setMobileExpanded(null) }, [location.pathname])
 
   return (
     <header className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-sm shadow-md' : 'bg-white border-b border-gray-100'}`}>
@@ -223,10 +218,16 @@ export default function Navbar() {
                       <div key={section.title}>
                         <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 px-2 py-1">{section.title}</p>
                         {section.links.map(({ to, label }) => (
-                          <Link key={to} to={to}
+                          <a key={to} href={to}
+                            onClick={(e) => {
+                              e.preventDefault()
+                              setMobileOpen(false)
+                              setMobileExpanded(null)
+                              navigate(to)
+                            }}
                             className="block px-2 py-2 text-sm text-gray-600 hover:text-brand hover:bg-beige rounded-lg transition-colors">
                             {label}
-                          </Link>
+                          </a>
                         ))}
                       </div>
                     ))}
