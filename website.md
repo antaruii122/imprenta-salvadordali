@@ -230,6 +230,7 @@ To add a product: edit `src/data/products.js` — add an object with `id`, `name
 | 2026-05-04 | Navbar dropdowns: switched from hover to click-to-toggle — Escape key + aria-expanded added |
 | 2026-05-04 | ComunaPage.jsx: new H1 format, two-paragraph intro (intro+body), service bullet links, neighbors cross-links |
 | 2026-05-04 | comunas.js: added `body` (keyword-dense per-comuna paragraph), `keywords` array, `neighbors` array for all 12 |
+| 2026-05-04 | Fixed navbar navigation: migrated from BrowserRouter to createBrowserRouter + RouterProvider + layout route for React Router v7 compatibility |
 
 ---
 
@@ -301,21 +302,21 @@ To add a product: edit `src/data/products.js` — add an object with `id`, `name
 - ✅ Phone number in footer + contact page
 - ✅ NAP consistent across pages (good — must stay consistent everywhere)
 
-**Pages:**
-- ❌ `/` — H1 "SALVADOR DALÍ" not keyword-optimized. No meta.
-- ❌ `/portafolio` — Only images, no text, no alt text. Invisible to Google.
-- ❌ `/tienda` — No meta. Product images have no alt text.
-- ❌ `/tienda/stickers` — No descriptive copy. No meta.
-- ❌ `/tienda/tarjeteria` — No descriptive copy. No meta.
-- ❌ `/tienda/publicidad` — No descriptive copy. No meta.
-- ❌ `/tienda/utiles-escolares` — No descriptive copy. No meta.
-- ❌ `/quienes-somos` — Good copy exists but not keyword-optimized. No meta.
-- ❌ `/blog` — No meta. "Leer más" goes nowhere — no individual post pages.
-- ❌ `/contacto` — Address present but not in schema markup. No meta.
-- ✅ `/servicios/:slug` — 4 service hubs live (stickers, tarjetas, volantes, pendones)
-- ✅ `/imprenta/:slug` — 12 comunas pages live (Las Condes, Providencia, Vitacura, etc.)
-- ✅ MapSection on every service + comunas page
-- ✅ Internal links: service pages → comunas, comunas pages → service pages (hub-and-spoke)
+**Páginas:**
+- ❌ `/` — H1 "SALVADOR DALÍ" no está keyword-optimizado. Sin meta tags.
+- ❌ `/portafolio` — Solo imágenes, sin texto, sin alt text. Invisible para Google.
+- ❌ `/tienda` — Sin meta. Imágenes de productos sin alt text.
+- ❌ `/tienda/stickers` — Sin copy descriptivo. Sin meta.
+- ❌ `/tienda/tarjeteria` — Sin copy descriptivo. Sin meta.
+- ❌ `/tienda/publicidad` — Sin copy descriptivo. Sin meta.
+- ❌ `/tienda/utiles-escolares` — Sin copy descriptivo. Sin meta.
+- ❌ `/quienes-somos` — Tiene buen copy pero no está keyword-optimizado. Sin meta.
+- ❌ `/blog` — Sin meta. "Leer más" no va a ningún lado — no existen páginas individuales de artículos.
+- ❌ `/contacto` — Dirección presente pero no en schema markup. Sin meta.
+- ✅ `/servicios/:slug` — 4 service hubs activos (stickers, tarjetas, volantes, pendones)
+- ✅ `/imprenta/:slug` — 12 páginas de comunas activas con H1 keyword-dense, 2 párrafos de copy, links a servicios y comunas vecinas
+- ✅ MapSection en todas las páginas de servicios y comunas
+- ✅ Links internos: páginas de servicios ↔ comunas (hub-and-spoke) + comunas vecinas entre sí
 
 ---
 
@@ -366,13 +367,20 @@ Homepage (/)
 | Task | File | Notes |
 |------|------|-------|
 | Install `react-helmet-async` | `App.jsx` | Wrap app in `<HelmetProvider>` |
-| Meta title + description per page | All `src/pages/*.jsx` | Include city + keyword in title |
+| Meta title + description per page | All `src/pages/*.jsx` | Use "Trenbolone" formula — see below |
 | Open Graph tags | All `src/pages/*.jsx` | og:title, og:description, og:image |
-| Alt text on ALL images | All pages + ProductCard + Portafolio | "Stickers personalizados Las Condes - Imprenta Salvador Dalí" format |
-| `sitemap.xml` | `public/sitemap.xml` | List every route including future /servicios/* and /imprenta/* |
-| `robots.txt` | `public/robots.txt` | `Allow: /` + `Sitemap:` pointer |
-| LocalBusiness + PrintShop JSON-LD | `index.html` | See schema below |
-| NAP in footer (visible HTML) | `Footer.jsx` | Already exists — keep it consistent everywhere |
+| Alt text en TODAS las imágenes | All pages + ProductCard + Portafolio | Formato: "Stickers personalizados Las Condes - Imprenta Salvador Dalí" |
+| `sitemap.xml` | `public/sitemap.xml` | Listar todas las rutas incluyendo /servicios/* e /imprenta/* |
+| `robots.txt` | `public/robots.txt` | `Allow: /` + puntero a `Sitemap:` |
+| LocalBusiness + PrintShop JSON-LD | `index.html` | Ver schema abajo |
+| NAP en footer (HTML visible) | `Footer.jsx` | Ya existe — mantener idéntico en todos lados |
+
+**Fórmula de Title Tag ("Trenbolone") — apuntar a ~200 caracteres, no 60:**
+- Home: `MEJOR Imprenta en Las Condes, Santiago — Stickers, Tarjetas de Presentación, Volantes y Pendones | Imprenta Salvador Dalí`
+- Servicio: `Stickers Personalizados en Las Condes y Santiago — Adhesivos en Todo Formato con Entrega Express | Imprenta Salvador Dalí`
+- Comuna: `Imprenta Profesional en Providencia — Stickers, Tarjetas, Volantes y Pendones con Entrega en 48h | Imprenta Salvador Dalí`
+- Tienda: `Tienda de Impresión en Las Condes — Stickers, Tarjetas, Volantes y más | Imprenta Salvador Dalí`
+- Blog post: incluir keyword principal + "Santiago" o "Chile" en el título
 
 **Schema JSON-LD for `index.html`:**
 ```json
@@ -526,57 +534,114 @@ Homepage (/)
 ---
 
 ### Phase 5 — Google Business Profile
-*The single highest-impact action for Google Maps ranking. Do this in parallel with Phase 1.*
+*El impacto más alto para ranking en Google Maps. Hacer en paralelo con Fase 1.*
 
-- [ ] Claim/verify GBP for "Imprenta Salvador Dalí" at Las Condes #10.415
-- [ ] Select primary category: **"Print shop"** — this is the most important GBP field
-- [ ] Add secondary categories: Sticker maker, Business card printing service
-- [ ] Upload 10+ high-quality photos: storefront, equipment, printed samples
-- [ ] Add all services with descriptions and prices
-- [ ] Set correct hours (Mon–Fri 09:00–18:00)
-- [ ] Add website URL (pointing to new site once deployed)
-- [ ] Enable Google Messages — respond within 1 hour (ranking signal)
-- [ ] Get 5+ reviews in first month — ask every customer via WhatsApp
-- [ ] Post weekly Google Posts: promos, new products, finished jobs
-- [ ] NAP on GBP must match website exactly: "Las Condes #10.415, of 25B"
+**Categorías:**
+- Principal: **"Imprenta"** — la más importante, no tocar sin razón
+- Secundarias (máx 2–3): Fabricante de adhesivos, Servicio de impresión de tarjetas de presentación
+- Regla: menos categorías = más fuerza por categoría. No agregar categorías que se alejen del negocio.
+
+**Perfil completo:**
+- Completar al 100% — dirección, teléfono, web, horario (mínimo 3/5 funciones activas)
+- Activar "Reservas" → enlazar a `/contacto` (suma punto de perfil)
+- Activar Google Messages — responder en menos de 1 hora
+
+**Servicios (campo clave para long-tail):**
+- Meta: 30+ servicios, máximo 99
+- Prompt para generar la lista: usar AI con "lista de servicios de una imprenta en Santiago, Chile" → cliente confirma cuáles NO ofrece → agregar todos los demás
+- Escribir descripción de máx 300 caracteres para los 20 principales servicios
+- Si hay múltiples categorías, pedir a AI que los categorice y agregarlos bajo la categoría correcta
+
+**Fotos y Geotagging:**
+- Subir 10+ fotos: local, equipo, trabajos terminados, stickers, tarjetas impresas
+- **IMPORTANTE:** antes de subir cada foto, geoetiquetar con coordenadas GPS usando tool.geoimgr.com
+- Si no hay fotos reales: generar con AI, tomar screenshot (borra metadata), luego geoetiquetar
+- Estrategia: si heatmap muestra ranking débil en Providencia → subir foto con coordenadas de Providencia para dar señal a Google
+- Seguir subiendo 1 foto geoetiquetada por semana — enfocar en comunas con ranking débil
+
+**FAQ en GBP:**
+- Agregar 6–8 preguntas frecuentes directamente en el perfil
+- Ejemplos para imprenta chilena: "¿Hacen despacho a domicilio?", "¿Cuánto demora la entrega?", "¿Trabajan con empresas?", "¿Hacen diseño gráfico?", "¿Tienen mínimo de pedido?"
+
+**Reseñas:**
+- Meta: 5+ reseñas en el primer mes
+- Pedir por WhatsApp a cada cliente después de entregar el pedido — hacerlo rutina
+- Responder TODAS las reseñas (positivas y negativas) en español — señal de actividad
+
+**Google Posts semanales:**
+- Publicar 1–2 veces por semana: trabajo terminado, promo del mes, tip de impresión
+- Usar AI para redactar en español, editar levemente antes de publicar
+- Fotos en los posts también se pueden geoetiquetar
+
+**NAP en GBP — idéntico al sitio:**
+- Nombre: `Imprenta Salvador Dalí`
+- Dirección: `Las Condes #10.415, of 25B`
+- Teléfono: `+56 9 6412 3098`
+- Horario: Lunes–Viernes 09:00–18:00
 
 ---
 
-### Phase 6 — Citation Building (Chile Directories)
-*Citations = online mentions of your NAP. Google uses them to verify your business is real.*
+### Phase 6 — Citaciones (Directorios Chile)
+*Citaciones = menciones online de tu NAP. Google las usa para verificar que el negocio es real. Una citación fuerte vale más que 50 débiles.*
 
-**Must-have (Tier 1):**
-- [ ] Páginas Amarillas Chile — paginasamarillas.cl
-- [ ] Localizate.online
-- [ ] Facebook Business Page (treated as citation)
-- [ ] LinkedIn Company Page
+**Tier 1 — Alta autoridad (hacer primero):**
+- Bing Places for Business — bing.com/forbusiness — gratuito
+- Apple Maps — businessconnect.apple.com — gratuito, aparece en Siri y Maps de iPhone (muy usado en Chile)
 
-**High-authority (Tier 2):**
-- [ ] Yelp Chile
-- [ ] Foursquare
-- [ ] Apple Maps (via Apple Business Connect)
-- [ ] Bing Places for Business
+**Tier 2 — Directorios relevantes en Chile:**
+- Páginas Amarillas Chile — paginasamarillas.cl — el más conocido en Chile
+- Guialocal.com — directorio de empresas chilenas
+- Mipymes.cl — portal PYME del gobierno, alta confianza
+- Chileempresas.cl — directorio empresarial
+- Foursquare — distribuye a Waze, Uber, Apple Maps (cuesta ~$20 USD pero vale)
+- Facebook Página de Empresa — citación + señal social
+- LinkedIn Página de Empresa — citación + autoridad de dominio
 
-**Rule:** NAP must be **exactly identical** across every citation:
-- Name: `Imprenta Salvador Dalí` (with accent and ï)
-- Address: `Las Condes #10.415, of 25B, Las Condes, Región Metropolitana`
-- Phone: `+56 9 6412 3098`
+**Cómo encontrar directorios de nicho (Chile específico):**
+1. Buscar "imprenta Santiago" en Google
+2. Anotar qué directorios o listas aparecen en página 1
+3. Registrarse en esos — Google ya los considera relevantes para este nicho en Chile
+4. Repetir con "stickers personalizados Santiago", "tarjetas presentación Chile"
+
+**Cómo encontrar citaciones de competidores:**
+1. Buscar "imprenta Las Condes" en Google Maps
+2. Hacer clic en un competidor top → "Más sobre este lugar"
+3. Google muestra sitios que apuntan a ese negocio
+4. Registrarse en los mismos sitios donde ellos están listados
+
+**Regla NAP — idéntico en ABSOLUTAMENTE TODOS:**
+- Nombre: `Imprenta Salvador Dalí` (con tilde en ó y diéresis en ï)
+- Dirección: `Las Condes #10.415, of 25B, Las Condes, Región Metropolitana, Chile`
+- Teléfono: `+56 9 6412 3098`
 
 ---
 
-### SEO Roadmap Timeline
+### Mantenimiento Semanal (Ongoing)
+*SEO local no es "set and forget" — la actividad continua es señal de ranking.*
 
-| Week | Action |
-|------|--------|
-| Week 1–2 | Phase 1: Technical foundations — meta tags, schema, alt text, sitemap, robots.txt |
-| Week 2–3 | Phase 5: Google Business Profile — claim, complete, first photos + reviews |
-| Week 3–5 | Phase 2: Build 3 priority service hubs (stickers, tarjetas, volantes) |
-| Week 4–6 | Phase 3: Build 4 priority comunas pages (Las Condes, Providencia, Vitacura, Santiago) |
-| Week 5–8 | Phase 4: Blog post pages — fix "Leer más", write first 2 posts |
-| Week 7–9 | Phase 6: Submit to Chilean directories |
-| Week 8+ | Phase 2 cont: Remaining 3 service hubs |
-| Week 10+ | Phase 3 cont: Remaining 8 comunas pages |
-| Ongoing | 1 blog post/week + 1 Google Post/week + review responses |
+| Tarea | Frecuencia | Notas |
+|-------|-----------|-------|
+| Google Post en GBP | 1–2/semana | Trabajo terminado, promo, tip — AI redacta, tú editas |
+| Foto geoetiquetada al GBP | 1/semana | Enfocar coordenadas en comunas con ranking débil |
+| Pedir reseña a cliente | Cada entrega | Por WhatsApp, después de confirmar que quedó conforme |
+| Responder reseñas | Inmediato | En español, todas — positivas y negativas |
+| Revisar heatmap | 1/mes | Comparar con benchmark inicial para medir progreso |
+
+---
+
+### Hoja de Ruta SEO — Timeline Chile
+
+| Semana | Acción |
+|--------|--------|
+| Semana 1 | Benchmarking: heatmap "imprenta Las Condes", revisar top 10 competidores, correr `site:` en Google |
+| Semana 1–2 | Fase 1: Fundaciones técnicas — meta tags (fórmula Trenbolone), schema JSON-LD, alt text, sitemap.xml, robots.txt |
+| Semana 2–3 | Fase 5: GBP — reclamar, categorías, servicios (30+), horario, fotos geoetiquetadas, FAQ, primera reseña |
+| Semana 3–5 | Fase 2: Construir 3 service hubs prioritarios con contenido extenso (stickers, tarjetas, volantes) |
+| Semana 4–6 | Fase 4: Blog — crear BlogPost.jsx, conectar "Leer más", escribir primeros 2 artículos en español |
+| Semana 5–8 | Fase 6: Citaciones — Bing Places, Apple Maps, Páginas Amarillas, Facebook, LinkedIn |
+| Semana 7–9 | Fase 6 cont: Encontrar directorios de nicho ("imprenta Santiago" → page 1) + citaciones de competidores |
+| Semana 8+ | Fase 2 cont: Hubs restantes (pendones, etiquetas) |
+| Continuo | 1–2 Google Posts/semana + 1 foto geoetiquetada/semana + pedir reseña por WhatsApp a cada cliente |
 
 ---
 

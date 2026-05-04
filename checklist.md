@@ -82,46 +82,86 @@
 
 ## 🟡 Medium Priority — To Do
 
-### SEO — Google Business Profile (Phase 5 — do in parallel with technical SEO)
-- [ ] Claim/verify GBP for "Imprenta Salvador Dalí"
-- [ ] Set primary category: "Print shop"
-- [ ] Add secondary categories: Sticker maker, Business card printing service
-- [ ] Upload 10+ photos (storefront, equipment, printed samples)
-- [ ] Add all services with descriptions + prices
-- [ ] Set hours: Mon–Fri 09:00–18:00
-- [ ] Add website URL (new site)
-- [ ] Enable Google Messages
-- [ ] Get 5+ reviews in first month
+### SEO — Benchmarking (hacer ANTES de tocar el GBP)
+- [ ] Buscar "imprenta Las Condes" en Google Maps y anotar: cuántas reseñas, fotos y categorías tienen los top 10
+- [ ] Correr heatmap con GMB Everywhere o Leadsnap sobre "imprenta Las Condes" — guarda screenshot como punto de partida
+- [ ] Revisar si hay competidores con nombre keyword-stuffed o dirección falsa (ej: "IMPRENTA STICKERS TARJETAS LAS CONDES") → reportar con "Sugerir un cambio" en Google Maps
+- [ ] Buscar `site:imprentasalvadordali.cl` en Google → ver cuántas páginas están indexadas (meta: 30+)
+- [ ] Validar schema en validator.schema.org cuando esté el JSON-LD agregado
+
+### SEO — Google Business Profile (Fase 5 — hacer en paralelo con técnico)
+- [ ] Reclamar/verificar GBP de "Imprenta Salvador Dalí" en Las Condes #10.415
+- [ ] Categoría principal: **"Imprenta"** — la más importante, no cambiar sin razón
+- [ ] Categorías secundarias: Fabricante de adhesivos, Servicio de impresión de tarjetas de presentación (máx 2–3 total)
+- [ ] Completar perfil al 100% — dirección, teléfono, web, horario (mínimo 3/5 funciones activas)
+- [ ] Agregar servicios: meta 30+ servicios, máx 99. Usar AI para generar lista de servicios de imprenta → cliente confirma cuáles NO ofrece → agregar todos los demás. Escribir descripción de 300 caracteres para los 20 principales.
+- [ ] Subir 10+ fotos (local, equipos, trabajos terminados) — GEOETIQUETAR antes de subir (ver sección Geotagging)
+- [ ] Configurar horario: Lunes–Viernes 09:00–18:00
+- [ ] Agregar URL del sitio nuevo (URL de Vercel una vez desplegado)
+- [ ] Activar función "Reservas" → enlazar a la página `/contacto` (suma un punto de perfil)
+- [ ] Agregar sección de Preguntas Frecuentes en GBP — 6–8 preguntas, generar con AI en español
+- [ ] Activar Google Messages — responder en menos de 1 hora (señal de ranking)
+- [ ] Publicar Google Post semanal: promos, trabajos terminados, tips de impresión — mínimo 1 por semana
+- [ ] Meta: 5+ reseñas en el primer mes — pedir a cada cliente por WhatsApp después de entrega
+- [ ] NAP en GBP idéntico al sitio: `Imprenta Salvador Dalí · Las Condes #10.415, of 25B · +56 9 6412 3098`
+
+### SEO — Geotagging de Fotos
+- [ ] Usar tool.geoimgr.com para incrustar coordenadas GPS en fotos antes de subirlas al GBP
+- [ ] Si no hay fotos reales: generar imagen con AI, tomar screenshot (borra metadata original), geoetiquetar
+- [ ] Estrategia: si el heatmap muestra ranking bajo en Providencia o Vitacura → geoetiquetar foto con coordenadas de esa comuna para dar señal a Google de que se trabaja ahí
 
 ### Products
-- [ ] Add prices to the 9 products missing them in `src/data/products.js`
-- [ ] Add product detail pages (`/tienda/:category/:slug`)
+- [ ] Agregar precios a los 9 productos sin precio en `src/data/products.js`
+- [ ] Agregar páginas de detalle de producto (`/tienda/:category/:slug`)
 
-### More SEO Service Hubs (Phase 2 cont.)
-- [ ] `/servicios/etiquetas` — Etiquetas Personalizadas hub page
-- [ ] Add etiquetas to `src/data/servicios.js`
+### Más Service Hubs SEO (Fase 2 cont.)
+- [ ] `/servicios/etiquetas` — página hub de Etiquetas Personalizadas
+- [ ] Agregar etiquetas a `src/data/servicios.js`
 
 ---
 
 ## 🟢 Low Priority — To Do
 
-### SEO — Citations (Phase 6)
-- [ ] Submit to Páginas Amarillas Chile
-- [ ] Submit to Localizate.online
-- [ ] Create/complete Facebook Business Page
-- [ ] Create LinkedIn Company Page
-- [ ] Submit to Bing Places for Business
-- [ ] Submit to Apple Maps (Apple Business Connect)
+### SEO — Citaciones (Fase 6) — Chile específico
+*Una citación fuerte vale más que 50 débiles. NAP idéntico en todas.*
 
-### Website Improvements
-- [ ] Blog archive filtering (date pills are decorative only)
-- [ ] Scroll-in animations (Intersection Observer)
-- [ ] Image optimization — download WP CDN images, convert to WebP, host locally
+**Tier 1 — Alta autoridad (hacer primero):**
+- [ ] Bing Places for Business — bing.com/forbusiness — gratuito, alta autoridad
+- [ ] Apple Maps — businessconnect.apple.com — gratuito, aparece en Siri y Maps iOS
+- [ ] Google Maps ya cubierto por GBP
 
-### Deployment
-- [ ] Deploy to Vercel or Netlify (currently only on GitHub, not live)
-- [ ] Add `vercel.json` or `public/_redirects` for SPA routing
-- [ ] Point domain (if any) to new deployment
+**Tier 2 — Directorios Chile relevantes:**
+- [ ] Páginas Amarillas Chile — paginasamarillas.cl — el directorio más conocido en Chile
+- [ ] Guialocal.com — directorio de empresas Chile
+- [ ] Mipymes.cl — portal PYME del gobierno chileno, alta confianza
+- [ ] Chileempresas.cl — directorio empresarial chileno
+- [ ] Foursquare — foursquare.com (distribuye a Waze, Uber, Apple Maps) — cuesta ~$20 USD
+- [ ] Facebook Página de Empresa — también es citación + señal social
+- [ ] LinkedIn Página de Empresa — también es citación + señal de autoridad
+
+**Tier 3 — Encontrar directorios de nicho:**
+- [ ] Buscar "imprenta Santiago" en Google → anotar qué directorios aparecen en página 1 → registrarse en esos (Google los considera relevantes para el nicho)
+- [ ] Revisar backlinks de los top 3 competidores via sección "Más sobre este lugar" en Google Maps → registrarse en los mismos sitios
+
+**Regla NAP — idéntico en TODOS:**
+- Nombre: `Imprenta Salvador Dalí` (con tilde y ï)
+- Dirección: `Las Condes #10.415, of 25B, Las Condes, Región Metropolitana, Chile`
+- Teléfono: `+56 9 6412 3098`
+
+### SEO — Tareas Semanales Recurrentes (una vez el sitio y GBP estén activos)
+- [ ] Publicar 1–2 Google Posts por semana: trabajo terminado, promoción del mes, tip de impresión — usar AI para redactar, editar levemente
+- [ ] Subir 1 foto geoetiquetada por semana al GBP — enfocada en comunas con ranking débil según heatmap
+- [ ] Pedir reseña a cada cliente por WhatsApp después de entregar el pedido — hacer esto un hábito de rutina
+
+### Mejoras del Sitio
+- [ ] Filtrado del blog por fecha (los pills de archivo son decorativos por ahora)
+- [ ] Animaciones de scroll (Intersection Observer)
+- [ ] Optimización de imágenes — descargar imágenes del CDN de WordPress, convertir a WebP, hospedar localmente
+
+### Despliegue
+- [x] `vercel.json` agregado para SPA routing — hecho
+- [ ] Desplegar en Vercel (conectar repo GitHub en vercel.com — 2 min)
+- [ ] Apuntar dominio (si existe) al despliegue en Vercel
 
 ---
 
@@ -136,3 +176,4 @@
 | 2026-05-04 | Navbar redesigned (4 dropdowns), Footer updated with all new links |
 | 2026-05-04 | checklist.md created, website.md updated |
 | 2026-05-04 | Navbar: hover → click-to-toggle dropdowns; ComunaPage: keyword-rich H1/body/neighbors; comunas.js: body+keywords+neighbors for all 12 |
+| 2026-05-04 | Fixed navbar navigation: migrated App.jsx from BrowserRouter to createBrowserRouter + RouterProvider (React Router v7 compat) |

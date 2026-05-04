@@ -1,6 +1,4 @@
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
-import { useEffect } from 'react'
-import './index.css'
+import { createBrowserRouter, RouterProvider, Outlet, ScrollRestoration } from 'react-router-dom'
 
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -15,32 +13,37 @@ import Contacto from './pages/Contacto'
 import ServicioPage from './pages/ServicioPage'
 import ComunaPage from './pages/ComunaPage'
 
-function ScrollToTop() {
-  const { pathname } = useLocation()
-  useEffect(() => { window.scrollTo(0, 0) }, [pathname])
-  return null
+function Layout() {
+  return (
+    <>
+      <ScrollRestoration />
+      <Navbar />
+      <Outlet />
+      <Footer />
+    </>
+  )
 }
 
+const router = createBrowserRouter([
+  {
+    element: <Layout />,
+    children: [
+      { path: '/', element: <Home /> },
+      { path: '/portafolio', element: <Portafolio /> },
+      { path: '/tienda', element: <Tienda /> },
+      { path: '/tienda/stickers', element: <TiendaCategory category="stickers" /> },
+      { path: '/tienda/tarjeteria', element: <TiendaCategory category="tarjeteria" /> },
+      { path: '/tienda/publicidad', element: <TiendaCategory category="publicidad" /> },
+      { path: '/tienda/utiles-escolares', element: <TiendaCategory category="utiles-escolares" /> },
+      { path: '/quienes-somos', element: <QuienesSomos /> },
+      { path: '/blog', element: <Blog /> },
+      { path: '/contacto', element: <Contacto /> },
+      { path: '/servicios/:slug', element: <ServicioPage /> },
+      { path: '/imprenta/:slug', element: <ComunaPage /> },
+    ],
+  },
+])
+
 export default function App() {
-  return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/portafolio" element={<Portafolio />} />
-        <Route path="/tienda" element={<Tienda />} />
-        <Route path="/tienda/stickers" element={<TiendaCategory category="stickers" />} />
-        <Route path="/tienda/tarjeteria" element={<TiendaCategory category="tarjeteria" />} />
-        <Route path="/tienda/publicidad" element={<TiendaCategory category="publicidad" />} />
-        <Route path="/tienda/utiles-escolares" element={<TiendaCategory category="utiles-escolares" />} />
-        <Route path="/quienes-somos" element={<QuienesSomos />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/contacto" element={<Contacto />} />
-        <Route path="/servicios/:slug" element={<ServicioPage />} />
-        <Route path="/imprenta/:slug" element={<ComunaPage />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
-  )
+  return <RouterProvider router={router} />
 }
