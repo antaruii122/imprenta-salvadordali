@@ -102,16 +102,26 @@ function Dropdown({ menuKey, data, activeMenu, setActiveMenu }) {
   useEffect(() => { setActiveMenu(null) }, [location.pathname])
 
   useEffect(() => {
-    const handler = (e) => { if (ref.current && !ref.current.contains(e.target)) setActiveMenu(null) }
+    const handler = (e) => {
+      if (ref.current && !ref.current.contains(e.target)) setActiveMenu(null)
+    }
+    const keyHandler = (e) => {
+      if (e.key === 'Escape') setActiveMenu(null)
+    }
     document.addEventListener('mousedown', handler)
-    return () => document.removeEventListener('mousedown', handler)
+    document.addEventListener('keydown', keyHandler)
+    return () => {
+      document.removeEventListener('mousedown', handler)
+      document.removeEventListener('keydown', keyHandler)
+    }
   }, [])
 
   return (
-    <div ref={ref} className="relative"
-      onMouseEnter={() => setActiveMenu(menuKey)}
-      onMouseLeave={() => setActiveMenu(null)}>
+    <div ref={ref} className="relative">
       <button
+        aria-expanded={isOpen}
+        aria-haspopup="true"
+        onClick={() => setActiveMenu(isOpen ? null : menuKey)}
         className={`px-3 py-1.5 text-sm font-medium transition-all duration-200 rounded-full flex items-center gap-1 ${
           isOpen ? 'text-brand bg-beige font-semibold' : 'text-gray-600 hover:text-brand hover:bg-beige'
         }`}>

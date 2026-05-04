@@ -46,6 +46,9 @@
 - [x] Navbar redesigned: 4 dropdowns, mobile accordion, closes on navigation
 - [x] Footer updated with Servicios + Cobertura link sections
 - [x] Internal linking: service pages ↔ comunas pages (hub-and-spoke SEO)
+- [x] Navbar dropdowns switched from hover to click-to-toggle (+ Escape key, aria-expanded)
+- [x] ComunaPage improved: keyword-dense H1, 2-paragraph intro, services bullet links, neighbors cross-links
+- [x] comunas.js enriched: `body`, `keywords`, `neighbors` fields for all 12 comunas
 
 ### Documentation
 - [x] `website.md` — full project guide
@@ -132,3 +135,4 @@
 | 2026-05-04 | Hero fixed (stickers), ServicioPage + ComunaPage created, data files, routes |
 | 2026-05-04 | Navbar redesigned (4 dropdowns), Footer updated with all new links |
 | 2026-05-04 | checklist.md created, website.md updated |
+| 2026-05-04 | Navbar: hover → click-to-toggle dropdowns; ComunaPage: keyword-rich H1/body/neighbors; comunas.js: body+keywords+neighbors for all 12 |

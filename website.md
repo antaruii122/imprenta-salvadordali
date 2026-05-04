@@ -54,7 +54,7 @@ imprenta-salvadordali/
     ├── main.jsx             ← Entry point
     ├── index.css            ← Tailwind + custom component classes
     ├── components/
-    │   ├── Navbar.jsx       ← Sticky nav, dropdown Tienda menu, mobile hamburger
+    │   ├── Navbar.jsx       ← Sticky nav, 4 click-to-toggle dropdowns, Escape to close, mobile accordion
     │   ├── Footer.jsx       ← CTA strip + dark footer with services/links/contact
     │   ├── MapSection.jsx   ← Google Maps iframe + dark contact panel
     │   ├── ProductCard.jsx  ← Reusable product tile (image + name + price + WA button)
@@ -227,6 +227,9 @@ To add a product: edit `src/data/products.js` — add an object with `id`, `name
 | 2026-05-04 | Navbar redesigned — 4 dropdowns: Nuestro Trabajo / Servicios / Nosotros / Cobertura |
 | 2026-05-04 | Footer updated — Servicios + Cobertura link sections added |
 | 2026-05-04 | Created `checklist.md` — task tracking file linked to website.md |
+| 2026-05-04 | Navbar dropdowns: switched from hover to click-to-toggle — Escape key + aria-expanded added |
+| 2026-05-04 | ComunaPage.jsx: new H1 format, two-paragraph intro (intro+body), service bullet links, neighbors cross-links |
+| 2026-05-04 | comunas.js: added `body` (keyword-dense per-comuna paragraph), `keywords` array, `neighbors` array for all 12 |
 
 ---
 
