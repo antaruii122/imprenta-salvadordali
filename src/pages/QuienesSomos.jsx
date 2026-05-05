@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async'
 import MapSection from '../components/MapSection'
 
 const IMG = 'https://imprentasalvadordali.cl/wp-content/uploads/2023/09/nosotros-57-scaled.jpg'
@@ -12,6 +13,14 @@ const highlights = [
 export default function QuienesSomos() {
   return (
     <main>
+      <Helmet>
+        <title>Quiénes Somos — Imprenta Profesional en Las Condes, Santiago | Imprenta Salvador Dalí</title>
+        <meta name="description" content="Conoce nuestra historia. Imprenta en Las Condes especializada en impresión láser, offset y UV. Más de 10 años entregando calidad y servicio express en Santiago." />
+        <meta property="og:title" content="Quiénes Somos — Imprenta Salvador Dalí Las Condes" />
+        <meta property="og:description" content="Imprenta profesional en Las Condes. Impresión láser, offset y UV con entrega en 48 horas." />
+        <meta property="og:image" content="https://imprentasalvadordali.cl/wp-content/uploads/2023/08/logo-04.jpg" />
+      </Helmet>
+
       <div className="page-header">
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle, #8B7355 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
         <div className="relative max-w-6xl mx-auto px-4 text-center">

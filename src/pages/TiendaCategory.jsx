@@ -1,13 +1,38 @@
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 import ProductCard from '../components/ProductCard'
 import PromoBar from '../components/PromoBar'
 import { allProducts } from '../data/products'
 
 const meta = {
-  stickers: { title: 'Stickers', desc: 'Adhesivos, etiquetas y stickers personalizados.', emoji: '🎯' },
-  tarjeteria: { title: 'Tarjetería', desc: 'Tarjetas de presentación, tags, marca libros y más.', emoji: '🪪' },
-  publicidad: { title: 'Publicidad', desc: 'Volantes, afiches, pendones y todo tu material publicitario.', emoji: '📢' },
-  'utiles-escolares': { title: 'Útiles Escolares', desc: 'Personaliza tus adhesivos para los útiles escolares.', emoji: '🎒' },
+  stickers: {
+    title: 'Stickers',
+    desc: 'Adhesivos, etiquetas y stickers personalizados.',
+    emoji: '🎯',
+    metaTitle: 'Stickers Personalizados en Las Condes — Adhesivos en Todo Formato | Imprenta Salvador Dalí',
+    metaDesc: 'Stickers y adhesivos personalizados impresos en Las Condes. Vinilo transparente, troquelado, circular y más. Entrega en 48 horas. Cotiza por WhatsApp.',
+  },
+  tarjeteria: {
+    title: 'Tarjetería',
+    desc: 'Tarjetas de presentación, tags, marca libros y más.',
+    emoji: '🪪',
+    metaTitle: 'Tarjetas de Presentación en Las Condes — Acabados Premium | Imprenta Salvador Dalí',
+    metaDesc: 'Impresión de tarjetas de presentación en Las Condes. Laminado mate, brillo, barniz UV y más. Desde $5.000. Entrega en 48 horas.',
+  },
+  publicidad: {
+    title: 'Publicidad',
+    desc: 'Volantes, afiches, pendones y todo tu material publicitario.',
+    emoji: '📢',
+    metaTitle: 'Material Publicitario en Las Condes — Volantes, Pendones y Afiches | Imprenta Salvador Dalí',
+    metaDesc: 'Impresión de volantes, afiches y pendones en Las Condes. 1.000 volantes desde $20.000. Entrega express en 48 horas.',
+  },
+  'utiles-escolares': {
+    title: 'Útiles Escolares',
+    desc: 'Personaliza tus adhesivos para los útiles escolares.',
+    emoji: '🎒',
+    metaTitle: 'Útiles Escolares Personalizados en Las Condes — Stickers para Cuadernos | Imprenta Salvador Dalí',
+    metaDesc: 'Stickers y etiquetas personalizadas para útiles escolares en Las Condes. Ideal para colegios y apoderados. Entrega en 48 horas.',
+  },
 }
 
 const cats = [
@@ -26,6 +51,14 @@ export default function TiendaCategory({ category }) {
 
   return (
     <main>
+      <Helmet>
+        <title>{info.metaTitle}</title>
+        <meta name="description" content={info.metaDesc} />
+        <meta property="og:title" content={info.metaTitle} />
+        <meta property="og:description" content={info.metaDesc} />
+        <meta property="og:image" content="https://imprentasalvadordali.cl/wp-content/uploads/2023/08/logo-04.jpg" />
+      </Helmet>
+
       <div className="page-header">
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle, #8B7355 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
         <div className="relative max-w-6xl mx-auto px-4">

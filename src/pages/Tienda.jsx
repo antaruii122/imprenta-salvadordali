@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 import ProductCard from '../components/ProductCard'
 import PromoBar from '../components/PromoBar'
 import { allProducts } from '../data/products'
@@ -13,6 +14,14 @@ const categories = [
 export default function Tienda() {
   return (
     <main>
+      <Helmet>
+        <title>Tienda de Impresión en Las Condes — Stickers, Tarjetas, Volantes y más | Imprenta Salvador Dalí</title>
+        <meta name="description" content="Compra stickers, tarjetas de presentación, volantes, pendones y útiles escolares personalizados. Imprenta en Las Condes con entrega en 48 horas." />
+        <meta property="og:title" content="Tienda de Impresión — Imprenta Salvador Dalí Las Condes" />
+        <meta property="og:description" content="Stickers, tarjetas, volantes, pendones y más. Entrega express en 48 horas desde Las Condes." />
+        <meta property="og:image" content="https://imprentasalvadordali.cl/wp-content/uploads/2023/08/logo-04.jpg" />
+      </Helmet>
+
       <div className="page-header">
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle, #8B7355 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
         <div className="relative max-w-6xl mx-auto px-4 text-center">

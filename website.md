@@ -231,6 +231,19 @@ To add a product: edit `src/data/products.js` — add an object with `id`, `name
 | 2026-05-04 | ComunaPage.jsx: new H1 format, two-paragraph intro (intro+body), service bullet links, neighbors cross-links |
 | 2026-05-04 | comunas.js: added `body` (keyword-dense per-comuna paragraph), `keywords` array, `neighbors` array for all 12 |
 | 2026-05-04 | Fixed navbar navigation: migrated from BrowserRouter to createBrowserRouter + RouterProvider + layout route for React Router v7 compatibility |
+| 2026-05-05 | Installed react-helmet-async — HelmetProvider wraps RouterProvider in App.jsx |
+| 2026-05-05 | Added per-page Helmet meta tags + OG tags to all 10 page components |
+| 2026-05-05 | Home H1 changed to keyword-dense "Imprenta en Las Condes" with brand name as subtitle |
+| 2026-05-05 | index.html: title updated with Trenbolone formula + full JSON-LD LocalBusiness+PrintShop schema added |
+| 2026-05-05 | Created BlogPost.jsx (sidebar layout, related services, related comunas, other posts) |
+| 2026-05-05 | Created src/data/blogPosts.js — 3 full articles with H2 sections, CTA blocks, relatedServices + relatedComuna fields |
+| 2026-05-05 | Redesigned Blog.jsx — featured post dark card + 2-col grid for rest, tag strip |
+| 2026-05-05 | Added /blog/:slug route to App.jsx — "Leer más" now navigates to BlogPost |
+| 2026-05-05 | Expanded servicios.js — intro + body array (6 sections each, 1,200+ words per service) — ServicioPage now renders full body content |
+| 2026-05-05 | All 4 services now link to all 12 comunas (was only 4) |
+| 2026-05-05 | Expanded comunas.js — 600-800 word body per comuna with local landmarks and commercial context |
+| 2026-05-05 | Fixed ServicioPage breadcrumb: Inicio / Servicios / [service] (was /Tienda) |
+| 2026-05-05 | Created public/sitemap.xml (34 URLs) and public/robots.txt |
 
 ---
 
@@ -366,7 +379,7 @@ Homepage (/)
 
 | Task | File | Notes |
 |------|------|-------|
-| Install `react-helmet-async` | `App.jsx` | Wrap app in `<HelmetProvider>` |
+| ✅ Install `react-helmet-async` | `App.jsx` | Done — HelmetProvider wraps RouterProvider |
 | Meta title + description per page | All `src/pages/*.jsx` | Use "Trenbolone" formula — see below |
 | Open Graph tags | All `src/pages/*.jsx` | og:title, og:description, og:image |
 | Alt text en TODAS las imágenes | All pages + ProductCard + Portafolio | Formato: "Stickers personalizados Las Condes - Imprenta Salvador Dalí" |

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 import MapSection from '../components/MapSection'
 
 const HERO_IMG   = 'https://imprentasalvadordali.cl/wp-content/uploads/2023/09/fotos_producto-stickers-12-300x300.jpg'
@@ -36,6 +37,15 @@ const testimonials = [
 export default function Home() {
   return (
     <main>
+      <Helmet>
+        <title>MEJOR Imprenta en Las Condes, Santiago — Stickers, Tarjetas de Presentación, Volantes y Pendones con Entrega Express 48h | Imprenta Salvador Dalí</title>
+        <meta name="description" content="Imprenta en Las Condes con entrega express en 48 horas. Stickers personalizados, tarjetas de presentación, volantes, pendones y etiquetas. Cotiza gratis por WhatsApp ahora." />
+        <meta property="og:title" content="Imprenta Salvador Dalí — Las Condes, Santiago" />
+        <meta property="og:description" content="Stickers, tarjetas, volantes y pendones con entrega en 48 horas. Somos locales en Las Condes." />
+        <meta property="og:image" content="https://imprentasalvadordali.cl/wp-content/uploads/2023/08/logo-04.jpg" />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
       {/* ═══ HERO ═══ */}
       <section className="relative bg-gradient-to-br from-[#faf7f2] via-beige to-[#ede6d8] overflow-hidden min-h-[88vh] flex items-center">
         {/* decorative blobs */}
@@ -45,11 +55,14 @@ export default function Home() {
         <div className="relative max-w-6xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-up">
             <p className="section-label">Imprenta · Las Condes, Santiago</p>
-            <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl font-black text-charcoal leading-[1.05] mb-5">
-              SALVADOR<br /><span className="text-brand">DALÍ</span>
+            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-black text-charcoal leading-[1.05] mb-3">
+              Imprenta en<br /><span className="text-brand">Las Condes</span>
             </h1>
+            <p className="font-heading text-xl md:text-2xl font-bold text-charcoal/60 mb-5 tracking-wide">
+              Salvador Dalí
+            </p>
             <p className="text-gray-500 text-lg mb-6 leading-relaxed max-w-md">
-              Stickers · Tarjetas · Volantes · Pendones · Etiquetas · Publicidad · Útiles Escolares
+              Stickers personalizados, tarjetas de presentación, volantes, pendones y etiquetas con entrega express en 48 horas.
             </p>
             {/* tags */}
             <div className="flex flex-wrap gap-2 mb-8">

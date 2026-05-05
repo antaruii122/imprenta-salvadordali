@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
+import { HelmetProvider } from 'react-helmet-async'
 
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -10,6 +11,7 @@ import Tienda from './pages/Tienda'
 import TiendaCategory from './pages/TiendaCategory'
 import QuienesSomos from './pages/QuienesSomos'
 import Blog from './pages/Blog'
+import BlogPost from './pages/BlogPost'
 import Contacto from './pages/Contacto'
 import ServicioPage from './pages/ServicioPage'
 import ComunaPage from './pages/ComunaPage'
@@ -38,6 +40,7 @@ const router = createBrowserRouter([
       { path: '/tienda/utiles-escolares', element: <TiendaCategory category="utiles-escolares" /> },
       { path: '/quienes-somos', element: <QuienesSomos /> },
       { path: '/blog', element: <Blog /> },
+      { path: '/blog/:slug', element: <BlogPost /> },
       { path: '/contacto', element: <Contacto /> },
       { path: '/servicios/:slug', element: <ServicioPage /> },
       { path: '/imprenta/:slug', element: <ComunaPage /> },
@@ -46,5 +49,9 @@ const router = createBrowserRouter([
 ])
 
 export default function App() {
-  return <RouterProvider router={router} />
+  return (
+    <HelmetProvider>
+      <RouterProvider router={router} />
+    </HelmetProvider>
+  )
 }

@@ -1,4 +1,5 @@
 import { Link, useParams, Navigate } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 import MapSection from '../components/MapSection'
 import { comunas } from '../data/comunas'
 import { servicios } from '../data/servicios'
@@ -31,6 +32,15 @@ export default function ComunaPage() {
 
   return (
     <main>
+      <Helmet>
+        <title>{comuna.metaTitle}</title>
+        <meta name="description" content={comuna.metaDesc} />
+        <meta property="og:title" content={comuna.metaTitle} />
+        <meta property="og:description" content={comuna.metaDesc} />
+        <meta property="og:image" content="https://imprentasalvadordali.cl/wp-content/uploads/2023/08/logo-04.jpg" />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
       {/* Header */}
       <div className="page-header">
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle, #8B7355 1px, transparent 1px)', backgroundSize: '32px 32px' }} />

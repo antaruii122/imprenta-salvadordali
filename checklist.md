@@ -59,13 +59,13 @@
 ## 🔴 High Priority — To Do
 
 ### SEO — Technical Foundations (Phase 1)
-- [ ] Install `react-helmet-async`
-- [ ] Add meta title + description to every page
-- [ ] Add Open Graph tags (og:title, og:description, og:image) to every page
+- [x] Install `react-helmet-async`
+- [x] Add meta title + description to every page (all pages: Home, Portafolio, Tienda, TiendaCategory, QuienesSomos, Blog, BlogPost, Contacto, ServicioPage, ComunaPage)
+- [x] Add Open Graph tags (og:title, og:description, og:image) to every page
 - [ ] Add alt text to ALL images (portfolio, products, hero, gallery)
-- [ ] Add LocalBusiness + PrintShop JSON-LD schema to `index.html`
-- [ ] Create `public/sitemap.xml` listing all routes
-- [ ] Create `public/robots.txt`
+- [x] Add LocalBusiness + PrintShop JSON-LD schema to `index.html`
+- [x] Create `public/sitemap.xml` listing all routes (34 URLs)
+- [x] Create `public/robots.txt`
 
 ### Contact Form Backend
 - [ ] Choose provider: EmailJS (recommended, free) or Supabase or Formspree
@@ -73,10 +73,11 @@
 - [ ] Add success/error handling
 
 ### Blog Article Pages
-- [ ] Create `src/pages/BlogPost.jsx` template
-- [ ] Create `src/data/blogPosts.js` with full content for 3 existing posts
-- [ ] Add `/blog/:slug` route to `App.jsx`
-- [ ] Fix "Leer más" buttons in `Blog.jsx` to link to article pages
+- [x] Create `src/pages/BlogPost.jsx` template (with sidebar, CTA, related posts, related services)
+- [x] Create `src/data/blogPosts.js` with full content for 3 existing posts
+- [x] Add `/blog/:slug` route to `App.jsx`
+- [x] Fix "Leer más" buttons in `Blog.jsx` to link to article pages
+- [x] Redesigned Blog.jsx — featured post card (dark), grid for rest, tag strip
 
 ---
 
@@ -113,6 +114,14 @@
 ### Products
 - [ ] Agregar precios a los 9 productos sin precio en `src/data/products.js`
 - [ ] Agregar páginas de detalle de producto (`/tienda/:category/:slug`)
+
+### SEO — Content Improvements (done 2026-05-05)
+- [x] Home H1 changed from brand-name to keyword-dense: "Imprenta en Las Condes"
+- [x] index.html title updated with Trenbolone formula
+- [x] ServicioPage breadcrumb fixed: now shows Inicio / Servicios / [Service]
+- [x] servicios.js expanded: 6 body sections per service (~1,200+ words each), all 12 comunas linked
+- [x] comunas.js expanded: 600-800 word body per comuna with local landmarks and context
+- [x] blogPosts.js: 3 full articles with H2 structure, 600-800 words each, CTA blocks
 
 ### Más Service Hubs SEO (Fase 2 cont.)
 - [ ] `/servicios/etiquetas` — página hub de Etiquetas Personalizadas
@@ -177,3 +186,11 @@
 | 2026-05-04 | checklist.md created, website.md updated |
 | 2026-05-04 | Navbar: hover → click-to-toggle dropdowns; ComunaPage: keyword-rich H1/body/neighbors; comunas.js: body+keywords+neighbors for all 12 |
 | 2026-05-04 | Fixed navbar navigation: migrated App.jsx from BrowserRouter to createBrowserRouter + RouterProvider (React Router v7 compat) |
+| 2026-05-04 | Fixed navbar dropdown links canceling SPA navigation on click. Switched to an invisible overlay for clicking outside. |
+| 2026-05-05 | Installed react-helmet-async. Added Helmet meta tags + OG tags to ALL 10 page components. |
+| 2026-05-05 | Fixed Home H1 to keyword-dense "Imprenta en Las Condes". Updated index.html title (Trenbolone formula) + added full JSON-LD LocalBusiness+PrintShop schema. |
+| 2026-05-05 | Created BlogPost.jsx with sidebar, CTA card, related posts, related service links. Created blogPosts.js with 3 full articles (600-800 words each, H2 structure). Redesigned Blog.jsx with featured post dark card + grid layout. Fixed "Leer más" to navigate to /blog/:slug. |
+| 2026-05-05 | Expanded servicios.js: intro + 6 body sections per service (~1,200+ words each). All 4 services now link to all 12 comunas. Added ServicioPage long-form content rendering section. |
+| 2026-05-05 | Expanded comunas.js: 600-800 word body per comuna with local context, landmarks and commercial activity description. |
+| 2026-05-05 | Fixed ServicioPage breadcrumb: was Inicio/Tienda/[service], now correctly Inicio/Servicios/[service]. |
+| 2026-05-05 | Created public/sitemap.xml (34 URLs, priorities set) and public/robots.txt. |

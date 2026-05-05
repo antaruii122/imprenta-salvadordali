@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Helmet } from 'react-helmet-async'
 import MapSection from '../components/MapSection'
 
 const CONTACT_IMG = 'https://imprentasalvadordali.cl/wp-content/uploads/2023/09/contacto_img-17.png'
@@ -13,6 +14,14 @@ export default function Contacto() {
 
   return (
     <main>
+      <Helmet>
+        <title>Contacto — Imprenta en Las Condes, Santiago | Imprenta Salvador Dalí</title>
+        <meta name="description" content="Contáctanos para cotizar stickers, tarjetas, volantes o pendones. Estamos en Las Condes #10.415, of 25B. Respuesta express por WhatsApp." />
+        <meta property="og:title" content="Contacto — Imprenta Salvador Dalí Las Condes" />
+        <meta property="og:description" content="Impresión express en Las Condes. Cotiza por WhatsApp o visítanos en Las Condes #10.415, of 25B." />
+        <meta property="og:image" content="https://imprentasalvadordali.cl/wp-content/uploads/2023/08/logo-04.jpg" />
+      </Helmet>
+
       <div className="page-header">
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle, #8B7355 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
         <div className="relative max-w-6xl mx-auto px-4 text-center">

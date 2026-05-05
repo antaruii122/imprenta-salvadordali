@@ -1,4 +1,5 @@
 import { Link, useParams, Navigate } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 import MapSection from '../components/MapSection'
 import { servicios } from '../data/servicios'
 import { comunas } from '../data/comunas'
@@ -14,6 +15,15 @@ export default function ServicioPage() {
 
   return (
     <main>
+      <Helmet>
+        <title>{servicio.metaTitle}</title>
+        <meta name="description" content={servicio.metaDesc} />
+        <meta property="og:title" content={servicio.metaTitle} />
+        <meta property="og:description" content={servicio.metaDesc} />
+        <meta property="og:image" content={servicio.heroImg} />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
       {/* Header */}
       <div className="page-header">
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle, #8B7355 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
@@ -21,7 +31,7 @@ export default function ServicioPage() {
           <nav className="text-xs text-gray-500 mb-3 flex items-center gap-1">
             <Link to="/" className="hover:text-brand transition-colors">Inicio</Link>
             <span>/</span>
-            <Link to="/tienda" className="hover:text-brand transition-colors">Tienda</Link>
+            <Link to="/servicios" className="hover:text-brand transition-colors">Servicios</Link>
             <span>/</span>
             <span className="text-charcoal font-medium">{servicio.title}</span>
           </nav>
@@ -49,15 +59,7 @@ export default function ServicioPage() {
             <p className="section-label">Servicio destacado</p>
             <h2 className="section-title mb-2">{servicio.title} de calidad profesional</h2>
             <div className="section-divider" />
-            <p className="text-gray-500 leading-relaxed mb-4">
-              En Imprenta Salvador Dalí ofrecemos {servicio.title.toLowerCase()} con impresión de alta resolución,
-              materiales premium y entrega express en 48 horas hábiles. Trabajamos con negocios, emprendedores
-              y particulares de Las Condes y toda la Región Metropolitana.
-            </p>
-            <p className="text-gray-500 leading-relaxed mb-8">
-              Utilizamos sistemas de impresión láser, offset y tinta UV para garantizar el mejor resultado
-              en cada pedido, sin importar la cantidad.
-            </p>
+            <p className="text-gray-500 leading-relaxed mb-8">{servicio.intro}</p>
             <div className="flex flex-wrap gap-3">
               <a href={WA} target="_blank" rel="noopener noreferrer" className="btn-wsp-lg">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -72,6 +74,20 @@ export default function ServicioPage() {
           </div>
         </div>
       </section>
+
+      {/* Long-form content body */}
+      {servicio.body && servicio.body.length > 0 && (
+        <section className="py-16 bg-beige">
+          <div className="max-w-3xl mx-auto px-4 space-y-10">
+            {servicio.body.map((block, i) => (
+              <div key={i}>
+                <h2 className="font-heading text-2xl font-bold text-charcoal mb-4">{block.h2}</h2>
+                <p className="text-gray-500 leading-relaxed text-base">{block.text}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Why us — dark strip */}
       <section className="py-16 bg-charcoal">

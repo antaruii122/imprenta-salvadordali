@@ -1,3 +1,5 @@
+import { Helmet } from 'react-helmet-async'
+
 const BASE = 'https://imprentasalvadordali.cl/wp-content/uploads/2023/08/'
 
 const images = [
@@ -27,6 +29,14 @@ const images = [
 export default function Portafolio() {
   return (
     <main>
+      <Helmet>
+        <title>Portafolio de Trabajos — Stickers, Tarjetas y Volantes Impresos | Imprenta Salvador Dalí</title>
+        <meta name="description" content="Galería de trabajos impresos por Imprenta Salvador Dalí en Las Condes. Stickers, tarjetas de presentación, volantes, pendones y más. Calidad profesional." />
+        <meta property="og:title" content="Portafolio — Imprenta Salvador Dalí Las Condes" />
+        <meta property="og:description" content="Galería de trabajos impresos: stickers, tarjetas, volantes, pendones y más." />
+        <meta property="og:image" content="https://imprentasalvadordali.cl/wp-content/uploads/2023/08/logo-04.jpg" />
+      </Helmet>
+
       {/* Header */}
       <div className="page-header">
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle, #8B7355 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
