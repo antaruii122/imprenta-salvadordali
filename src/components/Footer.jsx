@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-const LOGO_BEIGE = 'https://imprentasalvadordali.cl/wp-content/uploads/2023/09/logo-beige-60.png'
+const LOGO_BEIGE = '/images/cropped-icono-66.png'
 const WA = 'https://wa.me/56964123098?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar'
 const IG = 'https://www.instagram.com/imprenta_salvador_dali/'
 
@@ -33,7 +33,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 py-14 grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Brand */}
         <div>
-          <img src={LOGO_BEIGE} alt="Imprenta Salvador Dalí" className="h-14 object-contain mb-5" />
+          <img src={LOGO_BEIGE} alt="Imprenta Salvador Dalí" className="h-14 object-contain mb-5" style={{filter:'brightness(0) invert(1)'}} />
           <p className="text-sm leading-relaxed text-gray-400 mb-5">
             Dedicados a sistemas de impresión láser, offset y tinta UV. Entrega express en 48 horas. Las Condes, Santiago.
           </p>

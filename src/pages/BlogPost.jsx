@@ -1,4 +1,4 @@
-import { Link, useParams, Navigate } from 'react-router-dom'
+﻿import { Link, useParams, Navigate } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { blogPosts } from '../data/blogPosts'
 import { servicios } from '../data/servicios'
@@ -30,7 +30,7 @@ export default function BlogPost() {
         <meta name="description" content={post.metaDesc} />
         <meta property="og:title" content={post.metaTitle} />
         <meta property="og:description" content={post.metaDesc} />
-        <meta property="og:image" content="https://imprentasalvadordali.cl/wp-content/uploads/2023/08/logo-04.jpg" />
+        <meta property="og:image" content="https://imprentasalvadordali.cl/images/cropped-icono-66.png" />
         <meta property="og:type" content="article" />
       </Helmet>
 
@@ -95,7 +95,7 @@ export default function BlogPost() {
             {/* Internal links to services */}
             {relatedServiceObjs.length > 0 && (
               <div className="mt-10 p-6 bg-beige rounded-2xl">
-                <p className="font-semibold text-charcoal text-sm mb-3">Servicios relacionados en Imprenta Salvador Dalí:</p>
+                <p className="font-semibold text-charcoal text-sm mb-3">Servicios relacionados en Imprenta Salvador DalÃ­:</p>
                 <div className="flex flex-wrap gap-3">
                   {relatedServiceObjs.map(s => (
                     <Link key={s.slug} to={`/servicios/${s.slug}`}
@@ -106,7 +106,7 @@ export default function BlogPost() {
                   {relatedComunaObj && (
                     <Link to={`/imprenta/${relatedComunaObj.slug}`}
                       className="flex items-center gap-2 bg-white border border-beige-dark hover:border-brand hover:text-brand text-gray-600 text-sm font-medium px-4 py-2 rounded-full transition-all duration-200">
-                      📍 Imprenta en {relatedComunaObj.name}
+                      ðŸ“ Imprenta en {relatedComunaObj.name}
                     </Link>
                   )}
                 </div>
@@ -118,7 +118,7 @@ export default function BlogPost() {
           <aside className="space-y-6 sticky top-24">
             {/* CTA card */}
             <div className="bg-charcoal rounded-2xl p-6 text-center">
-              <p className="text-white font-heading font-bold text-lg mb-2">¿Te quedó alguna duda?</p>
+              <p className="text-white font-heading font-bold text-lg mb-2">Â¿Te quedÃ³ alguna duda?</p>
               <p className="text-white/60 text-xs mb-5">Cotiza directo por WhatsApp y te respondemos en minutos.</p>
               <a href="https://wa.me/56964123098?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar"
                 target="_blank" rel="noopener noreferrer"
@@ -130,7 +130,7 @@ export default function BlogPost() {
             {/* Other posts */}
             {otherPosts.length > 0 && (
               <div className="bg-beige rounded-2xl p-6">
-                <p className="font-heading font-bold text-charcoal text-sm mb-4">Otros artículos</p>
+                <p className="font-heading font-bold text-charcoal text-sm mb-4">Otros artÃ­culos</p>
                 <div className="space-y-4">
                   {otherPosts.map(p => (
                     <Link key={p.slug} to={`/blog/${p.slug}`}
@@ -150,10 +150,10 @@ export default function BlogPost() {
               <p className="font-heading font-bold text-charcoal text-sm mb-4">Nuestros servicios</p>
               <div className="space-y-2">
                 {[
-                  { to: '/servicios/stickers', label: 'Stickers personalizados', emoji: '🎯' },
-                  { to: '/servicios/tarjetas-presentacion', label: 'Tarjetas de presentación', emoji: '🪪' },
-                  { to: '/servicios/volantes', label: 'Volantes y flyers', emoji: '📄' },
-                  { to: '/servicios/pendones', label: 'Pendones publicitarios', emoji: '🚩' },
+                  { to: '/servicios/stickers', label: 'Stickers personalizados', emoji: 'ðŸŽ¯' },
+                  { to: '/servicios/tarjetas-presentacion', label: 'Tarjetas de presentaciÃ³n', emoji: 'ðŸªª' },
+                  { to: '/servicios/volantes', label: 'Volantes y flyers', emoji: 'ðŸ“„' },
+                  { to: '/servicios/pendones', label: 'Pendones publicitarios', emoji: 'ðŸš©' },
                 ].map(({ to, label, emoji }) => (
                   <Link key={to} to={to}
                     className="flex items-center gap-2 text-sm text-gray-600 hover:text-brand transition-colors py-1">
@@ -169,7 +169,7 @@ export default function BlogPost() {
       {/* Back to blog */}
       <div className="bg-beige py-10 text-center">
         <Link to="/blog" className="btn-outline px-8 py-3 rounded-full">
-          ← Volver al Blog
+          â† Volver al Blog
         </Link>
       </div>
     </main>

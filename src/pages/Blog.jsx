@@ -1,9 +1,9 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { blogPosts } from '../data/blogPosts'
 
 const tagColors = {
-  'Tecnología': 'bg-blue-50 text-blue-700',
+  'TecnologÃ­a': 'bg-blue-50 text-blue-700',
   'Productos': 'bg-amber-50 text-amber-700',
 }
 
@@ -13,11 +13,11 @@ export default function Blog() {
   return (
     <main>
       <Helmet>
-        <title>Blog de Impresión en Santiago — Consejos y Novedades | Imprenta Salvador Dalí</title>
-        <meta name="description" content="Artículos sobre impresión digital, DTF textil, stickers troquelados y tinta UV en Santiago. Tips para emprendedores y empresas en Las Condes." />
-        <meta property="og:title" content="Blog — Imprenta Salvador Dalí Las Condes" />
-        <meta property="og:description" content="Guías y artículos sobre impresión en Santiago: DTF, troquelado, UV y más." />
-        <meta property="og:image" content="https://imprentasalvadordali.cl/wp-content/uploads/2023/08/logo-04.jpg" />
+        <title>Blog de ImpresiÃ³n en Santiago â€” Consejos y Novedades | Imprenta Salvador DalÃ­</title>
+        <meta name="description" content="ArtÃ­culos sobre impresiÃ³n digital, DTF textil, stickers troquelados y tinta UV en Santiago. Tips para emprendedores y empresas en Las Condes." />
+        <meta property="og:title" content="Blog â€” Imprenta Salvador DalÃ­ Las Condes" />
+        <meta property="og:description" content="GuÃ­as y artÃ­culos sobre impresiÃ³n en Santiago: DTF, troquelado, UV y mÃ¡s." />
+        <meta property="og:image" content="https://imprentasalvadordali.cl/images/cropped-icono-66.png" />
       </Helmet>
 
       {/* Header */}
@@ -25,10 +25,10 @@ export default function Blog() {
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle, #8B7355 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
         <div className="relative max-w-6xl mx-auto px-4 text-center">
           <p className="section-label">Noticias y consejos</p>
-          <h1 className="font-heading text-4xl font-bold text-charcoal">Blog de Impresión</h1>
+          <h1 className="font-heading text-4xl font-bold text-charcoal">Blog de ImpresiÃ³n</h1>
           <div className="section-divider mx-auto" />
           <p className="text-gray-500 text-sm max-w-md mx-auto">
-            Guías prácticas sobre tecnologías de impresión, materiales y cómo sacarle partido a tus materiales gráficos.
+            GuÃ­as prÃ¡cticas sobre tecnologÃ­as de impresiÃ³n, materiales y cÃ³mo sacarle partido a tus materiales grÃ¡ficos.
           </p>
         </div>
       </div>
@@ -57,7 +57,7 @@ export default function Blog() {
                 </h2>
                 <p className="text-white/60 text-sm leading-relaxed line-clamp-2 mb-5">{featured.excerpt}</p>
                 <span className="inline-flex items-center gap-2 text-brand-light font-semibold text-sm group-hover:gap-3 transition-all">
-                  Leer artículo completo <span>→</span>
+                  Leer artÃ­culo completo <span>â†’</span>
                 </span>
               </div>
             </div>
@@ -83,7 +83,7 @@ export default function Blog() {
                   </h2>
                   <p className="text-gray-500 text-xs leading-relaxed line-clamp-2 mb-3">{post.excerpt}</p>
                   <span className="text-brand font-semibold text-xs inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-                    Leer más <span>→</span>
+                    Leer mÃ¡s <span>â†’</span>
                   </span>
                 </div>
               </Link>
@@ -94,7 +94,7 @@ export default function Blog() {
           <div className="bg-beige rounded-2xl p-6">
             <p className="font-heading font-bold text-charcoal mb-3 text-sm">Temas</p>
             <div className="flex flex-wrap gap-2">
-              {['Tecnología', 'Productos', 'DTF Textil', 'Tinta UV', 'Stickers', 'Tarjetas'].map(tag => (
+              {['TecnologÃ­a', 'Productos', 'DTF Textil', 'Tinta UV', 'Stickers', 'Tarjetas'].map(tag => (
                 <span key={tag}
                   className="text-sm font-medium bg-white text-gray-600 hover:text-brand hover:bg-beige-dark px-4 py-1.5 rounded-full shadow-sm cursor-default transition-colors">
                   {tag}

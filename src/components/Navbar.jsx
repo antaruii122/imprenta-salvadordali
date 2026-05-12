@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
 
-const LOGO = 'https://imprentasalvadordali.cl/wp-content/uploads/2023/08/logo-04.jpg'
+const LOGO = '/images/cropped-icono-66.png'
 const WA = 'https://wa.me/56964123098?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar'
 
 const WaIcon = () => (

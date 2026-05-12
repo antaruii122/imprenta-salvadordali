@@ -1,40 +1,40 @@
-import { Helmet } from 'react-helmet-async'
+﻿import { Helmet } from 'react-helmet-async'
 
-const BASE = 'https://imprentasalvadordali.cl/wp-content/uploads/2023/08/'
+const PH = '/images/placeholder.svg'
 
 const images = [
-  { src: BASE + 'impresion1.jpg', alt: 'Impresión' },
-  { src: BASE + 'impresion2-tarjetas.jpg', alt: 'Tarjetas' },
-  { src: BASE + 'impresion3-stickers.jpg', alt: 'Stickers' },
-  { src: BASE + 'impresion4-stickers.jpg', alt: 'Stickers' },
-  { src: BASE + 'impresion5-tags.jpg', alt: 'Tags' },
-  { src: BASE + 'impresion6-stickes.jpg', alt: 'Stickers' },
-  { src: BASE + 'impresion8-flyers-volantes.jpg', alt: 'Flyers y Volantes' },
-  { src: BASE + 'impresion9-flyers-volantes.jpg', alt: 'Flyers y Volantes' },
-  { src: BASE + 'impresion10-tags.jpg', alt: 'Tags' },
-  { src: BASE + 'impresion11-tarjetas.jpg', alt: 'Tarjetas' },
-  { src: BASE + 'impresion12-adhesivos-botellas.jpg', alt: 'Adhesivos Botellas' },
-  { src: BASE + 'impresion13-tags.jpg', alt: 'Tags' },
-  { src: BASE + 'impresion14-tags.jpg', alt: 'Tags' },
-  { src: BASE + 'impresion15-stickers.jpg', alt: 'Stickers' },
-  { src: BASE + 'impresion16-entradas.jpg', alt: 'Entradas' },
-  { src: BASE + 'impresion17-catalogos.jpg', alt: 'Catálogos' },
-  { src: BASE + 'impresion18-stickers.jpg', alt: 'Stickers' },
-  { src: BASE + 'impresion19-flyers-volantes.jpg', alt: 'Flyers y Volantes' },
-  { src: BASE + 'impresion20-adhesivos.jpg', alt: 'Adhesivos' },
-  { src: BASE + 'impresion21-stickers.jpg', alt: 'Stickers' },
-  { src: BASE + 'impresion22-stickers-troquelados.jpg', alt: 'Stickers Troquelados' },
+  { src: PH, alt: 'ImpresiÃ³n' },
+  { src: PH, alt: 'Tarjetas' },
+  { src: PH, alt: 'Stickers' },
+  { src: PH, alt: 'Stickers' },
+  { src: PH, alt: 'Tags' },
+  { src: PH, alt: 'Stickers' },
+  { src: PH, alt: 'Flyers y Volantes' },
+  { src: PH, alt: 'Flyers y Volantes' },
+  { src: PH, alt: 'Tags' },
+  { src: PH, alt: 'Tarjetas' },
+  { src: PH, alt: 'Adhesivos Botellas' },
+  { src: PH, alt: 'Tags' },
+  { src: PH, alt: 'Tags' },
+  { src: PH, alt: 'Stickers' },
+  { src: PH, alt: 'Entradas' },
+  { src: PH, alt: 'CatÃ¡logos' },
+  { src: PH, alt: 'Stickers' },
+  { src: PH, alt: 'Flyers y Volantes' },
+  { src: PH, alt: 'Adhesivos' },
+  { src: PH, alt: 'Stickers' },
+  { src: PH, alt: 'Stickers Troquelados' },
 ]
 
 export default function Portafolio() {
   return (
     <main>
       <Helmet>
-        <title>Portafolio de Trabajos — Stickers, Tarjetas y Volantes Impresos | Imprenta Salvador Dalí</title>
-        <meta name="description" content="Galería de trabajos impresos por Imprenta Salvador Dalí en Las Condes. Stickers, tarjetas de presentación, volantes, pendones y más. Calidad profesional." />
-        <meta property="og:title" content="Portafolio — Imprenta Salvador Dalí Las Condes" />
-        <meta property="og:description" content="Galería de trabajos impresos: stickers, tarjetas, volantes, pendones y más." />
-        <meta property="og:image" content="https://imprentasalvadordali.cl/wp-content/uploads/2023/08/logo-04.jpg" />
+        <title>Portafolio de Trabajos â€” Stickers, Tarjetas y Volantes Impresos | Imprenta Salvador DalÃ­</title>
+        <meta name="description" content="GalerÃ­a de trabajos impresos por Imprenta Salvador DalÃ­ en Las Condes. Stickers, tarjetas de presentaciÃ³n, volantes, pendones y mÃ¡s. Calidad profesional." />
+        <meta property="og:title" content="Portafolio â€” Imprenta Salvador DalÃ­ Las Condes" />
+        <meta property="og:description" content="GalerÃ­a de trabajos impresos: stickers, tarjetas, volantes, pendones y mÃ¡s." />
+        <meta property="og:image" content="https://imprentasalvadordali.cl/images/cropped-icono-66.png" />
       </Helmet>
 
       {/* Header */}

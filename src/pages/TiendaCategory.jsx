@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import ProductCard from '../components/ProductCard'
 import PromoBar from '../components/PromoBar'
@@ -8,44 +8,44 @@ const meta = {
   stickers: {
     title: 'Stickers',
     desc: 'Adhesivos, etiquetas y stickers personalizados.',
-    emoji: '🎯',
-    metaTitle: 'Stickers Personalizados en Las Condes — Adhesivos en Todo Formato | Imprenta Salvador Dalí',
-    metaDesc: 'Stickers y adhesivos personalizados impresos en Las Condes. Vinilo transparente, troquelado, circular y más. Entrega en 48 horas. Cotiza por WhatsApp.',
+    emoji: 'ðŸŽ¯',
+    metaTitle: 'Stickers Personalizados en Las Condes â€” Adhesivos en Todo Formato | Imprenta Salvador DalÃ­',
+    metaDesc: 'Stickers y adhesivos personalizados impresos en Las Condes. Vinilo transparente, troquelado, circular y mÃ¡s. Entrega en 48 horas. Cotiza por WhatsApp.',
   },
   tarjeteria: {
-    title: 'Tarjetería',
-    desc: 'Tarjetas de presentación, tags, marca libros y más.',
-    emoji: '🪪',
-    metaTitle: 'Tarjetas de Presentación en Las Condes — Acabados Premium | Imprenta Salvador Dalí',
-    metaDesc: 'Impresión de tarjetas de presentación en Las Condes. Laminado mate, brillo, barniz UV y más. Desde $5.000. Entrega en 48 horas.',
+    title: 'TarjeterÃ­a',
+    desc: 'Tarjetas de presentaciÃ³n, tags, marca libros y mÃ¡s.',
+    emoji: 'ðŸªª',
+    metaTitle: 'Tarjetas de PresentaciÃ³n en Las Condes â€” Acabados Premium | Imprenta Salvador DalÃ­',
+    metaDesc: 'ImpresiÃ³n de tarjetas de presentaciÃ³n en Las Condes. Laminado mate, brillo, barniz UV y mÃ¡s. Desde $5.000. Entrega en 48 horas.',
   },
   publicidad: {
     title: 'Publicidad',
     desc: 'Volantes, afiches, pendones y todo tu material publicitario.',
-    emoji: '📢',
-    metaTitle: 'Material Publicitario en Las Condes — Volantes, Pendones y Afiches | Imprenta Salvador Dalí',
-    metaDesc: 'Impresión de volantes, afiches y pendones en Las Condes. 1.000 volantes desde $20.000. Entrega express en 48 horas.',
+    emoji: 'ðŸ“¢',
+    metaTitle: 'Material Publicitario en Las Condes â€” Volantes, Pendones y Afiches | Imprenta Salvador DalÃ­',
+    metaDesc: 'ImpresiÃ³n de volantes, afiches y pendones en Las Condes. 1.000 volantes desde $20.000. Entrega express en 48 horas.',
   },
   'utiles-escolares': {
-    title: 'Útiles Escolares',
-    desc: 'Personaliza tus adhesivos para los útiles escolares.',
-    emoji: '🎒',
-    metaTitle: 'Útiles Escolares Personalizados en Las Condes — Stickers para Cuadernos | Imprenta Salvador Dalí',
-    metaDesc: 'Stickers y etiquetas personalizadas para útiles escolares en Las Condes. Ideal para colegios y apoderados. Entrega en 48 horas.',
+    title: 'Ãštiles Escolares',
+    desc: 'Personaliza tus adhesivos para los Ãºtiles escolares.',
+    emoji: 'ðŸŽ’',
+    metaTitle: 'Ãštiles Escolares Personalizados en Las Condes â€” Stickers para Cuadernos | Imprenta Salvador DalÃ­',
+    metaDesc: 'Stickers y etiquetas personalizadas para Ãºtiles escolares en Las Condes. Ideal para colegios y apoderados. Entrega en 48 horas.',
   },
 }
 
 const cats = [
   { slug: 'stickers', label: 'Stickers' },
-  { slug: 'tarjeteria', label: 'Tarjetería' },
+  { slug: 'tarjeteria', label: 'TarjeterÃ­a' },
   { slug: 'publicidad', label: 'Publicidad' },
-  { slug: 'utiles-escolares', label: 'Útiles Escolares' },
+  { slug: 'utiles-escolares', label: 'Ãštiles Escolares' },
 ]
 
 const WA = 'https://wa.me/56964123098?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar'
 
 export default function TiendaCategory({ category }) {
-  const info = meta[category] || { title: category, desc: '', emoji: '🛍️' }
+  const info = meta[category] || { title: category, desc: '', emoji: 'ðŸ›ï¸' }
   const products = allProducts.filter(p => p.categories.includes(category))
   const others   = allProducts.filter(p => !p.categories.includes(category))
 
@@ -56,7 +56,7 @@ export default function TiendaCategory({ category }) {
         <meta name="description" content={info.metaDesc} />
         <meta property="og:title" content={info.metaTitle} />
         <meta property="og:description" content={info.metaDesc} />
-        <meta property="og:image" content="https://imprentasalvadordali.cl/wp-content/uploads/2023/08/logo-04.jpg" />
+        <meta property="og:image" content="https://imprentasalvadordali.cl/images/cropped-icono-66.png" />
       </Helmet>
 
       <div className="page-header">
@@ -93,7 +93,7 @@ export default function TiendaCategory({ category }) {
 
       {/* WA CTA */}
       <div className="bg-charcoal text-white py-5 text-center">
-        <p className="text-sm text-gray-300 mb-3">¿Tienes dudas? Cotiza directo y recibe respuesta rápida</p>
+        <p className="text-sm text-gray-300 mb-3">Â¿Tienes dudas? Cotiza directo y recibe respuesta rÃ¡pida</p>
         <a href={WA} target="_blank" rel="noopener noreferrer" className="btn-wsp">
           COTIZA A NUESTRO WHATSAPP
         </a>
@@ -112,7 +112,7 @@ export default function TiendaCategory({ category }) {
       {others.length > 0 && (
         <section className="py-14 bg-beige">
           <div className="max-w-6xl mx-auto px-4">
-            <h2 className="font-heading text-xl font-bold text-charcoal mb-8">¡También podría interesarte!</h2>
+            <h2 className="font-heading text-xl font-bold text-charcoal mb-8">Â¡TambiÃ©n podrÃ­a interesarte!</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
               {others.map(p => <ProductCard key={p.id} img={p.img} name={p.name} price={p.price} />)}
             </div>

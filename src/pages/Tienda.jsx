@@ -1,25 +1,25 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import ProductCard from '../components/ProductCard'
 import PromoBar from '../components/PromoBar'
 import { allProducts } from '../data/products'
 
 const categories = [
-  { slug: 'stickers', label: 'Stickers', emoji: '🎯' },
-  { slug: 'tarjeteria', label: 'Tarjetería', emoji: '🪪' },
-  { slug: 'publicidad', label: 'Publicidad', emoji: '📢' },
-  { slug: 'utiles-escolares', label: 'Útiles Escolares', emoji: '🎒' },
+  { slug: 'stickers', label: 'Stickers', emoji: 'ðŸŽ¯' },
+  { slug: 'tarjeteria', label: 'TarjeterÃ­a', emoji: 'ðŸªª' },
+  { slug: 'publicidad', label: 'Publicidad', emoji: 'ðŸ“¢' },
+  { slug: 'utiles-escolares', label: 'Ãštiles Escolares', emoji: 'ðŸŽ’' },
 ]
 
 export default function Tienda() {
   return (
     <main>
       <Helmet>
-        <title>Tienda de Impresión en Las Condes — Stickers, Tarjetas, Volantes y más | Imprenta Salvador Dalí</title>
-        <meta name="description" content="Compra stickers, tarjetas de presentación, volantes, pendones y útiles escolares personalizados. Imprenta en Las Condes con entrega en 48 horas." />
-        <meta property="og:title" content="Tienda de Impresión — Imprenta Salvador Dalí Las Condes" />
-        <meta property="og:description" content="Stickers, tarjetas, volantes, pendones y más. Entrega express en 48 horas desde Las Condes." />
-        <meta property="og:image" content="https://imprentasalvadordali.cl/wp-content/uploads/2023/08/logo-04.jpg" />
+        <title>Tienda de ImpresiÃ³n en Las Condes â€” Stickers, Tarjetas, Volantes y mÃ¡s | Imprenta Salvador DalÃ­</title>
+        <meta name="description" content="Compra stickers, tarjetas de presentaciÃ³n, volantes, pendones y Ãºtiles escolares personalizados. Imprenta en Las Condes con entrega en 48 horas." />
+        <meta property="og:title" content="Tienda de ImpresiÃ³n â€” Imprenta Salvador DalÃ­ Las Condes" />
+        <meta property="og:description" content="Stickers, tarjetas, volantes, pendones y mÃ¡s. Entrega express en 48 horas desde Las Condes." />
+        <meta property="og:image" content="https://imprentasalvadordali.cl/images/cropped-icono-66.png" />
       </Helmet>
 
       <div className="page-header">
@@ -28,7 +28,7 @@ export default function Tienda() {
           <p className="section-label">Nuestros productos</p>
           <h1 className="font-heading text-4xl font-bold text-charcoal">Tienda</h1>
           <div className="section-divider mx-auto" />
-          <p className="text-gray-500 text-sm max-w-md mx-auto">Impresión de calidad para todos tus proyectos. Cotiza directo por WhatsApp.</p>
+          <p className="text-gray-500 text-sm max-w-md mx-auto">ImpresiÃ³n de calidad para todos tus proyectos. Cotiza directo por WhatsApp.</p>
         </div>
       </div>
 
