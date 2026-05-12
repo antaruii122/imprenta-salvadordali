@@ -15,17 +15,17 @@ export default function Contacto() {
   return (
     <main>
       <Helmet>
-        <title>Contacto â€” Imprenta en Las Condes, Santiago | Imprenta Salvador DalÃ­</title>
-        <meta name="description" content="ContÃ¡ctanos para cotizar stickers, tarjetas, volantes o pendones. Estamos en Las Condes #10.415, of 25B. Respuesta express por WhatsApp." />
-        <meta property="og:title" content="Contacto â€” Imprenta Salvador DalÃ­ Las Condes" />
-        <meta property="og:description" content="ImpresiÃ³n express en Las Condes. Cotiza por WhatsApp o visÃ­tanos en Las Condes #10.415, of 25B." />
+        <title>Contacto — Imprenta en Las Condes, Santiago | Imprenta Salvador Dalí</title>
+        <meta name="description" content="Contáctanos para cotizar stickers, tarjetas, volantes o pendones. Estamos en Las Condes #10.415, of 25B. Respuesta express por WhatsApp." />
+        <meta property="og:title" content="Contacto — Imprenta Salvador Dalí Las Condes" />
+        <meta property="og:description" content="Impresión express en Las Condes. Cotiza por WhatsApp o visítanos en Las Condes #10.415, of 25B." />
         <meta property="og:image" content="https://imprentasalvadordali.cl/images/cropped-icono-66.png" />
       </Helmet>
 
       <div className="page-header">
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle, #8B7355 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
         <div className="relative max-w-6xl mx-auto px-4 text-center">
-          <p className="section-label">Estamos aquÃ­</p>
+          <p className="section-label">Estamos aquí</p>
           <h1 className="font-heading text-4xl font-bold text-charcoal">Contacto</h1>
           <div className="section-divider mx-auto" />
         </div>
@@ -36,18 +36,18 @@ export default function Contacto() {
 
           {/* Left */}
           <div>
-            <p className="section-label">EscrÃ­benos</p>
-            <h2 className="section-title mb-2">En Imprenta Salvador DalÃ­<br />te esperamos</h2>
+            <p className="section-label">Escríbenos</p>
+            <h2 className="section-title mb-2">En Imprenta Salvador Dalí<br />te esperamos</h2>
             <div className="section-divider" />
             <p className="text-gray-500 leading-relaxed mb-8">
-              Para imprimir todo tu material grÃ¡fico al mejor precio y la mejor calidad, impresiones en 48 hrs.
+              Para imprimir todo tu material gráfico al mejor precio y la mejor calidad, impresiones en 48 hrs.
             </p>
 
             <div className="space-y-5 mb-8">
               {[
-                { icon: 'ðŸ“', title: 'DirecciÃ³n', content: 'Las Condes #10.415, of 25B\nLas Condes, RegiÃ³n Metropolitana, Chile', note: 'Toda visita debe ser agendada previamente' },
-                { icon: 'ðŸ“ž', title: 'TelÃ©fono', href: 'tel:+56964123098', content: '+569 6412 3098' },
-                { icon: 'ðŸ’¬', title: 'WhatsApp', href: WA, content: 'Cotiza directo por WhatsApp' },
+                { icon: 'ðŸ“', title: 'Dirección', content: 'Las Condes #10.415, of 25B\nLas Condes, Región Metropolitana, Chile', note: 'Toda visita debe ser agendada previamente' },
+                { icon: 'ðŸ“ž', title: 'Teléfono', href: 'tel:+56964123098', content: '+569 6412 3098' },
+                { icon: '💬', title: 'WhatsApp', href: WA, content: 'Cotiza directo por WhatsApp' },
               ].map(item => (
                 <div key={item.title} className="flex gap-4 items-start p-4 rounded-xl bg-beige">
                   <span className="text-2xl">{item.icon}</span>
@@ -71,11 +71,11 @@ export default function Contacto() {
 
           {/* Right: form */}
           <div className="card p-8">
-            <h3 className="font-heading text-xl font-bold text-charcoal mb-6">EnvÃ­anos un mensaje</h3>
+            <h3 className="font-heading text-xl font-bold text-charcoal mb-6">Envíanos un mensaje</h3>
             {sent ? (
               <div className="text-center py-12">
-                <p className="text-5xl mb-4">âœ…</p>
-                <p className="font-heading text-xl font-bold text-charcoal mb-2">Â¡Mensaje enviado!</p>
+                <p className="text-5xl mb-4">✅</p>
+                <p className="font-heading text-xl font-bold text-charcoal mb-2">¡Mensaje enviado!</p>
                 <p className="text-gray-500 text-sm">Te contactaremos a la brevedad.</p>
               </div>
             ) : (
@@ -96,7 +96,7 @@ export default function Contacto() {
                   <label className="block text-sm font-semibold text-charcoal mb-1.5">Mensaje *</label>
                   <textarea name="mensaje" value={form.mensaje} onChange={handle} required rows={5}
                     className="w-full border border-beige-dark bg-beige focus:bg-white px-4 py-3 text-sm rounded-xl focus:outline-none focus:border-brand transition-all resize-none"
-                    placeholder="Â¿En quÃ© podemos ayudarte?" />
+                    placeholder="¿En qué podemos ayudarte?" />
                 </div>
                 <button type="submit"
                   className="w-full bg-charcoal hover:bg-brand text-white font-semibold py-3.5 rounded-xl transition-colors duration-200">

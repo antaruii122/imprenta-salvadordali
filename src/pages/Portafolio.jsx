@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async'
 const PH = '/images/hero_stickers.png'
 
 const images = [
-  { src: PH, alt: 'ImpresiÃ³n' },
+  { src: PH, alt: 'Impresión' },
   { src: PH, alt: 'Tarjetas' },
   { src: PH, alt: 'Stickers' },
   { src: PH, alt: 'Stickers' },
@@ -18,7 +18,7 @@ const images = [
   { src: PH, alt: 'Tags' },
   { src: PH, alt: 'Stickers' },
   { src: PH, alt: 'Entradas' },
-  { src: PH, alt: 'CatÃ¡logos' },
+  { src: PH, alt: 'Catálogos' },
   { src: PH, alt: 'Stickers' },
   { src: PH, alt: 'Flyers y Volantes' },
   { src: PH, alt: 'Adhesivos' },
@@ -30,10 +30,10 @@ export default function Portafolio() {
   return (
     <main>
       <Helmet>
-        <title>Portafolio de Trabajos â€” Stickers, Tarjetas y Volantes Impresos | Imprenta Salvador DalÃ­</title>
-        <meta name="description" content="GalerÃ­a de trabajos impresos por Imprenta Salvador DalÃ­ en Las Condes. Stickers, tarjetas de presentaciÃ³n, volantes, pendones y mÃ¡s. Calidad profesional." />
-        <meta property="og:title" content="Portafolio â€” Imprenta Salvador DalÃ­ Las Condes" />
-        <meta property="og:description" content="GalerÃ­a de trabajos impresos: stickers, tarjetas, volantes, pendones y mÃ¡s." />
+        <title>Portafolio de Trabajos — Stickers, Tarjetas y Volantes Impresos | Imprenta Salvador Dalí</title>
+        <meta name="description" content="Galería de trabajos impresos por Imprenta Salvador Dalí en Las Condes. Stickers, tarjetas de presentación, volantes, pendones y más. Calidad profesional." />
+        <meta property="og:title" content="Portafolio — Imprenta Salvador Dalí Las Condes" />
+        <meta property="og:description" content="Galería de trabajos impresos: stickers, tarjetas, volantes, pendones y más." />
         <meta property="og:image" content="https://imprentasalvadordali.cl/images/cropped-icono-66.png" />
       </Helmet>
 

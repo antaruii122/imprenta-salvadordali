@@ -13,11 +13,11 @@ const WaIcon = () => (
   </svg>
 )
 
-const services = ['Stickers', 'Tarjetas', 'Volantes', 'Pendones', 'Etiquetas', 'Publicidad', 'Ãštiles Escolares']
+const services = ['Stickers', 'Tarjetas', 'Volantes', 'Pendones', 'Etiquetas', 'Publicidad', 'Útiles Escolares']
 
 const highlights = [
-  { icon: 'âš¡', title: 'Imprenta express', body: 'Entrega en 48 horas, ideal para trabajos urgentes con excelente calidad.' },
-  { icon: 'ðŸ–¨ï¸', title: 'Excelente calidad', body: 'MÃ¡quinas y tintas premium para resultados de nivel profesional.' },
+  { icon: '⚡', title: 'Imprenta express', body: 'Entrega en 48 horas, ideal para trabajos urgentes con excelente calidad.' },
+  { icon: 'ðŸ–¨ï¸', title: 'Excelente calidad', body: 'Máquinas y tintas premium para resultados de nivel profesional.' },
   { icon: 'ðŸ’°', title: 'Precios Imperdibles', body: 'Valores accesibles, cercanos y comprometidos con cada cliente.' },
 ]
 
@@ -29,24 +29,24 @@ const gallery = [
 ]
 
 const testimonials = [
-  { quote: 'Entregaron rÃ¡pido, con excelente calidad y a muy buen precio. Sin duda los recomiendo.', name: 'Valentina R.', role: 'Organizadora de Eventos' },
-  { quote: 'Los mejores en stickers y tarjetas. El acabado es increÃ­ble y el servicio muy profesional.', name: 'AndrÃ©s M.', role: 'FotÃ³grafo' },
-  { quote: 'PedÃ­ pendones y volantes de urgencia y los tuve en 48 horas. Â¡IncreÃ­ble!', name: 'Camila S.', role: 'Emprendedora' },
+  { quote: 'Entregaron rápido, con excelente calidad y a muy buen precio. Sin duda los recomiendo.', name: 'Valentina R.', role: 'Organizadora de Eventos' },
+  { quote: 'Los mejores en stickers y tarjetas. El acabado es increíble y el servicio muy profesional.', name: 'Andrés M.', role: 'Fotógrafo' },
+  { quote: 'Pedí pendones y volantes de urgencia y los tuve en 48 horas. ¡Increíble!', name: 'Camila S.', role: 'Emprendedora' },
 ]
 
 export default function Home() {
   return (
     <main>
       <Helmet>
-        <title>MEJOR Imprenta en Las Condes, Santiago â€” Stickers, Tarjetas de PresentaciÃ³n, Volantes y Pendones con Entrega Express 48h | Imprenta Salvador DalÃ­</title>
-        <meta name="description" content="Imprenta en Las Condes con entrega express en 48 horas. Stickers personalizados, tarjetas de presentaciÃ³n, volantes, pendones y etiquetas. Cotiza gratis por WhatsApp ahora." />
-        <meta property="og:title" content="Imprenta Salvador DalÃ­ â€” Las Condes, Santiago" />
+        <title>MEJOR Imprenta en Las Condes, Santiago — Stickers, Tarjetas de Presentación, Volantes y Pendones con Entrega Express 48h | Imprenta Salvador Dalí</title>
+        <meta name="description" content="Imprenta en Las Condes con entrega express en 48 horas. Stickers personalizados, tarjetas de presentación, volantes, pendones y etiquetas. Cotiza gratis por WhatsApp ahora." />
+        <meta property="og:title" content="Imprenta Salvador Dalí — Las Condes, Santiago" />
         <meta property="og:description" content="Stickers, tarjetas, volantes y pendones con entrega en 48 horas. Somos locales en Las Condes." />
         <meta property="og:image" content="https://imprentasalvadordali.cl/images/cropped-icono-66.png" />
         <meta property="og:type" content="website" />
       </Helmet>
 
-      {/* â•â•â• HERO â•â•â• */}
+      {/* ═══ HERO ═══ */}
       <section className="relative bg-gradient-to-br from-[#faf7f2] via-beige to-[#ede6d8] overflow-hidden min-h-[88vh] flex items-center">
         {/* decorative blobs */}
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand/10 rounded-full blur-3xl -translate-y-1/3 translate-x-1/3 pointer-events-none" />
@@ -54,15 +54,15 @@ export default function Home() {
 
         <div className="relative max-w-6xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-up">
-            <p className="section-label">Imprenta Â· Las Condes, Santiago</p>
+            <p className="section-label">Imprenta · Las Condes, Santiago</p>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-black text-charcoal leading-[1.05] mb-3">
               Imprenta en<br /><span className="text-brand">Las Condes</span>
             </h1>
             <p className="font-heading text-xl md:text-2xl font-bold text-charcoal/60 mb-5 tracking-wide">
-              Salvador DalÃ­
+              Salvador Dalí
             </p>
             <p className="text-gray-500 text-lg mb-6 leading-relaxed max-w-md">
-              Stickers personalizados, tarjetas de presentaciÃ³n, volantes, pendones y etiquetas con entrega express en 48 horas.
+              Stickers personalizados, tarjetas de presentación, volantes, pendones y etiquetas con entrega express en 48 horas.
             </p>
             {/* tags */}
             <div className="flex flex-wrap gap-2 mb-8">
@@ -77,7 +77,7 @@ export default function Home() {
                 <WaIcon /> Cotiza a nuestro WhatsApp
               </a>
               <Link to="/portafolio" className="btn-outline">
-                Ver Portafolio â†’
+                Ver Portafolio →
               </Link>
             </div>
           </div>
@@ -88,7 +88,7 @@ export default function Home() {
               {/* card glow */}
               <div className="absolute -inset-4 bg-gradient-to-tr from-brand/20 to-transparent rounded-3xl blur-xl" />
               <div className="relative rounded-3xl overflow-hidden shadow-hero">
-                <img src={HERO_IMG} alt="Stickers personalizados - Imprenta Salvador DalÃ­ Las Condes"
+                <img src={HERO_IMG} alt="Stickers personalizados - Imprenta Salvador Dalí Las Condes"
                   className="w-full object-cover hover:scale-105 transition-transform duration-700" />
               </div>
               {/* floating oval badge */}
@@ -113,14 +113,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* â•â•â• STATS BAR â•â•â• */}
+      {/* ═══ STATS BAR ═══ */}
       <section className="bg-white border-b border-gray-100 py-6">
         <div className="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           {[
             { n: '48 hrs', label: 'Entrega Express' },
-            { n: '3', label: 'Sistemas de ImpresiÃ³n' },
+            { n: '3', label: 'Sistemas de Impresión' },
             { n: '10+', label: 'Tipos de Producto' },
-            { n: '4.9 â˜…', label: 'ValoraciÃ³n Google' },
+            { n: '4.9 ★', label: 'Valoración Google' },
           ].map(({ n, label }) => (
             <div key={label}>
               <p className="font-heading text-2xl font-black text-brand">{n}</p>
@@ -130,7 +130,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* â•â•â• ABOUT â•â•â• */}
+      {/* ═══ ABOUT ═══ */}
       <section className="py-24">
         <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
           {/* image with overlapping card */}
@@ -142,32 +142,32 @@ export default function Home() {
             </div>
             {/* floating badge */}
             <div className="absolute -bottom-5 -right-5 bg-brand text-white rounded-2xl shadow-lg px-5 py-3">
-              <p className="font-heading text-lg font-black">Laser Â· Offset Â· UV</p>
-              <p className="text-xs text-brand-light mt-0.5">Sistemas de impresiÃ³n</p>
+              <p className="font-heading text-lg font-black">Laser · Offset · UV</p>
+              <p className="text-xs text-brand-light mt-0.5">Sistemas de impresión</p>
             </div>
           </div>
 
           <div>
-            <p className="section-label">QuiÃ©nes Somos</p>
+            <p className="section-label">Quiénes Somos</p>
             <h2 className="section-title mb-2">Sobre nuestra imprenta</h2>
             <div className="section-divider" />
             <p className="text-gray-500 leading-relaxed mb-4">
-              Dedicados a sistemas de impresiÃ³n lÃ¡ser, offset y tinta UV en diversos papeles (chuche, opalina, lisa, texturada, Bond, lvc, sintÃ©tico) y textiles.
+              Dedicados a sistemas de impresión láser, offset y tinta UV en diversos papeles (chuche, opalina, lisa, texturada, Bond, lvc, sintético) y textiles.
             </p>
             <p className="text-gray-500 leading-relaxed mb-8">
-              FanÃ¡ticos del pintor Salvador DalÃ­ desde hace aÃ±os, siguiendo su obra y estilo para honrarlo con nuestra propia marca.
+              Fanáticos del pintor Salvador Dalí desde hace años, siguiendo su obra y estilo para honrarlo con nuestra propia marca.
             </p>
-            <Link to="/quienes-somos" className="btn-outline">Conocer mÃ¡s â†’</Link>
+            <Link to="/quienes-somos" className="btn-outline">Conocer más →</Link>
           </div>
         </div>
       </section>
 
-      {/* â•â•â• HIGHLIGHTS â•â•â• */}
+      {/* ═══ HIGHLIGHTS ═══ */}
       <section className="py-20 bg-charcoal relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-brand/10 rounded-full blur-3xl pointer-events-none" />
         <div className="relative max-w-6xl mx-auto px-4">
           <div className="text-center mb-14">
-            <p className="text-brand text-xs font-bold uppercase tracking-[0.2em] mb-3">Por quÃ© elegirnos</p>
+            <p className="text-brand text-xs font-bold uppercase tracking-[0.2em] mb-3">Por qué elegirnos</p>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-white">Nuestra propuesta de valor</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -183,26 +183,26 @@ export default function Home() {
         </div>
       </section>
 
-      {/* â•â•â• PROMO BANNER â•â•â• */}
+      {/* ═══ PROMO BANNER ═══ */}
       <section className="py-20 bg-gradient-to-r from-brand-dark via-brand to-brand-light relative overflow-hidden">
         <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)', backgroundSize: '24px 24px' }} />
         <div className="relative max-w-3xl mx-auto px-4 text-center">
           <span className="inline-block bg-white/20 text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
-            ðŸ”¥ PromociÃ³n del Mes
+            🔥 Promoción del Mes
           </span>
           <h2 className="font-heading text-4xl md:text-5xl font-black text-white mb-3">
             1.000 Volantes<br />
-            <span className="text-white/80 text-3xl">10Ã—14 cm por</span> $20.000
+            <span className="text-white/80 text-3xl">10×14 cm por</span> $20.000
           </h2>
-          <p className="text-white/60 text-sm mb-10">*VÃ¡lido hasta agotar stock</p>
+          <p className="text-white/60 text-sm mb-10">*Válido hasta agotar stock</p>
           <a href={WA} target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white text-brand hover:bg-brand hover:text-white font-bold text-base px-10 py-4 rounded-full shadow-xl transition-all duration-200 hover:-translate-y-1">
-            <WaIcon /> Â¡Lo quiero!
+            <WaIcon /> ¡Lo quiero!
           </a>
         </div>
       </section>
 
-      {/* â•â•â• GALLERY â•â•â• */}
+      {/* ═══ GALLERY ═══ */}
       <section className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-14">
@@ -224,13 +224,13 @@ export default function Home() {
           </div>
           <div className="text-center mt-10">
             <Link to="/portafolio" className="btn-dark px-8 py-3 rounded-full">
-              Ver Portafolio Completo â†’
+              Ver Portafolio Completo →
             </Link>
           </div>
         </div>
       </section>
 
-      {/* â•â•â• TESTIMONIALS â•â•â• */}
+      {/* ═══ TESTIMONIALS ═══ */}
       <section className="py-24 bg-beige">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-14">
@@ -242,7 +242,7 @@ export default function Home() {
             {testimonials.map((t) => (
               <div key={t.name} className="card p-8 flex flex-col">
                 <div className="flex gap-0.5 mb-4">
-                  {[...Array(5)].map((_, i) => <span key={i} className="text-amber-400 text-lg">â˜…</span>)}
+                  {[...Array(5)].map((_, i) => <span key={i} className="text-amber-400 text-lg">★</span>)}
                 </div>
                 <p className="text-gray-500 text-sm leading-relaxed italic flex-1 mb-6">"{t.quote}"</p>
                 <div className="flex items-center gap-3">
@@ -260,7 +260,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* â•â•â• MAP â•â•â• */}
+      {/* ═══ MAP ═══ */}
       <MapSection />
     </main>
   )

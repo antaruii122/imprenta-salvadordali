@@ -14,7 +14,7 @@ const WaIcon = () => (
 
 const serviceLinks = [
   { slug: 'stickers', label: 'Stickers personalizados' },
-  { slug: 'tarjetas-presentacion', label: 'Tarjetas de presentaciÃ³n' },
+  { slug: 'tarjetas-presentacion', label: 'Tarjetas de presentación' },
   { slug: 'volantes', label: 'Volantes y flyers' },
   { slug: 'pendones', label: 'Pendones publicitarios' },
 ]
@@ -47,11 +47,11 @@ export default function ComunaPage() {
         <div className="relative max-w-6xl mx-auto px-4 text-center">
           <p className="section-label">Imprenta Â· Las Condes, Santiago</p>
           <h1 className="font-heading text-4xl font-bold text-charcoal">
-            Imprenta Profesional en {comuna.name} â€” ImpresiÃ³n Digital y Offset
+            Imprenta Profesional en {comuna.name} — Impresión Digital y Offset
           </h1>
           <div className="section-divider mx-auto" />
           <p className="text-gray-500 text-sm max-w-md mx-auto mt-2">
-            Entrega express en 48 horas Â· Stickers, tarjetas, volantes, pendones y mÃ¡s
+            Entrega express en 48 horas Â· Stickers, tarjetas, volantes, pendones y más
           </p>
         </div>
       </div>
@@ -59,7 +59,7 @@ export default function ComunaPage() {
       {/* Intro + services */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-14 items-start">
-          {/* Left â€” text */}
+          {/* Left — text */}
           <div>
             <p className="section-label">Trabajamos en {comuna.name}</p>
             <h2 className="section-title mb-2">Tu imprenta de confianza</h2>
@@ -70,7 +70,7 @@ export default function ComunaPage() {
             {/* Services list */}
             <div className="mb-6">
               <p className="text-sm font-bold text-charcoal mb-3">
-                Servicios mÃ¡s solicitados en {comuna.name}:
+                Servicios más solicitados en {comuna.name}:
               </p>
               <ul className="space-y-2">
                 {serviceLinks.map(({ slug: sSlug, label }) => (
@@ -78,12 +78,12 @@ export default function ComunaPage() {
                     <Link
                       to={`/servicios/${sSlug}`}
                       className="flex items-center gap-2 text-sm text-brand hover:underline font-medium">
-                      <span>â†’</span> {label}
+                      <span>→</span> {label}
                     </Link>
                   </li>
                 ))}
                 <li className="flex items-center gap-2 text-sm text-gray-500">
-                  <span className="text-gray-300">â†’</span> Afiches y material POP
+                  <span className="text-gray-300">→</span> Afiches y material POP
                 </li>
               </ul>
             </div>
@@ -98,7 +98,7 @@ export default function ComunaPage() {
             </a>
           </div>
 
-          {/* Right â€” services grid */}
+          {/* Right — services grid */}
           <div>
             <h3 className="font-heading text-xl font-bold text-charcoal mb-6">Nuestros servicios disponibles</h3>
             <div className="grid grid-cols-1 gap-4">
@@ -110,7 +110,7 @@ export default function ComunaPage() {
                     <p className="font-semibold text-charcoal group-hover:text-brand transition-colors">{s.title}</p>
                     <p className="text-gray-500 text-xs mt-0.5">{s.excerpt}</p>
                   </div>
-                  <span className="text-brand text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity">â†’</span>
+                  <span className="text-brand text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity">→</span>
                 </Link>
               ))}
             </div>
@@ -122,13 +122,13 @@ export default function ComunaPage() {
       <section className="py-16 bg-charcoal">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-10">
-            <h2 className="font-heading text-2xl font-bold text-white">Â¿Por quÃ© elegirnos en {comuna.name}?</h2>
+            <h2 className="font-heading text-2xl font-bold text-white">¿Por qué elegirnos en {comuna.name}?</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
             {[
-              { icon: 'âš¡', title: `Entrega en 48h en ${comuna.name}`, body: 'Express sin sacrificar calidad.' },
-              { icon: 'ðŸ—ºï¸', title: 'Servicio a domicilio', body: 'Coordinamos despacho a tu direcciÃ³n en ' + comuna.name + '.' },
-              { icon: 'ðŸ’¬', title: 'CotizaciÃ³n express', body: 'Respuesta por WhatsApp en minutos.' },
+              { icon: '⚡', title: `Entrega en 48h en ${comuna.name}`, body: 'Express sin sacrificar calidad.' },
+              { icon: 'ðŸ—ºï¸', title: 'Servicio a domicilio', body: 'Coordinamos despacho a tu dirección en ' + comuna.name + '.' },
+              { icon: '💬', title: 'Cotización express', body: 'Respuesta por WhatsApp en minutos.' },
             ].map(h => (
               <div key={h.title} className="bg-white/5 border border-white/10 hover:border-brand/40 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1">
                 <div className="text-4xl mb-4">{h.icon}</div>
@@ -160,7 +160,7 @@ export default function ComunaPage() {
           )}
 
           <div className="text-center mb-5">
-            <h3 className="font-heading text-base font-semibold text-charcoal">TambiÃ©n trabajamos en</h3>
+            <h3 className="font-heading text-base font-semibold text-charcoal">También trabajamos en</h3>
           </div>
           <div className="flex flex-wrap justify-center gap-3">
             {otherComunas.map(c => (
