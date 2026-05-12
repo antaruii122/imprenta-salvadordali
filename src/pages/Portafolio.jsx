@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 
-const PH = '/images/hero_stickers.png'
+const PH = '/images/hero_stickers.webp'
 
 const images = [
   { src: PH, alt: 'Impresión' },

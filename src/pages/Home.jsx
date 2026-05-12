@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import MapSection from '../components/MapSection'
 
-const HERO_IMG   = '/images/hero_stickers.png'
+const HERO_IMG   = '/images/hero_stickers.webp'
 const OVAL       = null
-const ABOUT_IMG  = '/images/print_shop_team.png'
+const ABOUT_IMG  = '/images/print_shop_team.webp'
 const WA         = 'https://wa.me/56964123098?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar'
 
 const WaIcon = () => (
@@ -22,10 +22,10 @@ const highlights = [
 ]
 
 const gallery = [
-  { src: '/images/hero_stickers.png', label: 'Etiquetas Adhesivas' },
-  { src: '/images/banners_pendones.png', label: 'Pendones' },
-  { src: '/images/flyers_volantes.png', label: 'Adhesivos' },
-  { src: '/images/business_cards.png', label: 'Tarjetas de Presentación' },
+  { src: '/images/hero_stickers.webp', label: 'Etiquetas Adhesivas' },
+  { src: '/images/banners_pendones.webp', label: 'Pendones' },
+  { src: '/images/flyers_volantes.webp', label: 'Adhesivos' },
+  { src: '/images/business_cards.webp', label: 'Tarjetas de Presentación' },
 ]
 
 const testimonials = [

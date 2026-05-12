@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async'
 import MapSection from '../components/MapSection'
 
-const CONTACT_IMG = '/images/print_shop_team.png'
+const CONTACT_IMG = '/images/print_shop_team.webp'
 const WA = 'https://wa.me/56964123098?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar'
 
 export default function Contacto() {
