@@ -1,7 +1,7 @@
-﻿import { Helmet } from 'react-helmet-async'
+import { Helmet } from 'react-helmet-async'
 import MapSection from '../components/MapSection'
 
-const IMG = '/images/placeholder.svg'
+const IMG = '/images/print_shop_team.png'
 const WA  = 'https://wa.me/56964123098?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar'
 
 const highlights = [

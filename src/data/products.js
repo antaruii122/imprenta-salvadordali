@@ -1,4 +1,4 @@
-const PH = '/images/placeholder.svg'
+const PH = '/images/hero_stickers.png'
 
 export const allProducts = [
   { id: 'afiche', name: 'Afiche', img: PH, categories: ['publicidad'] },

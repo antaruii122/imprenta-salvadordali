@@ -1,6 +1,6 @@
-﻿import { Helmet } from 'react-helmet-async'
+import { Helmet } from 'react-helmet-async'
 
-const PH = '/images/placeholder.svg'
+const PH = '/images/hero_stickers.png'
 
 const images = [
   { src: PH, alt: 'ImpresiÃ³n' },

@@ -1,4 +1,4 @@
-﻿export const servicios = [
+export const servicios = [
   {
     slug: 'stickers',
     title: 'Stickers Personalizados',
@@ -7,7 +7,7 @@
     metaTitle: 'Stickers Personalizados en Santiago con Entrega Express â€” Adhesivos en Todo Formato | Imprenta Salvador DalÃ­',
     metaDesc: 'Stickers y adhesivos personalizados con entrega express en 48 horas. ImpresiÃ³n de alta calidad en Las Condes, Santiago. Vinilo, troquelado, circular y mÃ¡s. Cotiza por WhatsApp.',
     emoji: 'ðŸŽ¯',
-    heroImg: '/images/placeholder.svg',
+    heroImg: '/images/hero_stickers.png',
     excerpt: 'Stickers y adhesivos personalizados de alta calidad, ideales para negocios, eventos y mÃ¡s.',
     tiendaSlug: 'stickers',
     comunas: ['las-condes', 'providencia', 'vitacura', 'santiago-centro', 'nunoa', 'la-florida', 'maipu', 'san-miguel', 'macul', 'quilicura', 'pudahuel', 'san-bernardo'],
@@ -69,7 +69,7 @@
     metaTitle: 'Tarjetas de PresentaciÃ³n en Las Condes y Santiago â€” Acabados Premium con Entrega 48h | Imprenta Salvador DalÃ­',
     metaDesc: 'ImpresiÃ³n de tarjetas de presentaciÃ³n profesionales en Las Condes, Santiago. Laminado mate, brillo, barniz UV y soft touch. Desde $5.000. Entrega en 48 horas. Cotiza por WhatsApp.',
     emoji: 'ðŸªª',
-    heroImg: '/images/placeholder.svg',
+    heroImg: '/images/business_cards.png',
     excerpt: 'Tarjetas de presentaciÃ³n profesionales con acabados premium para causar la mejor impresiÃ³n.',
     tiendaSlug: 'tarjeteria',
     comunas: ['las-condes', 'providencia', 'vitacura', 'santiago-centro', 'nunoa', 'la-florida', 'maipu', 'san-miguel', 'macul', 'quilicura', 'pudahuel', 'san-bernardo'],
@@ -131,7 +131,7 @@
     metaTitle: 'ImpresiÃ³n de Volantes en Santiago con Entrega Express â€” Flyers desde $20.000 | Imprenta Salvador DalÃ­',
     metaDesc: 'Volantes y flyers publicitarios impresos en Las Condes con entrega express. 1.000 volantes desde $20.000. Papel couchÃ©, varios tamaÃ±os. Cotiza ahora por WhatsApp.',
     emoji: 'ðŸ“„',
-    heroImg: '/images/placeholder.svg',
+    heroImg: '/images/flyers_volantes.png',
     excerpt: 'Volantes y flyers de alto impacto para tu campaÃ±a publicitaria, con entrega en 48 horas.',
     tiendaSlug: 'publicidad',
     comunas: ['las-condes', 'providencia', 'vitacura', 'santiago-centro', 'nunoa', 'la-florida', 'maipu', 'san-miguel', 'macul', 'quilicura', 'pudahuel', 'san-bernardo'],
@@ -193,7 +193,7 @@
     metaTitle: 'Pendones Publicitarios en Santiago con Entrega Express 48h â€” Gran Formato | Imprenta Salvador DalÃ­',
     metaDesc: 'ImpresiÃ³n de pendones y banners publicitarios en Santiago. Alta resoluciÃ³n, entrega en 48 horas desde Las Condes. Medidas personalizadas, ojales y bolsillo incluidos. Cotiza ya.',
     emoji: 'ðŸš©',
-    heroImg: '/images/placeholder.svg',
+    heroImg: '/images/banners_pendones.png',
     excerpt: 'Pendones y banners de gran formato para eventos, ferias y publicidad exterior.',
     tiendaSlug: 'publicidad',
     comunas: ['las-condes', 'providencia', 'vitacura', 'santiago-centro', 'nunoa', 'la-florida', 'maipu', 'san-miguel', 'macul', 'quilicura', 'pudahuel', 'san-bernardo'],
