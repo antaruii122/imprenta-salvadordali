@@ -89,7 +89,7 @@ export default function ComunaPage() {
             </div>
 
             <div className="flex items-center gap-3 bg-beige rounded-xl p-4 mb-8">
-              <span className="text-2xl">ðŸ“</span>
+              <span className="text-2xl">📍</span>
               <p className="text-sm text-gray-600">{comuna.distance}</p>
             </div>
             <a href={`${WA_BASE}${comuna.waText}`} target="_blank" rel="noopener noreferrer" className="btn-wsp-lg">
@@ -127,7 +127,7 @@ export default function ComunaPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
             {[
               { icon: '⚡', title: `Entrega en 48h en ${comuna.name}`, body: 'Express sin sacrificar calidad.' },
-              { icon: 'ðŸ—ºï¸', title: 'Servicio a domicilio', body: 'Coordinamos despacho a tu dirección en ' + comuna.name + '.' },
+              { icon: '🗺️', title: 'Servicio a domicilio', body: 'Coordinamos despacho a tu dirección en ' + comuna.name + '.' },
               { icon: '💬', title: 'Cotización express', body: 'Respuesta por WhatsApp en minutos.' },
             ].map(h => (
               <div key={h.title} className="bg-white/5 border border-white/10 hover:border-brand/40 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1">

@@ -106,7 +106,7 @@ export default function BlogPost() {
                   {relatedComunaObj && (
                     <Link to={`/imprenta/${relatedComunaObj.slug}`}
                       className="flex items-center gap-2 bg-white border border-beige-dark hover:border-brand hover:text-brand text-gray-600 text-sm font-medium px-4 py-2 rounded-full transition-all duration-200">
-                      ðŸ“ Imprenta en {relatedComunaObj.name}
+                      📍 Imprenta en {relatedComunaObj.name}
                     </Link>
                   )}
                 </div>

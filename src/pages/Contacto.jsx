@@ -45,8 +45,8 @@ export default function Contacto() {
 
             <div className="space-y-5 mb-8">
               {[
-                { icon: 'ðŸ“', title: 'Dirección', content: 'Las Condes #10.415, of 25B\nLas Condes, Región Metropolitana, Chile', note: 'Toda visita debe ser agendada previamente' },
-                { icon: 'ðŸ“ž', title: 'Teléfono', href: 'tel:+56964123098', content: '+569 6412 3098' },
+                { icon: '📍', title: 'Dirección', content: 'Las Condes #10.415, of 25B\nLas Condes, Región Metropolitana, Chile', note: 'Toda visita debe ser agendada previamente' },
+                { icon: '📞', title: 'Teléfono', href: 'tel:+56964123098', content: '+569 6412 3098' },
                 { icon: '💬', title: 'WhatsApp', href: WA, content: 'Cotiza directo por WhatsApp' },
               ].map(item => (
                 <div key={item.title} className="flex gap-4 items-start p-4 rounded-xl bg-beige">

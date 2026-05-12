@@ -17,8 +17,8 @@ const services = ['Stickers', 'Tarjetas', 'Volantes', 'Pendones', 'Etiquetas', '
 
 const highlights = [
   { icon: '⚡', title: 'Imprenta express', body: 'Entrega en 48 horas, ideal para trabajos urgentes con excelente calidad.' },
-  { icon: 'ðŸ–¨ï¸', title: 'Excelente calidad', body: 'Máquinas y tintas premium para resultados de nivel profesional.' },
-  { icon: 'ðŸ’°', title: 'Precios Imperdibles', body: 'Valores accesibles, cercanos y comprometidos con cada cliente.' },
+  { icon: '🖨️', title: 'Excelente calidad', body: 'Máquinas y tintas premium para resultados de nivel profesional.' },
+  { icon: '💰', title: 'Precios Imperdibles', body: 'Valores accesibles, cercanos y comprometidos con cada cliente.' },
 ]
 
 const gallery = [

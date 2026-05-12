@@ -6,8 +6,8 @@ const WA  = 'https://wa.me/56964123098?text=Hola%2C%20me%20gustar%C3%ADa%20cotiz
 
 const highlights = [
   { icon: '⚡', title: 'Imprenta express', body: 'Entrega en 48 horas, ideal para trabajos urgentes con excelente calidad.' },
-  { icon: 'ðŸ–¨ï¸', title: 'Excelente calidad', body: 'Máquinas y tintas de mercado premium para resultados de nivel profesional.' },
-  { icon: 'ðŸ’°', title: 'Precios Imperdibles', body: 'Valores accesibles, cercanos y comprometidos con cada cliente.' },
+  { icon: '🖨️', title: 'Excelente calidad', body: 'Máquinas y tintas de mercado premium para resultados de nivel profesional.' },
+  { icon: '💰', title: 'Precios Imperdibles', body: 'Valores accesibles, cercanos y comprometidos con cada cliente.' },
 ]
 
 export default function QuienesSomos() {

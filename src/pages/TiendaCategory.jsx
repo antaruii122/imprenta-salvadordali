@@ -45,7 +45,7 @@ const cats = [
 const WA = 'https://wa.me/56964123098?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar'
 
 export default function TiendaCategory({ category }) {
-  const info = meta[category] || { title: category, desc: '', emoji: 'ðŸ›ï¸' }
+  const info = meta[category] || { title: category, desc: '', emoji: '🛍️' }
   const products = allProducts.filter(p => p.categories.includes(category))
   const others   = allProducts.filter(p => !p.categories.includes(category))
 
