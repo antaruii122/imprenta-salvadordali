@@ -91,7 +91,7 @@
 - [ ] Validar schema en validator.schema.org cuando esté el JSON-LD agregado
 
 ### SEO — Google Business Profile (Fase 5 — hacer en paralelo con técnico)
-- [ ] Reclamar/verificar GBP de "Imprenta Salvador Dalí" en Las Condes #10.415
+- [ ] Reclamar/verificar GBP de "Imprenta Salvador Dalí" en Mayecura 1177, Las Condes
 - [ ] Categoría principal: **"Imprenta"** — la más importante, no cambiar sin razón
 - [ ] Categorías secundarias: Fabricante de adhesivos, Servicio de impresión de tarjetas de presentación (máx 2–3 total)
 - [ ] Completar perfil al 100% — dirección, teléfono, web, horario (mínimo 3/5 funciones activas)
@@ -104,7 +104,7 @@
 - [ ] Activar Google Messages — responder en menos de 1 hora (señal de ranking)
 - [ ] Publicar Google Post semanal: promos, trabajos terminados, tips de impresión — mínimo 1 por semana
 - [ ] Meta: 5+ reseñas en el primer mes — pedir a cada cliente por WhatsApp después de entrega
-- [ ] NAP en GBP idéntico al sitio: `Imprenta Salvador Dalí · Las Condes #10.415, of 25B · +56 9 6412 3098`
+- [ ] NAP en GBP idéntico al sitio: `Imprenta Salvador Dalí · Mayecura 1177, Las Condes · +56 9 6412 3098`
 
 ### SEO — Geotagging de Fotos
 - [ ] Usar tool.geoimgr.com para incrustar coordenadas GPS en fotos antes de subirlas al GBP
@@ -154,7 +154,7 @@
 
 **Regla NAP — idéntico en TODOS:**
 - Nombre: `Imprenta Salvador Dalí` (con tilde y ï)
-- Dirección: `Las Condes #10.415, of 25B, Las Condes, Región Metropolitana, Chile`
+- Dirección: `Mayecura 1177, Las Condes, Las Condes, Región Metropolitana, Chile`
 - Teléfono: `+56 9 6412 3098`
 
 ### SEO — Tareas Semanales Recurrentes (una vez el sitio y GBP estén activos)

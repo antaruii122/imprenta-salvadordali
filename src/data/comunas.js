@@ -3,8 +3,8 @@ export const comunas = [
     slug: 'las-condes',
     name: 'Las Condes',
     metaTitle: 'Imprenta en Las Condes — Stickers, Tarjetas y Volantes con Entrega Express 48h | Imprenta Salvador Dalí',
-    metaDesc: 'Imprenta en Las Condes con entrega express en 48 horas. Stickers, tarjetas de presentación, volantes, pendones y más. Somos locales en Las Condes #10.415.',
-    intro: 'Somos una imprenta ubicada en Las Condes, específicamente en Las Condes número 10.415, oficina 25B. Eso significa que conocemos perfectamente las necesidades de los negocios, emprendedores y profesionales de la comuna. Estamos a pasos de Apoquindo y atendemos con cotización express por WhatsApp.',
+    metaDesc: 'Imprenta en Las Condes con entrega express en 48 horas. Stickers, tarjetas de presentación, volantes, pendones y más. Somos locales en Mayecura 1177, Las Condes.',
+    intro: 'Somos una imprenta ubicada en Las Condes, específicamente en Mayecura 1177, Las Condes. Eso significa que conocemos perfectamente las necesidades de los negocios, emprendedores y profesionales de la comuna. Estamos a pasos de Apoquindo y atendemos con cotización express por WhatsApp.',
     body: `Las Condes es una de las comunas con mayor concentración de empresas, oficinas corporativas y emprendimientos de alto nivel en Santiago. Los negocios de Las Condes tienen estándares visuales muy altos y necesitan materiales gráficos que estén a la altura de su marca y su clientela. En Imprenta Salvador Dalí entendemos esa exigencia porque vivimos y trabajamos en la misma comuna.
 
 Producimos stickers personalizados en vinilo de alta calidad para packaging, identidad de marca y merchandising. Fabricamos tarjetas de presentación con acabados premium como laminado soft touch, barniz UV selectivo y relieve táctil, exactamente lo que los profesionales de Las Condes necesitan para diferenciarse en reuniones y eventos de networking. También hacemos volantes para promociones y campañas, pendones para ferias y eventos corporativos, etiquetas para productos y todo tipo de material gráfico con impresión digital de alta resolución.
@@ -12,7 +12,7 @@ Producimos stickers personalizados en vinilo de alta calidad para packaging, ide
 Nuestro servicio express entrega tu pedido en Las Condes en 48 horas hábiles, ideal para lanzamientos, eventos corporativos urgentes y campañas de marketing que no pueden esperar. Si buscas una imprenta en Las Condes que entienda la velocidad y los estándares del mundo empresarial moderno, somos tu opción. Cotiza por WhatsApp y te respondemos en minutos con precio y plazo exacto.`,
     keywords: ['imprenta Las Condes', 'stickers Las Condes', 'tarjetas de presentación Las Condes', 'volantes Las Condes', 'pendones Las Condes', 'impresión digital Las Condes'],
     neighbors: ['providencia', 'vitacura', 'nunoa'],
-    distance: 'Estamos en Las Condes #10.415, of 25B. Retiro en el local o coordinamos despacho.',
+    distance: 'Estamos en Mayecura 1177, Las Condes. Retiro en el local o coordinamos despacho.',
     waText: 'Hola%2C%20soy%20de%20Las%20Condes%20y%20me%20gustar%C3%ADa%20cotizar',
   },
   {
@@ -25,10 +25,10 @@ Nuestro servicio express entrega tu pedido en Las Condes en 48 horas hábiles, i
 
 En Imprenta Salvador Dalí atendemos a clientes de Providencia con los mismos estándares que ofrecemos a nuestros clientes locales de Las Condes. Producimos stickers en vinilo de alta resolución para packaging y branding, tarjetas de presentación con acabados premium, volantes en papel couché de distintos gramajes para campañas de distribución masiva, y pendones para locales comerciales y eventos. Trabajamos con impresión digital y offset, lo que nos permite adaptar la tecnología al proyecto y garantizar el mejor resultado en cada caso.
 
-La distancia entre Las Condes y Providencia es muy corta y el despacho llega en 48 horas hábiles o menos. También puedes retirar personalmente en nuestro local de Las Condes número 10.415, oficina 25B. Para cotizar tu proyecto, envíanos el diseño o una descripción de lo que necesitas por WhatsApp y respondemos con precio y plazo en minutos. Muchos clientes de Providencia prefieren cotizar por WhatsApp en la mañana y tener su pedido listo para retirar o recibir en dos días.`,
+La distancia entre Las Condes y Providencia es muy corta y el despacho llega en 48 horas hábiles o menos. También puedes retirar personalmente en nuestro local de Mayecura 1177, Las Condes. Para cotizar tu proyecto, envíanos el diseño o una descripción de lo que necesitas por WhatsApp y respondemos con precio y plazo en minutos. Muchos clientes de Providencia prefieren cotizar por WhatsApp en la mañana y tener su pedido listo para retirar o recibir en dos días.`,
     keywords: ['imprenta Providencia', 'stickers personalizados Providencia', 'tarjetas de presentación Providencia', 'impresión digital Providencia', 'volantes Providencia', 'pendones Providencia'],
     neighbors: ['las-condes', 'nunoa', 'santiago-centro'],
-    distance: 'A solo 10 minutos de Providencia. Retiro en Las Condes #10.415 o coordinamos despacho.',
+    distance: 'A solo 10 minutos de Providencia. Retiro en Mayecura 1177, Las Condes o coordinamos despacho.',
     waText: 'Hola%2C%20soy%20de%20Providencia%20y%20me%20gustar%C3%ADa%20cotizar',
   },
   {
@@ -41,10 +41,10 @@ La distancia entre Las Condes y Providencia es muy corta y el despacho llega en 
 
 Los profesionales de Vitacura que más nos contactan son abogados, arquitectos, médicos y consultores que necesitan tarjetas de presentación que comuniquen seriedad y distinción. También atendemos a las tiendas de lujo y boutiques de Avenida Alonso de Córdova que necesitan etiquetas y packaging con acabado premium. Los restaurantes y cafeterías de la zona nos piden volantes y menús impresos con papeles especiales, y los organizadores de eventos en Vitacura recurren a nosotros para pendones y señalética de gran formato.
 
-Coordinamos despacho a Vitacura en 48 horas hábiles desde la aprobación del diseño. También puedes retirar en nuestro local de Las Condes número 10.415, que queda a menos de 10 minutos en auto desde cualquier punto de Vitacura. Para cotizar, envíanos tu diseño o descripción del proyecto por WhatsApp y respondemos de inmediato.`,
+Coordinamos despacho a Vitacura en 48 horas hábiles desde la aprobación del diseño. También puedes retirar en nuestro local de Mayecura 1177, Las Condes, que queda a menos de 10 minutos en auto desde cualquier punto de Vitacura. Para cotizar, envíanos tu diseño o descripción del proyecto por WhatsApp y respondemos de inmediato.`,
     keywords: ['imprenta Vitacura', 'tarjetas de presentación Vitacura', 'stickers Vitacura', 'impresión digital Vitacura', 'pendones Vitacura', 'volantes Vitacura'],
     neighbors: ['las-condes', 'providencia', 'quilicura'],
-    distance: 'A menos de 10 minutos de Vitacura. Retiro en Las Condes #10.415 o despacho coordinado.',
+    distance: 'A menos de 10 minutos de Vitacura. Retiro en Mayecura 1177, Las Condes o despacho coordinado.',
     waText: 'Hola%2C%20soy%20de%20Vitacura%20y%20me%20gustar%C3%ADa%20cotizar',
   },
   {
@@ -57,10 +57,10 @@ Coordinamos despacho a Vitacura en 48 horas hábiles desde la aprobación del di
 
 En Imprenta Salvador Dalí somos ese proveedor para muchos clientes de Santiago Centro. Producimos volantes para reparto masivo en el centro de Santiago donde la competencia comercial es muy alta y el volante bien diseñado y bien distribuido marca diferencia. Fabricamos afiches para locales y oficinas del centro histórico, tarjetas de presentación para profesionales que tienen reuniones de negocios en la zona, stickers para packaging de productos que se venden en las galerías y tiendas del centro, y pendones para eventos y campañas que se realizan en plazas y espacios públicos del casco histórico.
 
-Trabajamos con impresión digital y offset para adaptarnos a las necesidades de cada cliente. El offset es especialmente conveniente para grandes tirajes de volantes que es lo más común para distribución masiva en Santiago Centro. Coordinamos despacho a cualquier dirección de Santiago Centro en 48 horas desde la aprobación del diseño, o puedes retirar en nuestro local de Las Condes número 10.415, oficina 25B.`,
+Trabajamos con impresión digital y offset para adaptarnos a las necesidades de cada cliente. El offset es especialmente conveniente para grandes tirajes de volantes que es lo más común para distribución masiva en Santiago Centro. Coordinamos despacho a cualquier dirección de Santiago Centro en 48 horas desde la aprobación del diseño, o puedes retirar en nuestro local de Mayecura 1177, Las Condes.`,
     keywords: ['imprenta Santiago Centro', 'volantes Santiago Centro', 'afiches Santiago', 'stickers Santiago Centro', 'impresión offset Santiago', 'tarjetas Santiago Centro'],
     neighbors: ['providencia', 'nunoa', 'san-miguel'],
-    distance: 'A 20 minutos de Santiago Centro. Coordinamos despacho o retiro en Las Condes #10.415.',
+    distance: 'A 20 minutos de Santiago Centro. Coordinamos despacho o retiro en Mayecura 1177, Las Condes.',
     waText: 'Hola%2C%20soy%20de%20Santiago%20Centro%20y%20me%20gustar%C3%ADa%20cotizar',
   },
   {
@@ -73,10 +73,10 @@ Trabajamos con impresión digital y offset para adaptarnos a las necesidades de 
 
 En Imprenta Salvador Dalí atendemos a clientes de Ñuñoa con todos nuestros servicios: stickers personalizados en vinilo para productos de emprendimientos gastronómicos y de moda, tarjetas de presentación originales con acabados que se destacan del estándar, folletos y dípticos para las múltiples ferias y mercados que ocurren en la comuna, y pendones para eventos en el Teatro Municipal de Ñuñoa, la Plaza Ñuñoa y espacios culturales del barrio. También fabricamos etiquetas para los productores de cerveza artesanal, conservas y alimentos que abundan en la zona.
 
-El perfil del cliente de Ñuñoa que nos elige suele ser alguien que valora tanto la calidad del producto como el diseño del resultado. Por eso trabajamos con materiales premium y ofrecemos orientación en acabados para que el resultado final sea exactamente lo que necesitas. El despacho a Ñuñoa llega en 48 horas hábiles o puedes retirar en nuestro local de Las Condes número 10.415, oficina 25B. Cotiza por WhatsApp y respondemos con precio en minutos.`,
+El perfil del cliente de Ñuñoa que nos elige suele ser alguien que valora tanto la calidad del producto como el diseño del resultado. Por eso trabajamos con materiales premium y ofrecemos orientación en acabados para que el resultado final sea exactamente lo que necesitas. El despacho a Ñuñoa llega en 48 horas hábiles o puedes retirar en nuestro local de Mayecura 1177, Las Condes. Cotiza por WhatsApp y respondemos con precio en minutos.`,
     keywords: ['imprenta Ñuñoa', 'stickers Ñuñoa', 'tarjetas de presentación Ñuñoa', 'impresión digital Ñuñoa', 'volantes Ñuñoa', 'pendones Ñuñoa'],
     neighbors: ['providencia', 'las-condes', 'macul'],
-    distance: 'A 20 minutos de Ñuñoa. Coordinamos despacho o retiro en Las Condes #10.415.',
+    distance: 'A 20 minutos de Ñuñoa. Coordinamos despacho o retiro en Mayecura 1177, Las Condes.',
     waText: 'Hola%2C%20soy%20de%20%C3%91u%C3%B1oa%20y%20me%20gustar%C3%ADa%20cotizar',
   },
   {
@@ -92,7 +92,7 @@ En Imprenta Salvador Dalí coordinamos despacho a La Florida con entrega en 48 h
 La Florida concentra además una cantidad importante de colegios y jardines infantiles que nos contactan para material escolar personalizado: stickers para útiles, carpetas y mochilas, y materiales para actividades y eventos del colegio. Si tienes un proyecto en La Florida, cotiza por WhatsApp con las medidas y el diseño, o cuéntanos qué necesitas y te asesoramos desde cero.`,
     keywords: ['imprenta La Florida', 'volantes La Florida', 'stickers La Florida', 'tarjetas de presentación La Florida', 'impresión digital La Florida', 'pendones La Florida'],
     neighbors: ['nunoa', 'macul', 'san-bernardo'],
-    distance: 'Coordinamos despacho a La Florida en 48 horas. Retiro en Las Condes #10.415.',
+    distance: 'Coordinamos despacho a La Florida en 48 horas. Retiro en Mayecura 1177, Las Condes.',
     waText: 'Hola%2C%20soy%20de%20La%20Florida%20y%20me%20gustar%C3%ADa%20cotizar',
   },
   {
@@ -105,10 +105,10 @@ La Florida concentra además una cantidad importante de colegios y jardines infa
 
 En Imprenta Salvador Dalí coordinamos despacho a Maipú con entrega en 48 horas hábiles. Producimos volantes para reparto en zonas de alto flujo como Avenida Pajaritos y las cercanías del metro, donde la distribución puerta a puerta y en locales comerciales sigue siendo muy efectiva. Fabricamos stickers y etiquetas para los muchos emprendimientos de alimentos, productos artesanales y tiendas online que operan desde Maipú. Hacemos tarjetas de presentación para profesionales independientes y representantes de empresa. También producimos pendones para los numerosos eventos municipales, ferias navideñas y eventos deportivos que se realizan en la comuna.
 
-La distancia entre Las Condes y Maipú es mayor que otras comunas, pero el servicio de despacho cubre Maipú sin problemas. Para pedidos urgentes o de gran volumen, consulta disponibilidad directamente por WhatsApp y evaluamos la mejor logística para tu caso. También puedes retirar en nuestro local de Las Condes número 10.415, oficina 25B, si tienes cómo movilizarte.`,
+La distancia entre Las Condes y Maipú es mayor que otras comunas, pero el servicio de despacho cubre Maipú sin problemas. Para pedidos urgentes o de gran volumen, consulta disponibilidad directamente por WhatsApp y evaluamos la mejor logística para tu caso. También puedes retirar en nuestro local de Mayecura 1177, Las Condes, si tienes cómo movilizarte.`,
     keywords: ['imprenta Maipú', 'stickers Maipú', 'volantes Maipú', 'folletos Maipú', 'impresión digital Maipú', 'tarjetas de presentación Maipú'],
     neighbors: ['pudahuel', 'san-miguel', 'san-bernardo'],
-    distance: 'Coordinamos despacho a Maipú. Retiro disponible en Las Condes #10.415.',
+    distance: 'Coordinamos despacho a Maipú. Retiro disponible en Mayecura 1177, Las Condes.',
     waText: 'Hola%2C%20soy%20de%20Maip%C3%BA%20y%20me%20gustar%C3%ADa%20cotizar',
   },
   {
@@ -124,7 +124,7 @@ En Imprenta Salvador Dalí atendemos a clientes de San Miguel con todos nuestros
 Lo que más valoran nuestros clientes de San Miguel es la combinación de calidad profesional, precios accesibles y entrega rápida. El despacho llega en 48 horas hábiles a cualquier dirección de San Miguel. Para cotizar tu proyecto, envíanos el diseño por WhatsApp con las medidas y la cantidad, y respondemos de inmediato.`,
     keywords: ['imprenta San Miguel', 'volantes San Miguel', 'stickers San Miguel', 'tarjetas de presentación San Miguel', 'afiches San Miguel', 'impresión San Miguel'],
     neighbors: ['santiago-centro', 'maipu', 'macul'],
-    distance: 'Coordinamos despacho a San Miguel en 48 horas. Retiro en Las Condes #10.415.',
+    distance: 'Coordinamos despacho a San Miguel en 48 horas. Retiro en Mayecura 1177, Las Condes.',
     waText: 'Hola%2C%20soy%20de%20San%20Miguel%20y%20me%20gustar%C3%ADa%20cotizar',
   },
   {
@@ -137,10 +137,10 @@ Lo que más valoran nuestros clientes de San Miguel es la combinación de calida
 
 En Imprenta Salvador Dalí producimos para clientes de Macul stickers personalizados en vinilo de alta calidad para marcas locales y emprendimientos de packaging. Fabricamos tarjetas de presentación con acabados que van desde el estándar económico hasta el laminado mate o soft touch para quienes necesitan una imagen más premium. Imprimimos volantes para los comercios de las avenidas principales de Macul y folletos para las instituciones educativas y deportivas de la zona, que son muchas. También hacemos pendones para eventos de la comunidad y señalética temporal para obras y construcciones.
 
-El servicio de despacho a Macul opera en 48 horas hábiles. También puedes retirar en nuestro local de Las Condes número 10.415, oficina 25B, que queda a 20 minutos en auto desde Macul. Para tu cotización, envíanos el diseño en PDF o imagen por WhatsApp junto con las medidas y la cantidad, y respondemos con precio y plazo en minutos.`,
+El servicio de despacho a Macul opera en 48 horas hábiles. También puedes retirar en nuestro local de Mayecura 1177, Las Condes, que queda a 20 minutos en auto desde Macul. Para tu cotización, envíanos el diseño en PDF o imagen por WhatsApp junto con las medidas y la cantidad, y respondemos con precio y plazo en minutos.`,
     keywords: ['imprenta Macul', 'stickers Macul', 'volantes Macul', 'tarjetas de presentación Macul', 'impresión digital Macul', 'pendones Macul'],
     neighbors: ['nunoa', 'la-florida', 'san-miguel'],
-    distance: 'Coordinamos despacho a Macul en 48 horas. Retiro en Las Condes #10.415.',
+    distance: 'Coordinamos despacho a Macul en 48 horas. Retiro en Mayecura 1177, Las Condes.',
     waText: 'Hola%2C%20soy%20de%20Macul%20y%20me%20gustar%C3%ADa%20cotizar',
   },
   {
@@ -153,10 +153,10 @@ El servicio de despacho a Macul opera en 48 horas hábiles. También puedes reti
 
 Eso genera una demanda muy variada de material gráfico. Las empresas del sector industrial de Quilicura nos contactan para folletos corporativos de presentación, tarjetas de presentación para equipos comerciales numerosos, etiquetas para productos y afiches para la señalética interna de sus instalaciones. Los negocios del sector comercial piden volantes para reparto en la zona, stickers para packaging y pendones para campañas de temporada. Los emprendimientos de productos artesanales y alimentos nos buscan para etiquetas en vinilo con diseños troquelados.
 
-En Imprenta Salvador Dalí coordinamos el despacho a Quilicura en 48 horas hábiles. La distancia es algo mayor que para comunas del sector oriente, pero el servicio de mensajería cubre sin problemas. Para proyectos urgentes o de volumen importante, consulta directamente por WhatsApp y ajustamos la logística. También puedes retirar en Las Condes número 10.415, oficina 25B.`,
+En Imprenta Salvador Dalí coordinamos el despacho a Quilicura en 48 horas hábiles. La distancia es algo mayor que para comunas del sector oriente, pero el servicio de mensajería cubre sin problemas. Para proyectos urgentes o de volumen importante, consulta directamente por WhatsApp y ajustamos la logística. También puedes retirar en Mayecura 1177, Las Condes.`,
     keywords: ['imprenta Quilicura', 'stickers Quilicura', 'folletos Quilicura', 'afiches Quilicura', 'tarjetas de presentación Quilicura', 'volantes Quilicura'],
     neighbors: ['pudahuel', 'vitacura', 'maipu'],
-    distance: 'Coordinamos despacho a Quilicura en 48 horas. Retiro en Las Condes #10.415.',
+    distance: 'Coordinamos despacho a Quilicura en 48 horas. Retiro en Mayecura 1177, Las Condes.',
     waText: 'Hola%2C%20soy%20de%20Quilicura%20y%20me%20gustar%C3%ADa%20cotizar',
   },
   {
@@ -172,7 +172,7 @@ En Imprenta Salvador Dalí producimos para clientes de Pudahuel stickers para et
 El precio es una variable importante para muchos clientes de Pudahuel, especialmente para empresas que hacen pedidos recurrentes. En Imprenta Salvador Dalí tenemos precios accesibles sin sacrificar calidad, y los pedidos recurrentes siempre tienen mejor precio que los pedidos únicos. Coordinamos el despacho a Pudahuel en 48 horas hábiles. Para cotizar, envíanos el diseño o descripción del proyecto por WhatsApp.`,
     keywords: ['imprenta Pudahuel', 'stickers Pudahuel', 'volantes Pudahuel', 'etiquetas Pudahuel', 'impresión digital Pudahuel', 'tarjetas Pudahuel'],
     neighbors: ['quilicura', 'maipu', 'san-bernardo'],
-    distance: 'Coordinamos despacho a Pudahuel en 48 horas. Retiro en Las Condes #10.415.',
+    distance: 'Coordinamos despacho a Pudahuel en 48 horas. Retiro en Mayecura 1177, Las Condes.',
     waText: 'Hola%2C%20soy%20de%20Pudahuel%20y%20me%20gustar%C3%ADa%20cotizar',
   },
   {
@@ -185,10 +185,10 @@ El precio es una variable importante para muchos clientes de Pudahuel, especialm
 
 En Imprenta Salvador Dalí atendemos a clientes de San Bernardo con todos nuestros servicios de impresión. Producimos volantes para reparto en las zonas comerciales del centro de San Bernardo y en los accesos de los sectores industriales. Fabricamos stickers personalizados para los emprendimientos de productos artesanales y alimentos que abundan en la zona. Hacemos tarjetas de presentación para profesionales y representantes de empresa. También producimos pendones para los eventos de la feria de San Bernardo, el estadio municipal y otros espacios de uso comunitario de la ciudad.
 
-San Bernardo está en el extremo sur de la Región Metropolitana, por lo que la coordinación del despacho requiere un poco más de planificación. El tiempo de entrega en 48 horas hábiles aplica siempre que el pedido esté aprobado antes del mediodía. Para pedidos urgentes o de gran volumen, consulta directamente por WhatsApp antes de confirmar el plazo. También puedes retirar en nuestro local de Las Condes número 10.415 si tienes traslado disponible.`,
+San Bernardo está en el extremo sur de la Región Metropolitana, por lo que la coordinación del despacho requiere un poco más de planificación. El tiempo de entrega en 48 horas hábiles aplica siempre que el pedido esté aprobado antes del mediodía. Para pedidos urgentes o de gran volumen, consulta directamente por WhatsApp antes de confirmar el plazo. También puedes retirar en nuestro local de Mayecura 1177, Las Condes si tienes traslado disponible.`,
     keywords: ['imprenta San Bernardo', 'stickers San Bernardo', 'volantes San Bernardo', 'afiches San Bernardo', 'tarjetas de presentación San Bernardo', 'impresión San Bernardo'],
     neighbors: ['maipu', 'pudahuel', 'la-florida'],
-    distance: 'Coordinamos despacho a San Bernardo. Retiro disponible en Las Condes #10.415.',
+    distance: 'Coordinamos despacho a San Bernardo. Retiro disponible en Mayecura 1177, Las Condes.',
     waText: 'Hola%2C%20soy%20de%20San%20Bernardo%20y%20me%20gustar%C3%ADa%20cotizar',
   },
 ]

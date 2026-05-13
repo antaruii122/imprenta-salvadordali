@@ -204,7 +204,7 @@ To add a product: edit `src/data/products.js` — add an object with `id`, `name
 | WhatsApp | `https://wa.me/56964123098?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar` |
 | Phone | `+569 6412 3098` |
 | Instagram | `https://www.instagram.com/imprenta_salvador_dali/` |
-| Google Maps | Embedded iframe for Las Condes #10.415, of 25B |
+| Google Maps | Embedded iframe for Mayecura 1177, Las Condes |
 | Logo (color) | `https://imprentasalvadordali.cl/wp-content/uploads/2023/08/logo-04.jpg` |
 | Logo (footer/beige) | `https://imprentasalvadordali.cl/wp-content/uploads/2023/09/logo-beige-60.png` |
 
@@ -404,7 +404,7 @@ Homepage (/)
   "image": "https://imprentasalvadordali.cl/wp-content/uploads/2023/08/logo-04.jpg",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Las Condes #10.415, of 25B",
+    "streetAddress": "Mayecura 1177, Las Condes",
     "addressLocality": "Las Condes",
     "addressRegion": "Región Metropolitana",
     "postalCode": "7591538",
@@ -588,7 +588,7 @@ Homepage (/)
 
 **NAP en GBP — idéntico al sitio:**
 - Nombre: `Imprenta Salvador Dalí`
-- Dirección: `Las Condes #10.415, of 25B`
+- Dirección: `Mayecura 1177, Las Condes`
 - Teléfono: `+56 9 6412 3098`
 - Horario: Lunes–Viernes 09:00–18:00
 
@@ -624,7 +624,7 @@ Homepage (/)
 
 **Regla NAP — idéntico en ABSOLUTAMENTE TODOS:**
 - Nombre: `Imprenta Salvador Dalí` (con tilde en ó y diéresis en ï)
-- Dirección: `Las Condes #10.415, of 25B, Las Condes, Región Metropolitana, Chile`
+- Dirección: `Mayecura 1177, Las Condes, Las Condes, Región Metropolitana, Chile`
 - Teléfono: `+56 9 6412 3098`
 
 ---

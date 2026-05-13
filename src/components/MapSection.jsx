@@ -34,7 +34,7 @@ export default function MapSection() {
               <div className="flex gap-4 items-start">
                 <span className="text-brand text-xl mt-0.5">📍</span>
                 <div>
-                  <p className="font-semibold text-white">Las Condes #10.415, of 25B</p>
+                  <p className="font-semibold text-white">Mayecura 1177, 7570718 Las Condes, Región Metropolitana, Chile</p>
                   <p className="text-gray-400 text-sm">Las Condes, Región Metropolitana, Chile</p>
                 </div>
               </div>

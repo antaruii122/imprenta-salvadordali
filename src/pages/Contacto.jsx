@@ -11,9 +11,9 @@ export default function Contacto() {
     <main>
       <Helmet>
         <title>Contacto — Imprenta en Las Condes, Santiago | Imprenta Salvador Dalí</title>
-        <meta name="description" content="Contáctanos para cotizar stickers, tarjetas, volantes o pendones. Estamos en Las Condes #10.415, of 25B. Respuesta express por WhatsApp." />
+        <meta name="description" content="Contáctanos para cotizar stickers, tarjetas, volantes o pendones. Estamos en Mayecura 1177, Las Condes. Respuesta express por WhatsApp." />
         <meta property="og:title" content="Contacto — Imprenta Salvador Dalí Las Condes" />
-        <meta property="og:description" content="Impresión express en Las Condes. Cotiza por WhatsApp o visítanos en Las Condes #10.415, of 25B." />
+        <meta property="og:description" content="Impresión express en Las Condes. Cotiza por WhatsApp o visítanos en Mayecura 1177, Las Condes." />
         <meta property="og:image" content="https://imprentasalvadordali.cl/images/cropped-icono-66.png" />
       </Helmet>
 
@@ -40,7 +40,7 @@ export default function Contacto() {
 
             <div className="space-y-5 mb-8">
               {[
-                { icon: '📍', title: 'Dirección', content: 'Las Condes #10.415, of 25B\nLas Condes, Región Metropolitana, Chile', note: 'Toda visita debe ser agendada previamente' },
+                { icon: '📍', title: 'Dirección', content: 'Mayecura 1177, 7570718 Las Condes, Región Metropolitana, Chile', note: 'Toda visita debe ser agendada previamente' },
                 { icon: '📞', title: 'Teléfono', href: 'tel:+56964123098', content: '+569 6412 3098' },
                 { icon: '💬', title: 'WhatsApp', href: WA, content: 'Cotiza directo por WhatsApp' },
               ].map(item => (

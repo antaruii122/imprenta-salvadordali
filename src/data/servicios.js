@@ -97,7 +97,7 @@ export const servicios = [
       },
       {
         h2: 'Entrega y retiro de tarjetas en Las Condes',
-        text: `El plazo de producción estándar para tarjetas de presentación es 48 horas hábiles desde la aprobación del diseño. Puedes retirar en nuestra imprenta en Las Condes número 10.415, oficina 25B, o coordinamos despacho a tu dirección en Santiago. Para pedidos urgentes consulta disponibilidad directamente por WhatsApp.`,
+        text: `El plazo de producción estándar para tarjetas de presentación es 48 horas hábiles desde la aprobación del diseño. Puedes retirar en nuestra imprenta en Mayecura 1177, Las Condes, o coordinamos despacho a tu dirección en Santiago. Para pedidos urgentes consulta disponibilidad directamente por WhatsApp.`,
       },
     ],
     faqs: [
