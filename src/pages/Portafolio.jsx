@@ -1,29 +1,18 @@
 import { Helmet } from 'react-helmet-async'
 
-const PH = '/images/hero_stickers.webp'
-
 const images = [
-  { src: PH, alt: 'Impresión' },
-  { src: PH, alt: 'Tarjetas' },
-  { src: PH, alt: 'Stickers' },
-  { src: PH, alt: 'Stickers' },
-  { src: PH, alt: 'Tags' },
-  { src: PH, alt: 'Stickers' },
-  { src: PH, alt: 'Flyers y Volantes' },
-  { src: PH, alt: 'Flyers y Volantes' },
-  { src: PH, alt: 'Tags' },
-  { src: PH, alt: 'Tarjetas' },
-  { src: PH, alt: 'Adhesivos Botellas' },
-  { src: PH, alt: 'Tags' },
-  { src: PH, alt: 'Tags' },
-  { src: PH, alt: 'Stickers' },
-  { src: PH, alt: 'Entradas' },
-  { src: PH, alt: 'Catálogos' },
-  { src: PH, alt: 'Stickers' },
-  { src: PH, alt: 'Flyers y Volantes' },
-  { src: PH, alt: 'Adhesivos' },
-  { src: PH, alt: 'Stickers' },
-  { src: PH, alt: 'Stickers Troquelados' },
+  { src: '/images/hero_stickers.webp', alt: 'Stickers Troquelados' },
+  { src: '/images/product_afiche.webp', alt: 'Afiches' },
+  { src: '/images/product_etiqueta.webp', alt: 'Etiquetas' },
+  { src: '/images/product_etiqueta_textil.webp', alt: 'Etiquetas Textiles' },
+  { src: '/images/product_etiquetas_bolsas.webp', alt: 'Etiquetas para Bolsas' },
+  { src: '/images/product_marca_libro.webp', alt: 'Marca Libros' },
+  { src: '/images/product_stickers_circulares.webp', alt: 'Stickers Circulares' },
+  { src: '/images/product_stickers_utiles.webp', alt: 'Stickers Útiles' },
+  { src: '/images/product_tags.webp', alt: 'Tags' },
+  { src: '/images/banners_pendones.webp', alt: 'Pendones' },
+  { src: '/images/business_cards.webp', alt: 'Tarjetas de Presentación' },
+  { src: '/images/flyers_volantes.webp', alt: 'Flyers y Volantes' },
 ]
 
 export default function Portafolio() {
