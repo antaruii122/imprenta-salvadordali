@@ -38,11 +38,12 @@ export default function Home() {
   return (
     <main>
       <Helmet>
-        <title>MEJOR Imprenta en Las Condes, Santiago — Stickers, Tarjetas de Presentación, Volantes y Pendones con Entrega Express 48h | Imprenta Salvador Dalí</title>
-        <meta name="description" content="Imprenta en Las Condes con entrega express en 48 horas. Stickers personalizados, tarjetas de presentación, volantes, pendones y etiquetas. Cotiza gratis por WhatsApp ahora." />
-        <meta property="og:title" content="Imprenta Salvador Dalí — Las Condes, Santiago" />
-        <meta property="og:description" content="Stickers, tarjetas, volantes y pendones con entrega en 48 horas. Somos locales en Las Condes." />
-        <meta property="og:image" content="https://imprentasalvadordalichile.cl/images/cropped-icono-66.png" />
+        <title>Imprenta en Las Condes con Entrega 48h | Salvador Dalí</title>
+        <meta name="description" content="Imprenta en Las Condes con entrega express en 48 horas. Stickers personalizados, tarjetas de presentación, volantes y pendones. Cotiza gratis por WhatsApp." />
+        <meta property="og:title" content="Imprenta en Las Condes con Entrega 48h | Salvador Dalí" />
+        <meta property="og:description" content="Stickers, tarjetas, volantes y pendones. Entrega express en 48h. Cotiza gratis por WhatsApp." />
+        <meta property="og:image" content="https://www.imprentasalvadordalichile.cl/images/og-preview.jpg" />
+        <meta property="og:url" content="https://www.imprentasalvadordalichile.cl/" />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://www.imprentasalvadordalichile.cl/" />
       </Helmet>
