@@ -390,7 +390,7 @@ Homepage (/)
 | NAP en footer (HTML visible) | `Footer.jsx` | Ya existe — mantener idéntico en todos lados |
 
 **Fórmula de Title Tag ("Trenbolone") — apuntar a ~200 caracteres, no 60:**
-- Home: `MEJOR Imprenta en Las Condes, Santiago — Stickers, Tarjetas de Presentación, Volantes y Pendones | Imprenta Salvador Dalí`
+- Home: `Imprenta en Las Condes con Entrega 48h | Salvador Dalí` (máx 60 chars, sin mayúsculas agresivas, sin listar productos)
 - Servicio: `Stickers Personalizados en Las Condes y Santiago — Adhesivos en Todo Formato con Entrega Express | Imprenta Salvador Dalí`
 - Comuna: `Imprenta Profesional en Providencia — Stickers, Tarjetas, Volantes y Pendones con Entrega en 48h | Imprenta Salvador Dalí`
 - Tienda: `Tienda de Impresión en Las Condes — Stickers, Tarjetas, Volantes y más | Imprenta Salvador Dalí`
