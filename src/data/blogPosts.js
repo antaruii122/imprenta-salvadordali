@@ -5,13 +5,13 @@ export const blogPosts = [
     date: '28 de enero de 2026',
     tag: 'Tecnología',
     emoji: '👕',
-    metaTitle: 'Qué es la Impresión DTF Textil y Para Qué Sirve — Guía Completa Chile | Imprenta Salvador Dalí',
+    metaTitle: 'Qué es la Impresión DTF Textil y Para Qué Sirve — Guía Completa Chile | Imprenta Salvador Dali',
     metaDesc: 'Todo sobre la impresión DTF Textil en Chile: cómo funciona, ventajas sobre la serigrafía, precios y para qué tipos de tela es ideal. Impresión en Las Condes.',
     excerpt: 'La impresión DTF permite estampar cualquier diseño sobre tela sin importar el color del tejido. Te explicamos cómo funciona y por qué está revolucionando la industria textil en Chile.',
     content: [
       {
         type: 'intro',
-        text: 'Si has buscado cómo personalizar poleras, bolsos o ropa de trabajo en Santiago, probablemente ya escuchaste hablar del DTF. La impresión Direct to Film está transformando la manera en que las empresas y emprendedores en Chile imprimen sobre textiles, y en Imprenta Salvador Dalí la ofrecemos con entrega en 48 horas desde Las Condes.',
+        text: 'Si has buscado cómo personalizar poleras, bolsos o ropa de trabajo en Santiago, probablemente ya escuchaste hablar del DTF. La impresión Direct to Film está transformando la manera en que las empresas y emprendedores en Chile imprimen sobre textiles, y en Imprenta Salvador Dali la ofrecemos con entrega en 48 horas desde Las Condes.',
       },
       {
         type: 'h2',
@@ -51,7 +51,7 @@ export const blogPosts = [
       },
       {
         type: 'h2',
-        text: 'Precios y tiempos de entrega en Imprenta Salvador Dalí',
+        text: 'Precios y tiempos de entrega en Imprenta Salvador Dali',
       },
       {
         type: 'text',
@@ -72,13 +72,13 @@ export const blogPosts = [
     date: '28 de septiembre de 2023',
     tag: 'Productos',
     emoji: '✂️',
-    metaTitle: '¿Qué son los Adhesivos Troquelados? Guía Completa para Negocios en Santiago | Imprenta Salvador Dalí',
+    metaTitle: '¿Qué son los Adhesivos Troquelados? Guía Completa para Negocios en Santiago | Imprenta Salvador Dali',
     metaDesc: 'Guía completa sobre adhesivos troquelados: formas, materiales, usos en packaging y marketing. Impresión de stickers troquelados en Las Condes, Santiago.',
     excerpt: 'Los adhesivos troquelados son stickers cortados con forma precisa, sin el fondo cuadrado tradicional. Son la herramienta de branding más efectiva para productos, packaging y eventos en Chile.',
     content: [
       {
         type: 'intro',
-        text: 'Los adhesivos troquelados están en todas partes: en la etiqueta de tu cerveza artesanal favorita, en el empaque de esa crema importada, en el MacBook de la persona sentada al lado tuyo en la cafetería. Son stickers cortados con exactitud a la silueta del diseño, sin el cuadrado o rectángulo de fondo que tienen los stickers normales. En Imprenta Salvador Dalí los producimos en Las Condes con entrega en 48 horas.',
+        text: 'Los adhesivos troquelados están en todas partes: en la etiqueta de tu cerveza artesanal favorita, en el empaque de esa crema importada, en el MacBook de la persona sentada al lado tuyo en la cafetería. Son stickers cortados con exactitud a la silueta del diseño, sin el cuadrado o rectángulo de fondo que tienen los stickers normales. En Imprenta Salvador Dali los producimos en Las Condes con entrega en 48 horas.',
       },
       {
         type: 'h2',
@@ -106,7 +106,7 @@ export const blogPosts = [
       },
       {
         type: 'h2',
-        text: 'Cantidades mínimas y precios en Imprenta Salvador Dalí',
+        text: 'Cantidades mínimas y precios en Imprenta Salvador Dali',
       },
       {
         type: 'text',
@@ -135,7 +135,7 @@ export const blogPosts = [
     date: '9 de agosto de 2023',
     tag: 'Tecnología',
     emoji: '🔆',
-    metaTitle: 'Impresión con Tinta UV en Santiago: Qué es y Para Qué Sirve | Imprenta Salvador Dalí',
+    metaTitle: 'Impresión con Tinta UV en Santiago: Qué es y Para Qué Sirve | Imprenta Salvador Dali',
     metaDesc: 'Todo sobre la impresión con tinta UV en Chile: superficies compatibles, acabados, diferencias con impresión normal y precios. Imprenta en Las Condes.',
     excerpt: 'La tinta UV se cura instantáneamente con luz ultravioleta y permite imprimir sobre madera, vidrio, metal y más. Te contamos todo lo que necesitas saber sobre este sistema de impresión.',
     content: [

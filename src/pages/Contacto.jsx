@@ -10,9 +10,9 @@ export default function Contacto() {
   return (
     <main>
       <Helmet>
-        <title>Contacto — Imprenta en Las Condes, Santiago | Imprenta Salvador Dalí</title>
+        <title>Contacto — Imprenta en Las Condes, Santiago | Imprenta Salvador Dali</title>
         <meta name="description" content="Contáctanos para cotizar stickers, tarjetas, volantes o pendones. Estamos en Mayecura 1177, Las Condes. Respuesta express por WhatsApp." />
-        <meta property="og:title" content="Contacto — Imprenta Salvador Dalí Las Condes" />
+        <meta property="og:title" content="Contacto — Imprenta Salvador Dali Las Condes" />
         <meta property="og:description" content="Impresión express en Las Condes. Cotiza por WhatsApp o visítanos en Mayecura 1177, Las Condes." />
         <meta property="og:image" content="https://imprentasalvadordalichile.cl/images/cropped-icono-66.png" />
         <link rel="canonical" href="https://www.imprentasalvadordalichile.cl/contacto" />
@@ -33,7 +33,7 @@ export default function Contacto() {
           {/* Left */}
           <div>
             <p className="section-label">Escríbenos</p>
-            <h2 className="section-title mb-2">En Imprenta Salvador Dalí<br />te esperamos</h2>
+            <h2 className="section-title mb-2">En Imprenta Salvador Dali<br />te esperamos</h2>
             <div className="section-divider" />
             <p className="text-gray-500 leading-relaxed mb-8">
               Para imprimir todo tu material gráfico al mejor precio y la mejor calidad, impresiones en 48 hrs.
@@ -87,6 +87,28 @@ export default function Contacto() {
               <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-2">Horario de Atención</p>
               <p className="text-sm text-gray-500">Lunes a Viernes: 09:00 - 18:00 hrs</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-beige">
+        <div className="max-w-3xl mx-auto px-4">
+          <p className="section-label">Preguntas frecuentes</p>
+          <h2 className="section-title mb-8">Lo que más nos preguntan</h2>
+          <div className="space-y-4">
+            {[
+              { q: "¿Hacen despacho a domicilio?", a: "Sí, despachamos a toda la Región Metropolitana. Coordinamos por WhatsApp." },
+              { q: "¿Cuánto demora la entrega?", a: "Entrega express en 48 horas hábiles desde aprobado el diseño." },
+              { q: "¿Trabajan con empresas?", a: "Sí, emitimos factura. Trabajamos con empresas de todos los tamaños." },
+              { q: "¿Hacen diseño gráfico?", a: "Sí, tenemos diseñadores. Cotiza por WhatsApp con tu idea." },
+              { q: "¿Tienen mínimo de pedido?", a: "Depende del producto. Consulta por WhatsApp sin compromiso." },
+              { q: "¿Aceptan transferencia bancaria?", a: "Sí, aceptamos transferencia, tarjeta y efectivo." },
+            ].map(({ q, a }) => (
+              <details key={q} className="card p-6 cursor-pointer">
+                <summary className="font-semibold text-charcoal">{q}</summary>
+                <p className="text-gray-500 mt-3 text-sm leading-relaxed">{a}</p>
+              </details>
+            ))}
           </div>
         </div>
       </section>

@@ -4,14 +4,14 @@ export const servicios = [
     title: 'Stickers Personalizados',
     h1: 'Stickers Personalizados en Santiago',
     keyword: 'stickers personalizados Santiago',
-    metaTitle: 'Stickers Personalizados en Santiago con Entrega Express — Adhesivos en Todo Formato | Imprenta Salvador Dalí',
+    metaTitle: 'Stickers Personalizados en Santiago con Entrega Express — Adhesivos en Todo Formato | Imprenta Salvador Dali',
     metaDesc: 'Stickers y adhesivos personalizados con entrega express en 48 horas. Impresión de alta calidad en Las Condes, Santiago. Vinilo, troquelado, circular y más. Cotiza por WhatsApp.',
     emoji: '🎯',
     heroImg: '/images/hero_stickers.webp',
     excerpt: 'Stickers y adhesivos personalizados de alta calidad, ideales para negocios, eventos y más.',
     tiendaSlug: 'stickers',
     comunas: ['las-condes', 'providencia', 'vitacura', 'santiago-centro', 'nunoa', 'la-florida', 'maipu', 'san-miguel', 'macul', 'quilicura', 'pudahuel', 'san-bernardo'],
-    intro: `Los stickers personalizados son una de las herramientas de marketing más versátiles y rentables que existen para negocios y emprendedores en Santiago. En Imprenta Salvador Dalí llevamos años produciendo adhesivos de alta calidad para marcas, eventos, comercios y proyectos personales en Las Condes y toda la Región Metropolitana.`,
+    intro: `Los stickers personalizados son una de las herramientas de marketing más versátiles y rentables que existen para negocios y emprendedores en Santiago. En Imprenta Salvador Dali llevamos años produciendo adhesivos de alta calidad para marcas, eventos, comercios y proyectos personales en Las Condes y toda la Región Metropolitana.`,
     body: [
       {
         h2: 'Qué tipos de stickers fabricamos',
@@ -30,7 +30,7 @@ export const servicios = [
         text: `Para garantizar el mejor resultado en impresión, el archivo ideal es un PDF vectorial con resolución mínima de 300 DPI y fondo transparente en las zonas que quieres que sean cortadas. Si el diseño es troquelado, necesitamos que la línea de corte esté en una capa separada marcada como "troquelado" o "corte". Si no tienes el archivo listo, no hay problema: puedes enviarnos el logo en cualquier formato y nuestro equipo prepara el archivo de producción sin costo adicional. También podemos orientarte si necesitas ajustes de color o composición antes de imprimir.`,
       },
       {
-        h2: 'Cantidades y precios de stickers en Imprenta Salvador Dalí',
+        h2: 'Cantidades y precios de stickers en Imprenta Salvador Dali',
         text: `No tenemos mínimos de producción altos. Puedes pedir desde pequeñas cantidades si estás probando un diseño o necesitas algo muy específico. El precio por unidad baja de forma importante a medida que aumenta la cantidad, por lo que siempre recomendamos cotizar al menos en dos rangos distintos para comparar. Para obtener tu cotización exacta, envíanos el diseño por WhatsApp con las medidas aproximadas, el material que prefieres y la cantidad que necesitas. Te respondemos con precio y plazo en minutos.`,
       },
       {
@@ -66,14 +66,14 @@ export const servicios = [
     title: 'Tarjetas de Presentación',
     h1: 'Tarjetas de Presentación en Las Condes',
     keyword: 'tarjetas de presentación Las Condes',
-    metaTitle: 'Tarjetas de Presentación en Las Condes y Santiago — Acabados Premium con Entrega 48h | Imprenta Salvador Dalí',
+    metaTitle: 'Tarjetas de Presentación en Las Condes y Santiago — Acabados Premium con Entrega 48h | Imprenta Salvador Dali',
     metaDesc: 'Impresión de tarjetas de presentación profesionales en Las Condes, Santiago. Laminado mate, brillo, barniz UV y soft touch. Desde $5.000. Entrega en 48 horas. Cotiza por WhatsApp.',
     emoji: '🪪',
     heroImg: '/images/business_cards.webp',
     excerpt: 'Tarjetas de presentación profesionales con acabados premium para causar la mejor impresión.',
     tiendaSlug: 'tarjeteria',
     comunas: ['las-condes', 'providencia', 'vitacura', 'santiago-centro', 'nunoa', 'la-florida', 'maipu', 'san-miguel', 'macul', 'quilicura', 'pudahuel', 'san-bernardo'],
-    intro: `La tarjeta de presentación sigue siendo una de las herramientas de networking más efectivas en el mundo de los negocios. En Imprenta Salvador Dalí, ubicados en Las Condes, producimos tarjetas de presentación profesionales con acabados premium para abogados, consultores, emprendedores, diseñadores y todo tipo de profesionales de Santiago que quieren causar la mejor primera impresión.`,
+    intro: `La tarjeta de presentación sigue siendo una de las herramientas de networking más efectivas en el mundo de los negocios. En Imprenta Salvador Dali, ubicados en Las Condes, producimos tarjetas de presentación profesionales con acabados premium para abogados, consultores, emprendedores, diseñadores y todo tipo de profesionales de Santiago que quieren causar la mejor primera impresión.`,
     body: [
       {
         h2: 'Tipos de papel y acabados para tarjetas de presentación',
@@ -88,7 +88,7 @@ export const servicios = [
         text: `Una tarjeta de presentación efectiva tiene que ser fácil de leer y rápida de entender. Lo esencial es tu nombre completo, tu cargo o descripción de lo que haces, el número de teléfono o WhatsApp y el email de contacto. Si tienes Instagram o LinkedIn relevante para tu trabajo, también conviene incluirlo. Lo que muchos profesionales olvidan es que menos es más: una tarjeta con demasiada información se ve abrumadora y dificulta que la persona recuerde el dato más importante. El diseño debe guiar el ojo hacia los datos clave y dejar respirar el espacio en blanco.`,
       },
       {
-        h2: 'Diseño de tarjetas de presentación en Imprenta Salvador Dalí',
+        h2: 'Diseño de tarjetas de presentación en Imprenta Salvador Dali',
         text: `Si ya tienes tu diseño listo, perfecto: enviamos a imprimir directamente desde tu archivo en PDF de alta resolución. Si no tienes diseño, nuestro equipo puede orientarte con un diseñador de confianza que trabaja en base a tu brief y tu identidad de marca. Lo más importante para producción es que el archivo tenga al menos 3 milímetros de sangrado en todos los bordes, que los colores estén en modo CMYK y que la resolución sea de 300 DPI como mínimo.`,
       },
       {
@@ -128,14 +128,14 @@ export const servicios = [
     title: 'Volantes y Flyers',
     h1: 'Impresión de Volantes en Santiago',
     keyword: 'volantes publicitarios Santiago',
-    metaTitle: 'Impresión de Volantes en Santiago con Entrega Express — Flyers desde $20.000 | Imprenta Salvador Dalí',
+    metaTitle: 'Impresión de Volantes en Santiago con Entrega Express — Flyers desde $20.000 | Imprenta Salvador Dali',
     metaDesc: 'Volantes y flyers publicitarios impresos en Las Condes con entrega express. 1.000 volantes desde $20.000. Papel couché, varios tamaños. Cotiza ahora por WhatsApp.',
     emoji: '📄',
     heroImg: '/images/flyers_volantes.webp',
     excerpt: 'Volantes y flyers de alto impacto para tu campaña publicitaria, con entrega en 48 horas.',
     tiendaSlug: 'publicidad',
     comunas: ['las-condes', 'providencia', 'vitacura', 'santiago-centro', 'nunoa', 'la-florida', 'maipu', 'san-miguel', 'macul', 'quilicura', 'pudahuel', 'san-bernardo'],
-    intro: `Los volantes y flyers siguen siendo una de las herramientas publicitarias más efectivas para negocios locales en Santiago. Bien diseñados y bien distribuidos, generan tráfico directo a tu local o sitio web a un costo muy bajo por contacto. En Imprenta Salvador Dalí producimos volantes en Las Condes con entrega en 48 horas y calidad de impresión profesional.`,
+    intro: `Los volantes y flyers siguen siendo una de las herramientas publicitarias más efectivas para negocios locales en Santiago. Bien diseñados y bien distribuidos, generan tráfico directo a tu local o sitio web a un costo muy bajo por contacto. En Imprenta Salvador Dali producimos volantes en Las Condes con entrega en 48 horas y calidad de impresión profesional.`,
     body: [
       {
         h2: 'Tamaños de volantes más populares en Chile',
@@ -150,7 +150,7 @@ export const servicios = [
         text: `Los volantes son especialmente efectivos para campañas de apertura de negocios, promociones del mes con oferta específica, eventos como conciertos, obras de teatro o ferias gastronómicas, y distribución cerca de colegios o universidades para servicios educativos. También funcionan muy bien para activaciones en el metro o en puntos de alto flujo peatonal como el Paseo Ahumada, el Mercado Central o los alrededores de Las Condes Shopping. El secreto de un volante efectivo es un titular claro, un beneficio concreto y una llamada a la acción directa, como un descuento con código o un número de WhatsApp visible.`,
       },
       {
-        h2: 'La promo de 1.000 volantes en Imprenta Salvador Dalí',
+        h2: 'La promo de 1.000 volantes en Imprenta Salvador Dali',
         text: `Nuestra promoción más popular es 1.000 volantes de 10 por 14 centímetros en papel couché de 90 gramos a ambas caras por $20.000. Es una de las propuestas más competitivas del mercado en Santiago y ha sido el punto de entrada de cientos de emprendedores que nos eligieron y siguieron pidiendo otros productos. Para otros tamaños, papeles o cantidades, la cotización es por WhatsApp y respondemos en minutos.`,
       },
       {
@@ -190,14 +190,14 @@ export const servicios = [
     title: 'Pendones Publicitarios',
     h1: 'Pendones Publicitarios en Santiago',
     keyword: 'pendones publicitarios Santiago',
-    metaTitle: 'Pendones Publicitarios en Santiago con Entrega Express 48h — Gran Formato | Imprenta Salvador Dalí',
+    metaTitle: 'Pendones Publicitarios en Santiago con Entrega Express 48h — Gran Formato | Imprenta Salvador Dali',
     metaDesc: 'Impresión de pendones y banners publicitarios en Santiago. Alta resolución, entrega en 48 horas desde Las Condes. Medidas personalizadas, ojales y bolsillo incluidos. Cotiza ya.',
     emoji: '🚩',
     heroImg: '/images/banners_pendones.webp',
     excerpt: 'Pendones y banners de gran formato para eventos, ferias y publicidad exterior.',
     tiendaSlug: 'publicidad',
     comunas: ['las-condes', 'providencia', 'vitacura', 'santiago-centro', 'nunoa', 'la-florida', 'maipu', 'san-miguel', 'macul', 'quilicura', 'pudahuel', 'san-bernardo'],
-    intro: `Los pendones publicitarios son una de las formas más efectivas de hacer visible tu negocio o evento en el espacio físico. En Imprenta Salvador Dalí producimos pendones de gran formato en Las Condes con impresión de alta resolución, materiales resistentes para exterior e interior, y entrega en 48 horas a cualquier punto de Santiago.`,
+    intro: `Los pendones publicitarios son una de las formas más efectivas de hacer visible tu negocio o evento en el espacio físico. En Imprenta Salvador Dali producimos pendones de gran formato en Las Condes con impresión de alta resolución, materiales resistentes para exterior e interior, y entrega en 48 horas a cualquier punto de Santiago.`,
     body: [
       {
         h2: 'Tipos de pendón y cuál elegir según tu uso',
@@ -220,7 +220,7 @@ export const servicios = [
         text: `Todos nuestros pendones incluyen de base el terminado que necesitas para colgarlos: ojales en los bordes, bolsillo superior e inferior según corresponda, o base de aluminio en el caso de los roll up. Para pendones de exterior que van en mallas o rejas, recomendamos agregar ventilación con perforaciones que reducen la resistencia al viento. También podemos incluir cuerda o bridas de plástico para facilitar la instalación si lo necesitas.`,
       },
       {
-        h2: 'Precios y plazos de pendones en Imprenta Salvador Dalí',
+        h2: 'Precios y plazos de pendones en Imprenta Salvador Dali',
         text: `El precio de un pendón depende del tamaño, el material y el tipo de terminado. Para tener una cotización exacta, envíanos por WhatsApp las medidas que necesitas, cuántas unidades quieres y si es para interior o exterior. Producimos en 48 horas hábiles desde la aprobación del diseño. Para pedidos múltiples o de gran formato con plazo muy ajustado, consulta disponibilidad directamente.`,
       },
     ],

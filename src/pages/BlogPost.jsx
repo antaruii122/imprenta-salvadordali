@@ -38,10 +38,10 @@ export default function BlogPost() {
           "@type": "Article",
           "headline": post.title,
           "datePublished": post.date,
-          "author": { "@type": "Organization", "name": "Imprenta Salvador Dalí" },
+          "author": { "@type": "Organization", "name": "Imprenta Salvador Dali" },
           "publisher": {
             "@type": "Organization",
-            "name": "Imprenta Salvador Dalí",
+            "name": "Imprenta Salvador Dali",
             "logo": { "@type": "ImageObject", "url": "https://www.imprentasalvadordalichile.cl/images/cropped-icono-66.png" }
           }
         })}</script>
@@ -108,7 +108,7 @@ export default function BlogPost() {
             {/* Internal links to services */}
             {relatedServiceObjs.length > 0 && (
               <div className="mt-10 p-6 bg-beige rounded-2xl">
-                <p className="font-semibold text-charcoal text-sm mb-3">Servicios relacionados en Imprenta Salvador Dalí:</p>
+                <p className="font-semibold text-charcoal text-sm mb-3">Servicios relacionados en Imprenta Salvador Dali:</p>
                 <div className="flex flex-wrap gap-3">
                   {relatedServiceObjs.map(s => (
                     <Link key={s.slug} to={`/servicios/${s.slug}`}

@@ -21,10 +21,10 @@ const highlights = [
 ]
 
 const gallery = [
-  { src: '/images/hero_stickers.webp',    label: 'Stickers personalizados adhesivos - Imprenta Salvador Dalí Las Condes' },
-  { src: '/images/banners_pendones.webp', label: 'Pendones publicitarios Santiago - Imprenta Salvador Dalí' },
-  { src: '/images/flyers_volantes.webp',  label: 'Volantes y flyers Las Condes - Imprenta Salvador Dalí' },
-  { src: '/images/business_cards.webp',   label: 'Tarjetas de presentación Las Condes - Imprenta Salvador Dalí' },
+  { src: '/images/hero_stickers.webp',    label: 'Stickers personalizados adhesivos - Imprenta Salvador Dali Las Condes' },
+  { src: '/images/banners_pendones.webp', label: 'Pendones publicitarios Santiago - Imprenta Salvador Dali' },
+  { src: '/images/flyers_volantes.webp',  label: 'Volantes y flyers Las Condes - Imprenta Salvador Dali' },
+  { src: '/images/business_cards.webp',   label: 'Tarjetas de presentación Las Condes - Imprenta Salvador Dali' },
 ]
 
 const testimonials = [
@@ -37,9 +37,9 @@ export default function Home() {
   return (
     <main>
       <Helmet>
-        <title>Imprenta en Las Condes con Entrega 48h | Salvador Dalí</title>
+        <title>Imprenta en Las Condes con Entrega 48h | Salvador Dali</title>
         <meta name="description" content="Imprenta en Las Condes con entrega express en 48 horas. Stickers personalizados, tarjetas de presentación, volantes y pendones. Cotiza gratis por WhatsApp." />
-        <meta property="og:title" content="Imprenta en Las Condes con Entrega 48h | Salvador Dalí" />
+        <meta property="og:title" content="Imprenta en Las Condes con Entrega 48h | Salvador Dali" />
         <meta property="og:description" content="Stickers, tarjetas, volantes y pendones. Entrega express en 48h. Cotiza gratis por WhatsApp." />
         <meta property="og:image" content="https://www.imprentasalvadordalichile.cl/images/og-preview.jpg" />
         <meta property="og:url" content="https://www.imprentasalvadordalichile.cl/" />
@@ -57,7 +57,7 @@ export default function Home() {
           <div className="animate-fade-up">
             <p className="section-label">Imprenta · Las Condes, Santiago</p>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-black text-charcoal leading-[1.05] mb-3">
-              Imprenta<br /><span className="text-brand">Salvador Dalí</span>
+              Imprenta<br /><span className="text-brand">Salvador Dali</span>
             </h1>
             <p className="font-heading text-xl md:text-2xl font-bold text-charcoal/60 mb-5 tracking-wide">
               En Las Condes
@@ -89,7 +89,7 @@ export default function Home() {
               {/* card glow */}
               <div className="absolute -inset-4 bg-gradient-to-tr from-brand/20 to-transparent rounded-3xl blur-xl" />
               <div className="relative rounded-3xl overflow-hidden shadow-hero">
-                <img src={HERO_IMG} alt="Stickers personalizados - Imprenta Salvador Dalí Las Condes"
+                <img src={HERO_IMG} alt="Stickers personalizados - Imprenta Salvador Dali Las Condes"
                   width="420" height="420"
                   className="w-full object-cover hover:scale-105 transition-transform duration-700" />
               </div>
@@ -139,7 +139,7 @@ export default function Home() {
           <div className="relative">
             <div className="absolute -inset-3 bg-gradient-to-br from-beige-dark to-transparent rounded-3xl" />
             <div className="relative rounded-2xl overflow-hidden shadow-card-hover">
-              <img src={ABOUT_IMG} alt="Equipo Imprenta Salvador Dalí Las Condes"
+              <img src={ABOUT_IMG} alt="Equipo Imprenta Salvador Dali Las Condes"
                 width="600" height="450" loading="lazy"
                 className="w-full object-cover hover:scale-105 transition-transform duration-700" />
             </div>
@@ -158,7 +158,7 @@ export default function Home() {
               Dedicados a sistemas de impresión láser, offset y tinta UV en diversos papeles (couché, opalina, lisa, texturada, Bond, pvc, sintético) y textiles.
             </p>
             <p className="text-gray-500 leading-relaxed mb-4">
-              Fanáticos del pintor Salvador Dalí desde hace años, siguiendo su obra y estilo para honrarlo con nuestra propia marca.
+              Fanáticos del pintor Salvador Dali desde hace años, siguiendo su obra y estilo para honrarlo con nuestra propia marca.
             </p>
             <p className="text-gray-500 leading-relaxed mb-8">
               Trabajamos con empresas, emprendedores y particulares en Las Condes, Providencia,

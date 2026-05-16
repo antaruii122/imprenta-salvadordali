@@ -36,7 +36,7 @@
 
   <!-- Main title -->
   <text x="112" y="240" font-family="Georgia, serif" font-size="72" font-weight="900" fill="#ffffff" letter-spacing="-1">Imprenta</text>
-  <text x="112" y="326" font-family="Georgia, serif" font-size="72" font-weight="900" fill="#a8896a">Salvador Dalí</text>
+  <text x="112" y="326" font-family="Georgia, serif" font-size="72" font-weight="900" fill="#a8896a">Salvador Dali</text>
 
   <!-- Divider line -->
   <rect x="112" y="358" width="120" height="3" rx="2" fill="url(#accent)"/>

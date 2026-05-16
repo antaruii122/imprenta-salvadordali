@@ -21,7 +21,7 @@ export default function MapSection() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Ubicación Imprenta Salvador Dalí"
+              title="Ubicación Imprenta Salvador Dali"
             />
           </div>
 

@@ -14,9 +14,9 @@ export default function QuienesSomos() {
   return (
     <main>
       <Helmet>
-        <title>Quiénes Somos — Imprenta Profesional en Las Condes, Santiago | Imprenta Salvador Dalí</title>
+        <title>Quiénes Somos — Imprenta Profesional en Las Condes, Santiago | Imprenta Salvador Dali</title>
         <meta name="description" content="Conoce nuestra historia. Imprenta en Las Condes especializada en impresión láser, offset y UV. Más de 10 años entregando calidad y servicio express en Santiago." />
-        <meta property="og:title" content="Quiénes Somos — Imprenta Salvador Dalí Las Condes" />
+        <meta property="og:title" content="Quiénes Somos — Imprenta Salvador Dali Las Condes" />
         <meta property="og:description" content="Imprenta profesional en Las Condes. Impresión láser, offset y UV con entrega en 48 horas." />
         <meta property="og:image" content="https://imprentasalvadordalichile.cl/images/cropped-icono-66.png" />
         <link rel="canonical" href="https://www.imprentasalvadordalichile.cl/quienes-somos" />
@@ -37,7 +37,7 @@ export default function QuienesSomos() {
           <div className="relative">
             <div className="absolute -inset-3 bg-gradient-to-br from-beige-dark to-transparent rounded-3xl" />
             <div className="relative rounded-2xl overflow-hidden shadow-card-hover">
-              <img src={IMG} alt="Equipo Imprenta Salvador Dalí"
+              <img src={IMG} alt="Equipo Imprenta Salvador Dali"
                 className="w-full object-cover hover:scale-105 transition-transform duration-700" />
             </div>
             <div className="absolute -bottom-5 -right-5 bg-brand text-white rounded-2xl shadow-lg px-5 py-3">
@@ -51,7 +51,7 @@ export default function QuienesSomos() {
             <h2 className="section-title mb-2">Sobre nuestra imprenta</h2>
             <div className="section-divider" />
             <p className="text-gray-500 leading-relaxed mb-5">
-              Nuestra imprenta nace del fanatismo al pintor Salvador Dalí. Fanáticos de su obra y estilo, quisimos honrarlo con nuestra propia marca.
+              Nuestra imprenta nace del fanatismo al pintor Salvador Dali. Fanáticos de su obra y estilo, quisimos honrarlo con nuestra propia marca.
             </p>
             <p className="text-gray-500 leading-relaxed mb-5">
               Dedicados a sistemas de impresión láser, offset y tinta UV en diversos papeles — chuche, opalina, lisa, texturada, Bond, lvc, sintético — y textiles. Caracterizados por servicio excepcional y entregas express de 48 horas.
