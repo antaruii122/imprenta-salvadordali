@@ -4,7 +4,18 @@ const LOGO_BEIGE = '/images/cropped-icono-66.png'
 const WA = 'https://wa.me/56964123098?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar'
 const IG = 'https://www.instagram.com/imprenta_salvador_dali/'
 
-const services = ['Stickers', 'Tarjetería', 'Volantes', 'Etiquetas', 'Pendones', 'Trípticos', 'Catálogos', 'Merchandising', 'Tinta UV', 'Tinta Blanca']
+const services = [
+  { label: 'Stickers',      to: '/servicios/stickers' },
+  { label: 'Tarjetería',    to: '/servicios/tarjetas-presentacion' },
+  { label: 'Volantes',      to: '/servicios/volantes' },
+  { label: 'Etiquetas',     to: '/tienda/stickers' },
+  { label: 'Pendones',      to: '/servicios/pendones' },
+  { label: 'Trípticos',     to: '/tienda/publicidad' },
+  { label: 'Catálogos',     to: '/tienda/publicidad' },
+  { label: 'Merchandising', to: '/tienda/publicidad' },
+  { label: 'Tinta UV',      to: '/quienes-somos' },
+  { label: 'Tinta Blanca',  to: '/quienes-somos' },
+]
 
 const WaIcon = () => (
   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -58,8 +69,8 @@ export default function Footer() {
         <div>
           <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-5">Servicios</h4>
           <div className="grid grid-cols-2 gap-1">
-            {services.map(s => (
-              <span key={s} className="text-sm text-gray-400 hover:text-white transition-colors cursor-default py-0.5">{s}</span>
+            {services.map(({ label, to }) => (
+              <Link key={label} to={to} className="text-sm text-gray-400 hover:text-white transition-colors py-0.5">{label}</Link>
             ))}
           </div>
         </div>
