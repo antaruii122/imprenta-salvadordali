@@ -14,7 +14,8 @@ export default function Contacto() {
         <meta name="description" content="Contáctanos para cotizar stickers, tarjetas, volantes o pendones. Estamos en Mayecura 1177, Las Condes. Respuesta express por WhatsApp." />
         <meta property="og:title" content="Contacto — Imprenta Salvador Dalí Las Condes" />
         <meta property="og:description" content="Impresión express en Las Condes. Cotiza por WhatsApp o visítanos en Mayecura 1177, Las Condes." />
-        <meta property="og:image" content="https://imprentasalvadordali.cl/images/cropped-icono-66.png" />
+        <meta property="og:image" content="https://imprentasalvadordalichile.cl/images/cropped-icono-66.png" />
+        <link rel="canonical" href="https://www.imprentasalvadordalichile.cl/contacto" />
       </Helmet>
 
       <div className="page-header">

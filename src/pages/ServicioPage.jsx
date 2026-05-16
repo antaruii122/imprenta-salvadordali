@@ -22,6 +22,7 @@ export default function ServicioPage() {
         <meta property="og:description" content={servicio.metaDesc} />
         <meta property="og:image" content={servicio.heroImg} />
         <meta property="og:type" content="website" />
+        <link rel="canonical" href={`https://www.imprentasalvadordalichile.cl/servicios/${servicio.slug}`} />
       </Helmet>
 
       {/* Header */}

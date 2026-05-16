@@ -56,7 +56,8 @@ export default function TiendaCategory({ category }) {
         <meta name="description" content={info.metaDesc} />
         <meta property="og:title" content={info.metaTitle} />
         <meta property="og:description" content={info.metaDesc} />
-        <meta property="og:image" content="https://imprentasalvadordali.cl/images/cropped-icono-66.png" />
+        <meta property="og:image" content="https://imprentasalvadordalichile.cl/images/cropped-icono-66.png" />
+        <link rel="canonical" href={`https://www.imprentasalvadordalichile.cl/tienda/${category}`} />
       </Helmet>
 
       <div className="page-header">

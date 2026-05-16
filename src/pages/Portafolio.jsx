@@ -23,7 +23,8 @@ export default function Portafolio() {
         <meta name="description" content="Galería de trabajos impresos por Imprenta Salvador Dalí en Las Condes. Stickers, tarjetas de presentación, volantes, pendones y más. Calidad profesional." />
         <meta property="og:title" content="Portafolio — Imprenta Salvador Dalí Las Condes" />
         <meta property="og:description" content="Galería de trabajos impresos: stickers, tarjetas, volantes, pendones y más." />
-        <meta property="og:image" content="https://imprentasalvadordali.cl/images/cropped-icono-66.png" />
+        <meta property="og:image" content="https://imprentasalvadordalichile.cl/images/cropped-icono-66.png" />
+        <link rel="canonical" href="https://www.imprentasalvadordalichile.cl/portafolio" />
       </Helmet>
 
       {/* Header */}

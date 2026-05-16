@@ -169,7 +169,8 @@
 
 ### Despliegue
 - [x] `vercel.json` agregado para SPA routing — hecho
-- [ ] Desplegar en Vercel (conectar repo GitHub en vercel.com — 2 min)
+- [x] Pre-rendering estático implementado — `npm run build:ssg` genera HTML completo para 29 rutas
+- [ ] Desplegar en Vercel usando `npm run build:ssg` como build command
 - [ ] Apuntar dominio (si existe) al despliegue en Vercel
 
 ---
@@ -194,3 +195,4 @@
 | 2026-05-05 | Expanded comunas.js: 600-800 word body per comuna with local context, landmarks and commercial activity description. |
 | 2026-05-05 | Fixed ServicioPage breadcrumb: was Inicio/Tienda/[service], now correctly Inicio/Servicios/[service]. |
 | 2026-05-05 | Created public/sitemap.xml (34 URLs, priorities set) and public/robots.txt. |
+| 2026-05-16 | Implemented static pre-rendering (SSG) via react-dom/server + createStaticRouter. New script: `prerender.mjs`. New command: `npm run build:ssg`. Generates full HTML for all 29 routes. Files: `src/entry-server.jsx`, `prerender.mjs`, `package.json` (new script), `index.html` (ssr-outlet added). |

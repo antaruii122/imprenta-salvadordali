@@ -17,7 +17,8 @@ export default function Blog() {
         <meta name="description" content="Artículos sobre impresión digital, DTF textil, stickers troquelados y tinta UV en Santiago. Tips para emprendedores y empresas en Las Condes." />
         <meta property="og:title" content="Blog — Imprenta Salvador Dalí Las Condes" />
         <meta property="og:description" content="Guías y artículos sobre impresión en Santiago: DTF, troquelado, UV y más." />
-        <meta property="og:image" content="https://imprentasalvadordali.cl/images/cropped-icono-66.png" />
+        <meta property="og:image" content="https://imprentasalvadordalichile.cl/images/cropped-icono-66.png" />
+        <link rel="canonical" href="https://www.imprentasalvadordalichile.cl/blog" />
       </Helmet>
 
       {/* Header */}

@@ -244,6 +244,7 @@ To add a product: edit `src/data/products.js` — add an object with `id`, `name
 | 2026-05-05 | Expanded comunas.js — 600-800 word body per comuna with local landmarks and commercial context |
 | 2026-05-05 | Fixed ServicioPage breadcrumb: Inicio / Servicios / [service] (was /Tienda) |
 | 2026-05-05 | Created public/sitemap.xml (34 URLs) and public/robots.txt |
+| 2026-05-16 | Implemented static pre-rendering (SSG) — `src/entry-server.jsx` + `prerender.mjs`. Build command: `npm run build:ssg`. Generates full HTML for all 29 routes using react-dom/server + createStaticRouter (no Puppeteer, no external plugin). |
 
 ---
 

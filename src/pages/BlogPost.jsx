@@ -30,8 +30,9 @@ export default function BlogPost() {
         <meta name="description" content={post.metaDesc} />
         <meta property="og:title" content={post.metaTitle} />
         <meta property="og:description" content={post.metaDesc} />
-        <meta property="og:image" content="https://imprentasalvadordali.cl/images/cropped-icono-66.png" />
+        <meta property="og:image" content="https://imprentasalvadordalichile.cl/images/cropped-icono-66.png" />
         <meta property="og:type" content="article" />
+        <link rel="canonical" href={`https://www.imprentasalvadordalichile.cl/blog/${post.slug}`} />
       </Helmet>
 
       {/* Header */}

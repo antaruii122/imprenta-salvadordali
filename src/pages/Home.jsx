@@ -42,8 +42,9 @@ export default function Home() {
         <meta name="description" content="Imprenta en Las Condes con entrega express en 48 horas. Stickers personalizados, tarjetas de presentación, volantes, pendones y etiquetas. Cotiza gratis por WhatsApp ahora." />
         <meta property="og:title" content="Imprenta Salvador Dalí — Las Condes, Santiago" />
         <meta property="og:description" content="Stickers, tarjetas, volantes y pendones con entrega en 48 horas. Somos locales en Las Condes." />
-        <meta property="og:image" content="https://imprentasalvadordali.cl/images/cropped-icono-66.png" />
+        <meta property="og:image" content="https://imprentasalvadordalichile.cl/images/cropped-icono-66.png" />
         <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://www.imprentasalvadordalichile.cl/" />
       </Helmet>
 
       {/* ═══ HERO ═══ */}
@@ -152,7 +153,7 @@ export default function Home() {
             <h2 className="section-title mb-2">Sobre nuestra imprenta</h2>
             <div className="section-divider" />
             <p className="text-gray-500 leading-relaxed mb-4">
-              Dedicados a sistemas de impresión láser, offset y tinta UV en diversos papeles (chuche, opalina, lisa, texturada, Bond, lvc, sintético) y textiles.
+              Dedicados a sistemas de impresión láser, offset y tinta UV en diversos papeles (couché, opalina, lisa, texturada, Bond, pvc, sintético) y textiles.
             </p>
             <p className="text-gray-500 leading-relaxed mb-8">
               Fanáticos del pintor Salvador Dalí desde hace años, siguiendo su obra y estilo para honrarlo con nuestra propia marca.

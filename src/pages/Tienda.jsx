@@ -19,7 +19,8 @@ export default function Tienda() {
         <meta name="description" content="Compra stickers, tarjetas de presentación, volantes, pendones y útiles escolares personalizados. Imprenta en Las Condes con entrega en 48 horas." />
         <meta property="og:title" content="Tienda de Impresión — Imprenta Salvador Dalí Las Condes" />
         <meta property="og:description" content="Stickers, tarjetas, volantes, pendones y más. Entrega express en 48 horas desde Las Condes." />
-        <meta property="og:image" content="https://imprentasalvadordali.cl/images/cropped-icono-66.png" />
+        <meta property="og:image" content="https://imprentasalvadordalichile.cl/images/cropped-icono-66.png" />
+        <link rel="canonical" href="https://www.imprentasalvadordalichile.cl/tienda" />
       </Helmet>
 
       <div className="page-header">

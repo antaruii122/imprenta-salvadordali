@@ -37,8 +37,9 @@ export default function ComunaPage() {
         <meta name="description" content={comuna.metaDesc} />
         <meta property="og:title" content={comuna.metaTitle} />
         <meta property="og:description" content={comuna.metaDesc} />
-        <meta property="og:image" content="https://imprentasalvadordali.cl/images/cropped-icono-66.png" />
+        <meta property="og:image" content="https://imprentasalvadordalichile.cl/images/cropped-icono-66.png" />
         <meta property="og:type" content="website" />
+        <link rel="canonical" href={`https://www.imprentasalvadordalichile.cl/imprenta/${comuna.slug}`} />
       </Helmet>
 
       {/* Header */}
