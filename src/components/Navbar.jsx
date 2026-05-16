@@ -165,7 +165,7 @@ export default function Navbar() {
     <header className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-sm shadow-md' : 'bg-white border-b border-gray-100'}`}>
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
         <Link to="/" className="flex-shrink-0">
-          <img src={LOGO} alt="Imprenta Salvador Dalí" className="h-11 w-auto object-contain" />
+          <img src={LOGO} alt="Imprenta Salvador Dalí" width="44" height="44" className="h-11 w-auto object-contain" />
         </Link>
 
         {/* Desktop Nav */}

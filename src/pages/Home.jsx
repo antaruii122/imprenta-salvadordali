@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet-async'
 import MapSection from '../components/MapSection'
 
 const HERO_IMG   = '/images/hero_stickers.webp'
-const OVAL       = null
 const ABOUT_IMG  = '/images/print_shop_team.webp'
 const WA         = 'https://wa.me/56964123098?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar'
 
@@ -158,8 +157,13 @@ export default function Home() {
             <p className="text-gray-500 leading-relaxed mb-4">
               Dedicados a sistemas de impresión láser, offset y tinta UV en diversos papeles (couché, opalina, lisa, texturada, Bond, pvc, sintético) y textiles.
             </p>
-            <p className="text-gray-500 leading-relaxed mb-8">
+            <p className="text-gray-500 leading-relaxed mb-4">
               Fanáticos del pintor Salvador Dalí desde hace años, siguiendo su obra y estilo para honrarlo con nuestra propia marca.
+            </p>
+            <p className="text-gray-500 leading-relaxed mb-8">
+              Trabajamos con empresas, emprendedores y particulares en Las Condes, Providencia,
+              Vitacura y toda la Región Metropolitana. Cada pedido tiene control de calidad antes
+              de salir — si no cumple el estándar, lo rehacemos.
             </p>
             <Link to="/quienes-somos" className="btn-outline">Conocer más →</Link>
           </div>

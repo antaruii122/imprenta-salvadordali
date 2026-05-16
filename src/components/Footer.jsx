@@ -33,7 +33,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 py-14 grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Brand */}
         <div>
-          <img src={LOGO_BEIGE} alt="Imprenta Salvador Dalí" className="h-14 object-contain mb-5" />
+          <img src={LOGO_BEIGE} alt="Imprenta Salvador Dalí" width="56" height="56" className="h-14 object-contain mb-5" />
           <p className="text-sm leading-relaxed text-gray-400 mb-5">
             Dedicados a sistemas de impresión láser, offset y tinta UV. Entrega express en 48 horas. Las Condes, Santiago.
           </p>
