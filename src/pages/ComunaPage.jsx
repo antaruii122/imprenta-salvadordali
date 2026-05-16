@@ -40,6 +40,15 @@ export default function ComunaPage() {
         <meta property="og:image" content="https://imprentasalvadordalichile.cl/images/cropped-icono-66.png" />
         <meta property="og:type" content="website" />
         <link rel="canonical" href={`https://www.imprentasalvadordalichile.cl/imprenta/${comuna.slug}`} />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.imprentasalvadordalichile.cl/" },
+            { "@type": "ListItem", "position": 2, "name": "Imprentas por zona", "item": "https://www.imprentasalvadordalichile.cl/imprenta" },
+            { "@type": "ListItem", "position": 3, "name": `Imprenta en ${comuna.name}`, "item": `https://www.imprentasalvadordalichile.cl/imprenta/${comuna.slug}` }
+          ]
+        })}</script>
       </Helmet>
 
       {/* Header */}

@@ -22,10 +22,10 @@ const highlights = [
 ]
 
 const gallery = [
-  { src: '/images/hero_stickers.webp', label: 'Etiquetas Adhesivas' },
-  { src: '/images/banners_pendones.webp', label: 'Pendones' },
-  { src: '/images/flyers_volantes.webp', label: 'Adhesivos' },
-  { src: '/images/business_cards.webp', label: 'Tarjetas de Presentación' },
+  { src: '/images/hero_stickers.webp',    label: 'Stickers personalizados adhesivos - Imprenta Salvador Dalí Las Condes' },
+  { src: '/images/banners_pendones.webp', label: 'Pendones publicitarios Santiago - Imprenta Salvador Dalí' },
+  { src: '/images/flyers_volantes.webp',  label: 'Volantes y flyers Las Condes - Imprenta Salvador Dalí' },
+  { src: '/images/business_cards.webp',   label: 'Tarjetas de presentación Las Condes - Imprenta Salvador Dalí' },
 ]
 
 const testimonials = [
@@ -91,6 +91,7 @@ export default function Home() {
               <div className="absolute -inset-4 bg-gradient-to-tr from-brand/20 to-transparent rounded-3xl blur-xl" />
               <div className="relative rounded-3xl overflow-hidden shadow-hero">
                 <img src={HERO_IMG} alt="Stickers personalizados - Imprenta Salvador Dalí Las Condes"
+                  width="420" height="420"
                   className="w-full object-cover hover:scale-105 transition-transform duration-700" />
               </div>
               {/* floating oval badge */}
@@ -139,7 +140,8 @@ export default function Home() {
           <div className="relative">
             <div className="absolute -inset-3 bg-gradient-to-br from-beige-dark to-transparent rounded-3xl" />
             <div className="relative rounded-2xl overflow-hidden shadow-card-hover">
-              <img src={ABOUT_IMG} alt="Sobre nuestra imprenta"
+              <img src={ABOUT_IMG} alt="Equipo Imprenta Salvador Dalí Las Condes"
+                width="600" height="450" loading="lazy"
                 className="w-full object-cover hover:scale-105 transition-transform duration-700" />
             </div>
             {/* floating badge */}
@@ -217,6 +219,7 @@ export default function Home() {
               <div key={g.src}
                 className={`group relative overflow-hidden rounded-2xl shadow-card hover:shadow-card-hover ${i === 0 ? 'md:col-span-2 md:row-span-2' : ''}`}>
                 <img src={g.src} alt={g.label}
+                  width="400" height={i === 0 ? 400 : 192} loading="lazy"
                   className={`w-full object-cover group-hover:scale-110 transition-transform duration-500 ${i === 0 ? 'h-64 md:h-full' : 'h-48'}`} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                   <span className="text-white font-semibold text-sm">{g.label}</span>

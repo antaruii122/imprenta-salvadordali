@@ -23,6 +23,15 @@ export default function ServicioPage() {
         <meta property="og:image" content={servicio.heroImg} />
         <meta property="og:type" content="website" />
         <link rel="canonical" href={`https://www.imprentasalvadordalichile.cl/servicios/${servicio.slug}`} />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.imprentasalvadordalichile.cl/" },
+            { "@type": "ListItem", "position": 2, "name": "Servicios", "item": "https://www.imprentasalvadordalichile.cl/servicios" },
+            { "@type": "ListItem", "position": 3, "name": servicio.title, "item": `https://www.imprentasalvadordalichile.cl/servicios/${servicio.slug}` }
+          ]
+        })}</script>
       </Helmet>
 
       {/* Header */}

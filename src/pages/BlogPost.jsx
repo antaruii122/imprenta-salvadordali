@@ -33,6 +33,18 @@ export default function BlogPost() {
         <meta property="og:image" content="https://imprentasalvadordalichile.cl/images/cropped-icono-66.png" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href={`https://www.imprentasalvadordalichile.cl/blog/${post.slug}`} />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": post.title,
+          "datePublished": post.date,
+          "author": { "@type": "Organization", "name": "Imprenta Salvador Dalí" },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Imprenta Salvador Dalí",
+            "logo": { "@type": "ImageObject", "url": "https://www.imprentasalvadordalichile.cl/images/cropped-icono-66.png" }
+          }
+        })}</script>
       </Helmet>
 
       {/* Header */}
