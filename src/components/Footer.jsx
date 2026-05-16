@@ -56,7 +56,7 @@ export default function Footer() {
             @imprenta_salvador_dali
           </a>
           <a
-            href="https://g.page/r/CX61S_h0x7wYEAE/review"
+            href="https://g.page/r/Ce61Wvh0x_sYEBM/review"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors mt-2"
