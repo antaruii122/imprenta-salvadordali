@@ -55,13 +55,13 @@ export default function ComunaPage() {
       <div className="page-header">
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle, #8B7355 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
         <div className="relative max-w-6xl mx-auto px-4 text-center">
-          <p className="section-label">Imprenta Â· Las Condes, Santiago</p>
+          <p className="section-label">Imprenta · Las Condes, Santiago</p>
           <h1 className="font-heading text-4xl font-bold text-charcoal">
             Imprenta Profesional en {comuna.name} — Impresión Digital y Offset
           </h1>
           <div className="section-divider mx-auto" />
           <p className="text-gray-500 text-sm max-w-md mx-auto mt-2">
-            Entrega express en 48 horas Â· Stickers, tarjetas, volantes, pendones y más
+            Entrega express en 48 horas · Stickers, tarjetas, volantes, pendones y más
           </p>
         </div>
       </div>
@@ -74,8 +74,7 @@ export default function ComunaPage() {
             <p className="section-label">Trabajamos en {comuna.name}</p>
             <h2 className="section-title mb-2">Tu imprenta de confianza</h2>
             <div className="section-divider" />
-            <p className="text-gray-500 leading-relaxed mb-4">{comuna.intro}</p>
-            <p className="text-gray-500 leading-relaxed mb-6">{comuna.body}</p>
+            <p className="text-gray-600 leading-relaxed mb-6">{comuna.intro}</p>
 
             {/* Services list */}
             <div className="mb-6">
@@ -127,6 +126,28 @@ export default function ComunaPage() {
           </div>
         </div>
       </section>
+
+      {/* Body content — párrafos con fondo alternado */}
+      {comuna.body.split('\n\n').filter(p => p.trim()).map((paragraph, i) => {
+        const icons = ['🖨️', '✂️', '🚀']
+        const labels = ['Nuestros servicios', 'Cómo trabajamos', 'Entrega y cotización']
+        const isBeige = i % 2 === 0
+        return (
+          <section key={i} className={`py-14 ${isBeige ? 'bg-beige' : 'bg-white'}`}>
+            <div className="max-w-4xl mx-auto px-4">
+              <div className={`flex gap-6 items-start ${isBeige ? 'flex-row' : 'flex-row-reverse'}`}>
+                <div className={`hidden md:flex flex-shrink-0 w-16 h-16 rounded-2xl items-center justify-center text-3xl shadow-sm ${isBeige ? 'bg-white' : 'bg-beige'}`}>
+                  {icons[i] || '📌'}
+                </div>
+                <div className="flex-1">
+                  <p className="text-xs font-bold uppercase tracking-widest text-brand mb-2">{labels[i] || `Sobre ${comuna.name}`}</p>
+                  <p className="text-gray-600 leading-relaxed text-base">{paragraph.trim()}</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        )
+      })}
 
       {/* Why us */}
       <section className="py-16 bg-charcoal">
