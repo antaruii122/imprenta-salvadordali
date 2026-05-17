@@ -664,6 +664,7 @@ Homepage (/)
 | Date | SEO Action |
 |------|-----------|
 | 2026-05-03 | Local SEO strategy planned and documented in website.md |
+| 2026-05-17 | Full SEO audit run on www.imprentasalvadordalichile.cl — Score: 47/100. Critical issue: domain bifurcation (`.chile.cl` not indexed by Google, only `imprentasalvadordali.cl` appears). Zero schema markup detected. Page titles duplicated across most pages. Reports: `FULL-AUDIT-REPORT.md` + `ACTION-PLAN.md` |
 
 ---
 

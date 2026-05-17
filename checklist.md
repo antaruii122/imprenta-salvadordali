@@ -196,3 +196,4 @@
 | 2026-05-05 | Fixed ServicioPage breadcrumb: was Inicio/Tienda/[service], now correctly Inicio/Servicios/[service]. |
 | 2026-05-05 | Created public/sitemap.xml (34 URLs, priorities set) and public/robots.txt. |
 | 2026-05-16 | Implemented static pre-rendering (SSG) via react-dom/server + createStaticRouter. New script: `prerender.mjs`. New command: `npm run build:ssg`. Generates full HTML for all 29 routes. Files: `src/entry-server.jsx`, `prerender.mjs`, `package.json` (new script), `index.html` (ssr-outlet added). |
+| 2026-05-17 | Full SEO audit completed on www.imprentasalvadordalichile.cl. Score: 47/100. Critical: domain bifurcation (site not indexed), zero schema, duplicate page titles. Reports saved: `FULL-AUDIT-REPORT.md` + `ACTION-PLAN.md`. |
