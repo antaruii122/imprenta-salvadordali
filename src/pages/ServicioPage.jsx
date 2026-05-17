@@ -32,6 +32,18 @@ export default function ServicioPage() {
             { "@type": "ListItem", "position": 3, "name": servicio.title, "item": `https://www.imprentasalvadordalichile.cl/servicios/${servicio.slug}` }
           ]
         })}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": servicio.faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.q,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": faq.a
+            }
+          }))
+        })}</script>
       </Helmet>
 
       {/* Header */}
