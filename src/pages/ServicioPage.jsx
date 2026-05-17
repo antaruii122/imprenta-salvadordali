@@ -85,19 +85,27 @@ export default function ServicioPage() {
         </div>
       </section>
 
-      {/* Long-form content body */}
-      {servicio.body && servicio.body.length > 0 && (
-        <section className="py-16 bg-beige">
-          <div className="max-w-3xl mx-auto px-4 space-y-10">
-            {servicio.body.map((block, i) => (
-              <div key={i}>
-                <h2 className="font-heading text-2xl font-bold text-charcoal mb-4">{block.h2}</h2>
-                <p className="text-gray-500 leading-relaxed text-base">{block.text}</p>
+      {/* Long-form content body — fondos alternados */}
+      {servicio.body && servicio.body.length > 0 && servicio.body.map((block, i) => {
+        const isBeige = i % 2 === 0
+        const icons = ['📋', '🧪', '🏪', '📁', '💰', '🚚', '📐', '🎨']
+        return (
+          <section key={i} className={`py-14 ${isBeige ? 'bg-beige' : 'bg-white'}`}>
+            <div className="max-w-4xl mx-auto px-4">
+              <div className="flex gap-6 items-start">
+                <div className={`hidden md:flex flex-shrink-0 w-14 h-14 rounded-2xl items-center justify-center text-2xl shadow-sm ${isBeige ? 'bg-white' : 'bg-beige'}`}>
+                  {icons[i] || '📌'}
+                </div>
+                <div className="flex-1">
+                  <h2 className="font-heading text-xl font-bold text-charcoal mb-3">{block.h2}</h2>
+                  <div className="w-10 h-0.5 bg-brand mb-4" />
+                  <p className="text-gray-600 leading-relaxed text-base">{block.text}</p>
+                </div>
               </div>
-            ))}
-          </div>
-        </section>
-      )}
+            </div>
+          </section>
+        )
+      })}
 
       {/* Why us — dark strip */}
       <section className="py-16 bg-charcoal">
