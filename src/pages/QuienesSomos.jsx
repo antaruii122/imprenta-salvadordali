@@ -18,7 +18,9 @@ export default function QuienesSomos() {
         <meta name="description" content="Conoce nuestra historia. Imprenta en Las Condes especializada en impresión láser, offset y UV. Más de 10 años entregando calidad y servicio express en Santiago." />
         <meta property="og:title" content="Quiénes Somos — Imprenta Salvador Dali Las Condes" />
         <meta property="og:description" content="Imprenta profesional en Las Condes. Impresión láser, offset y UV con entrega en 48 horas." />
-        <meta property="og:image" content="https://imprentasalvadordalichile.cl/images/cropped-icono-66.png" />
+        <meta property="og:image" content="https://www.imprentasalvadordalichile.cl/images/print_shop_team.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://www.imprentasalvadordalichile.cl/images/print_shop_team.webp" />
         <link rel="canonical" href="https://www.imprentasalvadordalichile.cl/quienes-somos" />
       </Helmet>
 
@@ -41,7 +43,7 @@ export default function QuienesSomos() {
                 className="w-full object-cover hover:scale-105 transition-transform duration-700" />
             </div>
             <div className="absolute -bottom-5 -right-5 bg-brand text-white rounded-2xl shadow-lg px-5 py-3">
-              <p className="font-heading text-lg font-black">Laser Â· Offset Â· UV</p>
+              <p className="font-heading text-lg font-black">Laser · Offset · UV</p>
               <p className="text-brand-light text-xs mt-0.5">Sistemas de impresión</p>
             </div>
           </div>

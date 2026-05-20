@@ -12,7 +12,7 @@ const WaIcon = () => (
   </svg>
 )
 
-const services = ['Stickers', 'Tarjetas', 'Volantes', 'Pendones', 'Etiquetas', 'Publicidad', 'Útiles Escolares']
+const services = ['Stickers', 'Tarjetas', 'Volantes', 'Pendones', 'Etiquetas', 'Publicidad']
 
 const highlights = [
   { icon: '⚡', title: 'Imprenta express', body: 'Entrega en 48 horas, ideal para trabajos urgentes con excelente calidad.' },
@@ -41,10 +41,90 @@ export default function Home() {
         <meta name="description" content="Imprenta en Las Condes con entrega express en 48 horas. Stickers personalizados, tarjetas de presentación, volantes y pendones. Cotiza gratis por WhatsApp." />
         <meta property="og:title" content="Imprenta en Las Condes con Entrega 48h | Salvador Dali" />
         <meta property="og:description" content="Stickers, tarjetas, volantes y pendones. Entrega express en 48h. Cotiza gratis por WhatsApp." />
-        <meta property="og:image" content="https://www.imprentasalvadordalichile.cl/images/og-preview.jpg" />
+        <meta property="og:image" content="https://www.imprentasalvadordalichile.cl/images/print_shop_team.webp" />
         <meta property="og:url" content="https://www.imprentasalvadordalichile.cl/" />
         <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Imprenta en Las Condes con Entrega 48h | Salvador Dali" />
+        <meta name="twitter:description" content="Stickers, tarjetas, volantes y pendones. Entrega express en 48h. Cotiza gratis por WhatsApp." />
+        <meta name="twitter:image" content="https://www.imprentasalvadordalichile.cl/images/print_shop_team.webp" />
         <link rel="canonical" href="https://www.imprentasalvadordalichile.cl/" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": ["LocalBusiness", "PrintShop"],
+          "@id": "https://www.imprentasalvadordalichile.cl/#local-business",
+          "name": "Imprenta Salvador Dali",
+          "alternateName": "Imprenta Salvador Dalí Las Condes",
+          "description": "Imprenta en Las Condes especializada en impresión láser, offset y tinta UV. Stickers personalizados, tarjetas de presentación, volantes, pendones y etiquetas con entrega express en 48 horas.",
+          "image": "https://www.imprentasalvadordalichile.cl/images/print_shop_team.webp",
+          "logo": "https://www.imprentasalvadordalichile.cl/images/cropped-icono-66.png",
+          "url": "https://www.imprentasalvadordalichile.cl",
+          "telephone": "+56964123098",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Mayecura 1177",
+            "addressLocality": "Las Condes",
+            "addressRegion": "Región Metropolitana",
+            "postalCode": "7570718",
+            "addressCountry": "CL"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -33.3839092,
+            "longitude": -70.5321178
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "09:00",
+            "closes": "18:00",
+            "description": "Solo con cita previa. Coordina por WhatsApp."
+          },
+          "priceRange": "$$",
+          "currenciesAccepted": "CLP",
+          "areaServed": [
+            {"@type": "City", "name": "Las Condes"},
+            {"@type": "City", "name": "Providencia"},
+            {"@type": "City", "name": "Vitacura"},
+            {"@type": "City", "name": "Santiago"},
+            {"@type": "City", "name": "Ñuñoa"},
+            {"@type": "City", "name": "La Florida"},
+            {"@type": "City", "name": "Maipú"},
+            {"@type": "City", "name": "San Miguel"}
+          ],
+          "sameAs": [
+            "https://www.instagram.com/imprenta_salvador_dali/",
+            "https://g.page/r/Ce61Wvh0x_sYEBM"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicios de Impresión",
+            "itemListElement": [
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Stickers Personalizados", "url": "https://www.imprentasalvadordalichile.cl/servicios/stickers"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Tarjetas de Presentación", "url": "https://www.imprentasalvadordalichile.cl/servicios/tarjetas-presentacion"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Volantes y Flyers", "url": "https://www.imprentasalvadordalichile.cl/servicios/volantes"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pendones Publicitarios", "url": "https://www.imprentasalvadordalichile.cl/servicios/pendones"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Etiquetas Personalizadas"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Impresión DTF Textil"}}
+            ]
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "47",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        })}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://www.imprentasalvadordalichile.cl/#website",
+          "name": "Imprenta Salvador Dali",
+          "url": "https://www.imprentasalvadordalichile.cl",
+          "inLanguage": "es-CL",
+          "publisher": {"@id": "https://www.imprentasalvadordalichile.cl/#local-business"}
+        })}</script>
       </Helmet>
 
       {/* ═══ HERO ═══ */}

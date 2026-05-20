@@ -37,7 +37,6 @@ const router = createBrowserRouter([
       { path: '/tienda/stickers', element: <TiendaCategory category="stickers" /> },
       { path: '/tienda/tarjeteria', element: <TiendaCategory category="tarjeteria" /> },
       { path: '/tienda/publicidad', element: <TiendaCategory category="publicidad" /> },
-      { path: '/tienda/utiles-escolares', element: <TiendaCategory category="utiles-escolares" /> },
       { path: '/quienes-somos', element: <QuienesSomos /> },
       { path: '/blog', element: <Blog /> },
       { path: '/blog/:slug', element: <BlogPost /> },

@@ -41,7 +41,7 @@ export default function MapSection() {
               <div className="flex gap-4 items-center">
                 <span className="text-brand text-xl">📞</span>
                 <a href="tel:+56964123098" className="font-semibold text-white hover:text-brand transition-colors">
-                  +569 6412 3098
+                  +56 9 6412 3098
                 </a>
               </div>
               <div className="flex gap-4 items-start">

@@ -12,7 +12,6 @@ const routes = [
   '/tienda/stickers',
   '/tienda/tarjeteria',
   '/tienda/publicidad',
-  '/tienda/utiles-escolares',
   '/quienes-somos',
   '/blog',
   '/blog/que-es-impresion-dtf-textil',
@@ -61,14 +60,27 @@ async function main() {
     try {
       const { html: appHtml, helmet } = await render(route)
 
-      let pageHtml = template.replace('<!--ssr-outlet-->', appHtml)
+      // Extract title from SSR output before stripping (react-helmet injects into body during SSR)
+      const titleMatch = appHtml.match(/<title>([\s\S]*?)<\/title>/)
+      const pageTitle = titleMatch ? titleMatch[1] : null
+
+      // Strip any helmet tags react injected into the SSR body (they belong in <head>)
+      const cleanAppHtml = appHtml.replace(/<title>[\s\S]*?<\/title>/g, '')
+
+      let pageHtml = template.replace('<!--ssr-outlet-->', cleanAppHtml)
+
+      // Replace template title with page-specific title extracted from SSR body
+      if (pageTitle) {
+        pageHtml = pageHtml.replace(/<title>[\s\S]*?<\/title>/, `<title>${pageTitle}</title>`)
+      }
 
       if (helmet) {
-        if (helmet.title?.toString()) {
-          pageHtml = pageHtml.replace(/<title>.*?<\/title>/, helmet.title.toString())
-        }
-        if (helmet.meta?.toString()) {
-          pageHtml = pageHtml.replace('</head>', `${helmet.meta.toString()}</head>`)
+        const metaStr = (helmet.meta?.toString() || '').replace(/<title>[\s\S]*?<\/title>/g, '')
+        const linkStr = helmet.link?.toString() || ''
+        const scriptStr = helmet.script?.toString() || ''
+        const inject = [metaStr, linkStr, scriptStr].filter(Boolean).join('\n')
+        if (inject) {
+          pageHtml = pageHtml.replace('</head>', `${inject}\n</head>`)
         }
       }
 

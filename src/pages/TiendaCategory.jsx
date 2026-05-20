@@ -26,20 +26,12 @@ const meta = {
     metaTitle: 'Material Publicitario en Las Condes — Volantes, Pendones y Afiches | Imprenta Salvador Dali',
     metaDesc: 'Impresión de volantes, afiches y pendones en Las Condes. 1.000 volantes desde $20.000. Entrega express en 48 horas.',
   },
-  'utiles-escolares': {
-    title: 'Útiles Escolares',
-    desc: 'Personaliza tus adhesivos para los útiles escolares.',
-    emoji: '🎒',
-    metaTitle: 'Útiles Escolares Personalizados en Las Condes — Stickers para Cuadernos | Imprenta Salvador Dali',
-    metaDesc: 'Stickers y etiquetas personalizadas para útiles escolares en Las Condes. Ideal para colegios y apoderados. Entrega en 48 horas.',
-  },
 }
 
 const cats = [
   { slug: 'stickers', label: 'Stickers' },
   { slug: 'tarjeteria', label: 'Tarjetería' },
   { slug: 'publicidad', label: 'Publicidad' },
-  { slug: 'utiles-escolares', label: 'Útiles Escolares' },
 ]
 
 const WA = 'https://wa.me/56964123098?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar'
@@ -56,7 +48,7 @@ export default function TiendaCategory({ category }) {
         <meta name="description" content={info.metaDesc} />
         <meta property="og:title" content={info.metaTitle} />
         <meta property="og:description" content={info.metaDesc} />
-        <meta property="og:image" content="https://imprentasalvadordalichile.cl/images/cropped-icono-66.png" />
+        <meta property="og:image" content="https://www.imprentasalvadordalichile.cl/images/print_shop_team.webp" />
         <link rel="canonical" href={`https://www.imprentasalvadordalichile.cl/tienda/${category}`} />
       </Helmet>
 

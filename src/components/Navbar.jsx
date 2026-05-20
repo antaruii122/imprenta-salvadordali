@@ -33,7 +33,6 @@ const menus = {
           { to: '/tienda/stickers', label: 'Stickers' },
           { to: '/tienda/tarjeteria', label: 'Tarjetería' },
           { to: '/tienda/publicidad', label: 'Publicidad' },
-          { to: '/tienda/utiles-escolares', label: 'Útiles Escolares' },
         ],
       },
     ],
