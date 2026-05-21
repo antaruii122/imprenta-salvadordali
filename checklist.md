@@ -63,9 +63,11 @@
 - [x] Add meta title + description to every page (all pages: Home, Portafolio, Tienda, TiendaCategory, QuienesSomos, Blog, BlogPost, Contacto, ServicioPage, ComunaPage)
 - [x] Add Open Graph tags (og:title, og:description, og:image) to every page
 - [ ] Add alt text to ALL images (portfolio, products, hero, gallery)
-- [x] Add LocalBusiness + PrintShop JSON-LD schema to `index.html`
+- [x] Add LocalBusiness + PrintShop JSON-LD schema to `index.html` — CORRECTED with AggregateRating and proper image URLs
 - [x] Create `public/sitemap.xml` listing all routes (34 URLs)
 - [x] Create `public/robots.txt`
+- [x] Configure static pre-rendering (SSG) — updated `vercel.json` with `npm run build:ssg` as build command
+- [x] Verify pre-rendering generates HTML with meta tags in head — tested, all 29 routes render correctly
 
 ### Contact Form Backend
 - [ ] Choose provider: EmailJS (recommended, free) or Supabase or Formspree

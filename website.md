@@ -665,6 +665,7 @@ Homepage (/)
 |------|-----------|
 | 2026-05-03 | Local SEO strategy planned and documented in website.md |
 | 2026-05-17 | Full SEO audit run on www.imprentasalvadordalichile.cl — Score: 47/100. Critical issue: domain bifurcation (`.chile.cl` not indexed by Google, only `imprentasalvadordali.cl` appears). Zero schema markup detected. Page titles duplicated across most pages. Reports: `FULL-AUDIT-REPORT.md` + `ACTION-PLAN.md` |
+| 2026-05-21 | Fixed critical indexation issues: (1) Updated `vercel.json` to use `npm run build:ssg` as build command for static pre-rendering. (2) Updated `index.html` with corrected LocalBusiness + PrintShop JSON-LD schema + AggregateRating. (3) Verified `prerender.mjs` generates 29 routes as static HTML with meta tags in head. (4) All OG tags present in generated files. (5) `/llms.txt` complete. Build tested successfully. |
 
 ---
 
