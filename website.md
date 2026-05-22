@@ -666,6 +666,7 @@ Homepage (/)
 | 2026-05-03 | Local SEO strategy planned and documented in website.md |
 | 2026-05-17 | Full SEO audit run on www.imprentasalvadordalichile.cl — Score: 47/100. Critical issue: domain bifurcation (`.chile.cl` not indexed by Google, only `imprentasalvadordali.cl` appears). Zero schema markup detected. Page titles duplicated across most pages. Reports: `FULL-AUDIT-REPORT.md` + `ACTION-PLAN.md` |
 | 2026-05-21 | Fixed critical indexation issues: (1) Updated `vercel.json` to use `npm run build:ssg` as build command for static pre-rendering. (2) Updated `index.html` with corrected LocalBusiness + PrintShop JSON-LD schema + AggregateRating. (3) Verified `prerender.mjs` generates 29 routes as static HTML with meta tags in head. (4) All OG tags present in generated files. (5) `/llms.txt` complete. Build tested successfully. |
+| 2026-05-22 | Fixed title tag bug on all 12 location pages: (1) Root cause — react-helmet-async SSR does not integrate with React 19 `renderToString`, so helmet context was always empty. (2) Fixed `prerender.mjs` to build a META_MAP from `comunas.js`, `servicios.js`, `blogPosts.js` data files and inject correct `<title>` and `<meta name="description">` directly per route, bypassing broken helmet SSR. (3) Fixed hardcoded "Las Condes, Santiago" label in `ComunaPage.jsx` line 58 — now uses `{comuna.name}`. Build verified: all 28 routes render with unique, correct titles. |
 
 ---
 

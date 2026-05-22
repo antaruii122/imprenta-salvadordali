@@ -55,7 +55,7 @@ export default function ComunaPage() {
       <div className="page-header">
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle, #8B7355 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
         <div className="relative max-w-6xl mx-auto px-4 text-center">
-          <p className="section-label">Imprenta · Las Condes, Santiago</p>
+          <p className="section-label">Imprenta · {comuna.name}, Santiago</p>
           <h1 className="font-heading text-4xl font-bold text-charcoal">
             Imprenta Profesional en {comuna.name} — Impresión Digital y Offset
           </h1>
