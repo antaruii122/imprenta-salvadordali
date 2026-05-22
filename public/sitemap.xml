@@ -11,12 +11,27 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.imprentasalvadordalichile.cl/portafolio</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.imprentasalvadordalichile.cl/tienda</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.imprentasalvadordalichile.cl/portafolio</loc>
+    <loc>https://www.imprentasalvadordalichile.cl/tienda/stickers</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.imprentasalvadordalichile.cl/tienda/tarjeteria</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.imprentasalvadordalichile.cl/tienda/publicidad</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -26,9 +41,44 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.imprentasalvadordalichile.cl/blog/que-es-impresion-dtf-textil</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.imprentasalvadordalichile.cl/blog/que-son-los-adhesivos-troquelados</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.imprentasalvadordalichile.cl/blog/impresion-tinta-uv-que-es</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.imprentasalvadordalichile.cl/contacto</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.imprentasalvadordalichile.cl/servicios/stickers</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.imprentasalvadordalichile.cl/servicios/tarjetas-presentacion</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.imprentasalvadordalichile.cl/servicios/volantes</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.imprentasalvadordalichile.cl/servicios/pendones</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.imprentasalvadordalichile.cl/imprenta/las-condes</loc>
@@ -89,60 +139,5 @@
     <loc>https://www.imprentasalvadordalichile.cl/imprenta/san-bernardo</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.imprentasalvadordalichile.cl/servicios/stickers</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.imprentasalvadordalichile.cl/servicios/tarjetas-presentacion</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.imprentasalvadordalichile.cl/servicios/volantes</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.imprentasalvadordalichile.cl/servicios/pendones</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.imprentasalvadordalichile.cl/blog/que-es-impresion-dtf-textil</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.imprentasalvadordalichile.cl/blog/que-son-los-adhesivos-troquelados</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.imprentasalvadordalichile.cl/blog/impresion-tinta-uv-que-es</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.imprentasalvadordalichile.cl/tienda/categoria/oficina</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.imprentasalvadordalichile.cl/tienda/categoria/marketing</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.imprentasalvadordalichile.cl/tienda/categoria/etiquetas</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.imprentasalvadordalichile.cl/tienda/categoria/stickers</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
 </urlset>
