@@ -38,6 +38,8 @@ export default function ComunaPage() {
         <meta property="og:title" content={comuna.metaTitle} />
         <meta property="og:description" content={comuna.metaDesc} />
         <meta property="og:image" content="https://www.imprentasalvadordalichile.cl/images/print_shop_team.webp" />
+        <meta property="og:image:width" content="1024" />
+        <meta property="og:image:height" content="1024" />
         <meta property="og:type" content="website" />
         <link rel="canonical" href={`https://www.imprentasalvadordalichile.cl/imprenta/${comuna.slug}`} />
         <script type="application/ld+json">{JSON.stringify({

@@ -42,6 +42,8 @@ export default function Home() {
         <meta property="og:title" content="Imprenta en Las Condes con Entrega 48h | Salvador Dali" />
         <meta property="og:description" content="Stickers, tarjetas, volantes y pendones. Entrega express en 48h. Cotiza gratis por WhatsApp." />
         <meta property="og:image" content="https://www.imprentasalvadordalichile.cl/images/print_shop_team.webp" />
+        <meta property="og:image:width" content="1024" />
+        <meta property="og:image:height" content="1024" />
         <meta property="og:url" content="https://www.imprentasalvadordalichile.cl/" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -60,12 +62,9 @@ export default function Home() {
         <div className="relative max-w-6xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-up">
             <p className="section-label">Imprenta · Las Condes, Santiago</p>
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-black text-charcoal leading-[1.05] mb-3">
-              Imprenta<br /><span className="text-brand">Salvador Dali</span>
+            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-black text-charcoal leading-[1.05] mb-5">
+              Imprenta <span className="text-brand">Salvador Dalí</span><br />en Las Condes
             </h1>
-            <p className="font-heading text-xl md:text-2xl font-bold text-charcoal/60 mb-5 tracking-wide">
-              En Las Condes
-            </p>
             <p className="text-gray-500 text-lg mb-6 leading-relaxed max-w-md">
               Stickers personalizados, tarjetas de presentación, volantes, pendones y etiquetas con entrega express en 48 horas.
             </p>

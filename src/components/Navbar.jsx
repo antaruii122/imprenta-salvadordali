@@ -183,7 +183,11 @@ export default function Navbar() {
         </a>
 
         {/* Mobile hamburger */}
-        <button className="lg:hidden p-2 rounded-lg hover:bg-beige transition-colors" onClick={() => setMobileOpen(!mobileOpen)}>
+        <button
+          className="lg:hidden p-2 rounded-lg hover:bg-beige transition-colors"
+          onClick={() => setMobileOpen(!mobileOpen)}
+          aria-label={mobileOpen ? 'Cerrar menú de navegación' : 'Abrir menú de navegación'}
+          aria-expanded={mobileOpen}>
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {mobileOpen
               ? <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12"/>

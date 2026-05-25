@@ -24,6 +24,8 @@ export default function Portafolio() {
         <meta property="og:title" content="Portafolio — Imprenta Salvador Dali Las Condes" />
         <meta property="og:description" content="Galería de trabajos impresos: stickers, tarjetas, volantes, pendones y más." />
         <meta property="og:image" content="https://imprentasalvadordalichile.cl/images/cropped-icono-66.png" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
         <link rel="canonical" href="https://www.imprentasalvadordalichile.cl/portafolio" />
       </Helmet>
 

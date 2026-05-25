@@ -19,6 +19,8 @@ export default function Tienda() {
         <meta property="og:title" content="Tienda de Impresión — Imprenta Salvador Dali Las Condes" />
         <meta property="og:description" content="Stickers, tarjetas, volantes, pendones y más. Entrega express en 48 horas desde Las Condes." />
         <meta property="og:image" content="https://www.imprentasalvadordalichile.cl/images/print_shop_team.webp" />
+        <meta property="og:image:width" content="1024" />
+        <meta property="og:image:height" content="1024" />
         <link rel="canonical" href="https://www.imprentasalvadordalichile.cl/tienda" />
       </Helmet>
 

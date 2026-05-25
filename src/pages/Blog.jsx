@@ -18,6 +18,8 @@ export default function Blog() {
         <meta property="og:title" content="Blog — Imprenta Salvador Dali Las Condes" />
         <meta property="og:description" content="Guías y artículos sobre impresión en Santiago: DTF, troquelado, UV y más." />
         <meta property="og:image" content="https://imprentasalvadordalichile.cl/images/cropped-icono-66.png" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
         <link rel="canonical" href="https://www.imprentasalvadordalichile.cl/blog" />
       </Helmet>
 

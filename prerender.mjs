@@ -89,14 +89,25 @@ for (const p of blogPosts) {
   META_MAP[`/blog/${p.slug}`] = { title: p.metaTitle, desc: p.metaDesc }
 }
 
+// react-helmet-async with React 19 renderToString doesn't populate helmetContext.
+// Instead it renders <Helmet> children inline at the very start of the component tree.
+// This function extracts those tags from the rendered HTML so we can move them to <head>.
+function extractHeadTagsFromStart(html) {
+  const regex = /^((?:<(?:meta|link)[^>]*\/?>\s*|<title>[^<]*<\/title>\s*)*)/
+  const match = html.match(regex)
+  const tags = (match?.[1] ?? '').trim()
+  return {
+    tags,
+    cleanHtml: tags ? html.slice(match[1].length).trimStart() : html,
+  }
+}
+
 function injectMeta(html, route) {
   const meta = META_MAP[route]
   if (!meta) return html
 
   let result = html
-  // Replace <title>
   result = result.replace(/<title>[^<]*<\/title>/, `<title>${meta.title}</title>`)
-  // Replace or inject <meta name="description">
   if (/<meta name="description"/.test(result)) {
     result = result.replace(/<meta name="description"[^>]*>/, `<meta name="description" content="${meta.desc}"/>`)
   } else {
@@ -130,8 +141,20 @@ async function main() {
     try {
       const { html: appHtml } = await render(route)
 
-      let pageHtml = template.replace('<!--ssr-outlet-->', appHtml)
-      pageHtml = injectMeta(pageHtml, route)
+      // Extract head tags rendered inline by react-helmet-async (React 19 behavior)
+      const { tags: inlineHeadTags, cleanHtml } = extractHeadTagsFromStart(appHtml)
+
+      let pageHtml
+      if (inlineHeadTags) {
+        // Remove static <title> from template — the extracted tags include the correct one
+        const base = template.replace(/<title>[^<]*<\/title>/, '')
+        pageHtml = base.replace('<!--ssr-outlet-->', cleanHtml)
+        pageHtml = pageHtml.replace('</head>', `    ${inlineHeadTags}\n  </head>`)
+      } else {
+        // Fallback: inject title + description from META_MAP
+        pageHtml = template.replace('<!--ssr-outlet-->', appHtml)
+        pageHtml = injectMeta(pageHtml, route)
+      }
 
       const outDir = path.resolve(__dirname, 'dist', route.slice(1))
       fs.mkdirSync(outDir, { recursive: true })

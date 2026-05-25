@@ -21,6 +21,8 @@ export default function ServicioPage() {
         <meta property="og:title" content={servicio.metaTitle} />
         <meta property="og:description" content={servicio.metaDesc} />
         <meta property="og:image" content={servicio.heroImg} />
+        <meta property="og:image:width" content="1024" />
+        <meta property="og:image:height" content="1024" />
         <meta property="og:type" content="website" />
         <link rel="canonical" href={`https://www.imprentasalvadordalichile.cl/servicios/${servicio.slug}`} />
         <script type="application/ld+json">{JSON.stringify({

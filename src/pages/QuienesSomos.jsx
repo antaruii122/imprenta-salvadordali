@@ -19,6 +19,8 @@ export default function QuienesSomos() {
         <meta property="og:title" content="Quiénes Somos — Imprenta Salvador Dali Las Condes" />
         <meta property="og:description" content="Imprenta profesional en Las Condes. Impresión láser, offset y UV con entrega en 48 horas." />
         <meta property="og:image" content="https://www.imprentasalvadordalichile.cl/images/print_shop_team.webp" />
+        <meta property="og:image:width" content="1024" />
+        <meta property="og:image:height" content="1024" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="https://www.imprentasalvadordalichile.cl/images/print_shop_team.webp" />
         <link rel="canonical" href="https://www.imprentasalvadordalichile.cl/quienes-somos" />

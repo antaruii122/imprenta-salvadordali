@@ -62,6 +62,7 @@
 - [x] Install `react-helmet-async`
 - [x] Add meta title + description to every page (all pages: Home, Portafolio, Tienda, TiendaCategory, QuienesSomos, Blog, BlogPost, Contacto, ServicioPage, ComunaPage)
 - [x] Add Open Graph tags (og:title, og:description, og:image) to every page
+- [x] Add og:image:width + og:image:height to every page (print_shop_team.webp = 1024×1024; cropped-icono-66.png = 512×512; servicio heroImgs = 1024×1024)
 - [ ] Add alt text to ALL images (portfolio, products, hero, gallery)
 - [x] Add LocalBusiness + PrintShop JSON-LD schema to `index.html` — CORRECTED with AggregateRating and proper image URLs
 - [x] Create `public/sitemap.xml` listing all routes (34 URLs)
@@ -199,3 +200,4 @@
 | 2026-05-05 | Created public/sitemap.xml (34 URLs, priorities set) and public/robots.txt. |
 | 2026-05-16 | Implemented static pre-rendering (SSG) via react-dom/server + createStaticRouter. New script: `prerender.mjs`. New command: `npm run build:ssg`. Generates full HTML for all 29 routes. Files: `src/entry-server.jsx`, `prerender.mjs`, `package.json` (new script), `index.html` (ssr-outlet added). |
 | 2026-05-17 | Full SEO audit completed on www.imprentasalvadordalichile.cl. Score: 47/100. Critical: domain bifurcation (site not indexed), zero schema, duplicate page titles. Reports saved: `FULL-AUDIT-REPORT.md` + `ACTION-PLAN.md`. |
+| 2026-05-25 | Added og:image:width and og:image:height to all 10 page components. Verified real dimensions: print_shop_team.webp = 1024×1024, cropped-icono-66.png = 512×512, all servicio hero images = 1024×1024. |
