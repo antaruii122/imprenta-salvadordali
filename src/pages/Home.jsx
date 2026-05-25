@@ -63,7 +63,7 @@ export default function Home() {
           <div className="animate-fade-up">
             <p className="section-label">Imprenta · Las Condes, Santiago</p>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-black text-charcoal leading-[1.05] mb-5">
-              Imprenta <span className="text-brand">Salvador Dalí</span><br />en Las Condes
+              Imprenta <span className="text-brand">Salvador Dali</span> en Las Condes
             </h1>
             <p className="text-gray-500 text-lg mb-6 leading-relaxed max-w-md">
               Stickers personalizados, tarjetas de presentación, volantes, pendones y etiquetas con entrega express en 48 horas.
