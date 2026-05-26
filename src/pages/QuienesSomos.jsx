@@ -15,7 +15,7 @@ export default function QuienesSomos() {
     <main>
       <Helmet>
         <title>Quiénes Somos — Imprenta Profesional en Las Condes, Santiago | Imprenta Salvador Dali</title>
-        <meta name="description" content="Conoce nuestra historia. Imprenta en Las Condes especializada en impresión láser, offset y UV. Más de 10 años entregando calidad y servicio express en Santiago." />
+        <meta name="description" content="25 años de experiencia en impresión profesional en Las Condes. Fundada en el año 2000, Imprenta Salvador Dali es especialista en impresión láser, offset y UV con entrega express en Santiago." />
         <meta property="og:title" content="Quiénes Somos — Imprenta Salvador Dali Las Condes" />
         <meta property="og:description" content="Imprenta profesional en Las Condes. Impresión láser, offset y UV con entrega en 48 horas." />
         <meta property="og:image" content="https://www.imprentasalvadordalichile.cl/images/print_shop_team.webp" />
@@ -55,13 +55,13 @@ export default function QuienesSomos() {
             <h2 className="section-title mb-2">Sobre nuestra imprenta</h2>
             <div className="section-divider" />
             <p className="text-gray-500 leading-relaxed mb-5">
-              Nuestra imprenta nace del fanatismo al pintor Salvador Dali. Fanáticos de su obra y estilo, quisimos honrarlo con nuestra propia marca.
+              Fundada en el año 2000, Imprenta Salvador Dali lleva 25 años entregando calidad gráfica en Las Condes, Santiago. Nuestro nombre nace del profundo fanatismo por el pintor Salvador Dalí — su obra, su estilo y su obsesión por la perfección son nuestra inspiración diaria.
             </p>
             <p className="text-gray-500 leading-relaxed mb-5">
-              Dedicados a sistemas de impresión láser, offset y tinta UV en diversos papeles — chuche, opalina, lisa, texturada, Bond, lvc, sintético — y textiles. Caracterizados por servicio excepcional y entregas express de 48 horas.
+              Somos especialistas en sistemas de impresión láser, offset y tinta UV en una amplia variedad de papeles — couché, opalina, lisa, texturada, Bond, PVC, sintético — y textiles. En 25 años hemos perfeccionado cada proceso para garantizar resultados de nivel profesional con entregas express en 48 horas.
             </p>
             <p className="text-gray-500 leading-relaxed">
-              Ofrecemos soluciones gráficas completas: tarjetas de presentación, volantes, stickers, pendones, trípticos, catálogos, merchandising y más.
+              Ofrecemos soluciones gráficas completas: tarjetas de presentación, volantes, stickers, pendones, trípticos, catálogos, merchandising y más. Trabajamos con empresas, emprendedores y particulares en toda la Región Metropolitana.
             </p>
           </div>
         </div>

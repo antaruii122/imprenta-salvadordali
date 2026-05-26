@@ -1,18 +1,18 @@
 import { Helmet } from 'react-helmet-async'
 
 const images = [
-  { src: '/images/hero_stickers.webp', alt: 'Stickers Troquelados' },
-  { src: '/images/product_afiche.webp', alt: 'Afiches' },
-  { src: '/images/product_etiqueta.webp', alt: 'Etiquetas' },
-  { src: '/images/product_etiqueta_textil.webp', alt: 'Etiquetas Textiles' },
-  { src: '/images/product_etiquetas_bolsas.webp', alt: 'Etiquetas para Bolsas' },
-  { src: '/images/product_marca_libro.webp', alt: 'Marca Libros' },
-  { src: '/images/product_stickers_circulares.webp', alt: 'Stickers Circulares' },
-  { src: '/images/product_stickers_utiles.webp', alt: 'Stickers Útiles' },
-  { src: '/images/product_tags.webp', alt: 'Tags' },
-  { src: '/images/banners_pendones.webp', alt: 'Pendones' },
-  { src: '/images/business_cards.webp', alt: 'Tarjetas de Presentación' },
-  { src: '/images/flyers_volantes.webp', alt: 'Flyers y Volantes' },
+  { src: '/images/hero_stickers.webp', alt: 'Stickers troquelados personalizados impresos en Las Condes — Imprenta Salvador Dali' },
+  { src: '/images/product_afiche.webp', alt: 'Afiches y carteles impresos en Santiago — Imprenta Salvador Dali Las Condes' },
+  { src: '/images/product_etiqueta.webp', alt: 'Etiquetas personalizadas para productos impresas en Las Condes — Imprenta Salvador Dali' },
+  { src: '/images/product_etiqueta_textil.webp', alt: 'Etiquetas textiles personalizadas con impresión DTF en Las Condes — Imprenta Salvador Dali' },
+  { src: '/images/product_etiquetas_bolsas.webp', alt: 'Etiquetas para bolsas y packaging impresas en Santiago — Imprenta Salvador Dali' },
+  { src: '/images/product_marca_libro.webp', alt: 'Marcadores de libros personalizados impresos en Las Condes — Imprenta Salvador Dali' },
+  { src: '/images/product_stickers_circulares.webp', alt: 'Stickers circulares personalizados impresos en Las Condes, Santiago — Imprenta Salvador Dali' },
+  { src: '/images/product_stickers_utiles.webp', alt: 'Stickers adhesivos para útiles y oficina impresos en Las Condes — Imprenta Salvador Dali' },
+  { src: '/images/product_tags.webp', alt: 'Tags y etiquetas colgantes personalizadas para ropa y productos — Imprenta Salvador Dali Las Condes' },
+  { src: '/images/banners_pendones.webp', alt: 'Pendones publicitarios impresos en Las Condes, Santiago — Imprenta Salvador Dali' },
+  { src: '/images/business_cards.webp', alt: 'Tarjetas de presentación impresas en Las Condes con acabado premium — Imprenta Salvador Dali' },
+  { src: '/images/flyers_volantes.webp', alt: 'Volantes y flyers publicitarios impresos en Las Condes, Santiago — Imprenta Salvador Dali' },
 ]
 
 export default function Portafolio() {

@@ -1,5 +1,76 @@
 export const blogPosts = [
   {
+    slug: 'precio-tarjetas-presentacion-santiago',
+    title: '¿Cuánto cuestan las tarjetas de presentación en Santiago? Precios 2025',
+    date: '26 de mayo de 2026',
+    tag: 'Precios',
+    emoji: '💳',
+    metaTitle: 'Precio Tarjetas de Presentación en Santiago 2025 — Guía Completa | Imprenta Salvador Dali',
+    metaDesc: 'Descubre cuánto cuestan las tarjetas de presentación en Santiago. Precios por cantidad, papel, acabado y tamaño. Desde $5.000 en Imprenta Salvador Dali, Las Condes.',
+    excerpt: 'Guía completa de precios para tarjetas de presentación en Santiago. Cuánto cuesta según el papel, el acabado y la cantidad. Con ejemplos reales y cómo cotizar rápido.',
+    content: [
+      {
+        type: 'intro',
+        text: 'Si buscas imprimir tarjetas de presentación en Santiago y no sabes cuánto deberías pagar, esta guía es para ti. En Imprenta Salvador Dali llevamos 25 años produciendo tarjetas en Las Condes y conocemos bien el mercado. Te explicamos los factores que definen el precio y damos rangos reales para que llegues a cotizar sabiendo qué esperar.',
+      },
+      {
+        type: 'h2',
+        text: '¿Qué factores definen el precio de las tarjetas de presentación?',
+      },
+      {
+        type: 'text',
+        text: 'El precio de unas tarjetas de presentación en Santiago depende principalmente de cuatro variables: la cantidad que pides, el tipo de papel, el acabado superficial y si necesitas diseño. A mayor cantidad, menor precio por unidad. Un papel couché de 350 gramos cuesta más que uno de 250 gramos. Un acabado con barniz UV selectivo o laminado mate tiene un valor extra sobre la impresión estándar. Y si no tienes diseño propio, el servicio de diseño suma entre $15.000 y $30.000 según la complejidad.',
+      },
+      {
+        type: 'h2',
+        text: 'Precios aproximados de tarjetas de presentación en Santiago 2025',
+      },
+      {
+        type: 'text',
+        text: 'En Imprenta Salvador Dali los precios parten desde $5.000 para pedidos pequeños de tarjetas estándar. A modo de referencia general: 100 tarjetas en couché 350g con laminado mate cuestan aproximadamente entre $8.000 y $12.000. 250 tarjetas en el mismo material rondan los $15.000 a $20.000. Para 500 unidades el precio por tarjeta baja considerablemente y el total suele estar entre $22.000 y $30.000. Estos son rangos orientativos — el precio exacto depende del diseño final, el tamaño y el acabado. Lo más rápido es cotizar directo por WhatsApp con tu archivo.',
+      },
+      {
+        type: 'h2',
+        text: 'Papeles más usados para tarjetas de presentación en Chile',
+      },
+      {
+        type: 'text',
+        text: 'El papel couché de 350 gramos es el estándar del mercado chileno porque tiene buen grosor, superficie lisa y acepta bien el laminado. El couché de 300 gramos es una opción más económica con resultado similar. Para tarjetas premium, el papel opalina de 300 o 350 gramos da una textura suave y elegante muy valorada en sectores como arquitectura, diseño y servicios profesionales. También trabajamos con papel texturado y sintético para proyectos específicos.',
+      },
+      {
+        type: 'h2',
+        text: 'Acabados disponibles y cuándo conviene cada uno',
+      },
+      {
+        type: 'text',
+        text: 'El laminado mate es el acabado más pedido hoy en Chile porque da un aspecto sofisticado, no refleja la luz y se siente premium al tacto. El laminado brillante resalta los colores y es ideal si tu tarjeta tiene fotografías o ilustraciones con muchos colores. El barniz UV selectivo es la opción más llamativa: se aplica solo sobre zonas específicas — tu logo, por ejemplo — creando un contraste entre mate y brillante que resalta el elemento clave. Si buscas diferenciarte, el UV selectivo es la mejor inversión.',
+      },
+      {
+        type: 'h2',
+        text: 'Tamaños estándar y personalizados en Chile',
+      },
+      {
+        type: 'text',
+        text: 'El tamaño estándar para tarjetas de presentación en Chile es 9 × 5 cm. También trabajamos con tamaño cuadrado (5,5 × 5,5 cm), apaisado (10 × 5,5 cm) y media carta vertical. Si tienes un tamaño específico en mente, puedes pedirlo con corte personalizado.',
+      },
+      {
+        type: 'h2',
+        text: 'Cómo cotizar tus tarjetas de presentación en Imprenta Salvador Dali',
+      },
+      {
+        type: 'text',
+        text: 'La forma más rápida es enviarnos el diseño por WhatsApp con las medidas, el papel que prefieres, el acabado y la cantidad. Si no tienes diseño, cuéntanos tu rubro y logo y te preparamos una propuesta. Respondemos con cotización en minutos. Producción en 48 horas hábiles desde la aprobación del arte final. Hacemos despacho a domicilio a toda la Región Metropolitana y también puedes retirar en Mayecura 1177, Las Condes.',
+      },
+      {
+        type: 'cta',
+        text: 'Cotiza tus tarjetas de presentación por WhatsApp',
+        link: 'https://wa.me/56964123098?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20tarjetas%20de%20presentaci%C3%B3n',
+      },
+    ],
+    relatedServices: ['tarjetas-presentacion', 'stickers'],
+    relatedComuna: 'las-condes',
+  },
+  {
     slug: 'que-es-impresion-dtf-textil',
     title: 'Qué es la impresión DTF Textil y para qué sirve',
     date: '28 de enero de 2026',

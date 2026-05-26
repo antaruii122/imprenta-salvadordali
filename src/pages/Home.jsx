@@ -27,11 +27,6 @@ const gallery = [
   { src: '/images/business_cards.webp',   label: 'Tarjetas de presentación Las Condes - Imprenta Salvador Dali' },
 ]
 
-const testimonials = [
-  { quote: 'Entregaron rápido, con excelente calidad y a muy buen precio. Sin duda los recomiendo.', name: 'Valentina R.', role: 'Organizadora de Eventos' },
-  { quote: 'Los mejores en stickers y tarjetas. El acabado es increíble y el servicio muy profesional.', name: 'Andrés M.', role: 'Fotógrafo' },
-  { quote: 'Pedí pendones y volantes de urgencia y los tuve en 48 horas. ¡Increíble!', name: 'Camila S.', role: 'Emprendedora' },
-]
 
 export default function Home() {
   return (
@@ -125,7 +120,7 @@ export default function Home() {
             { n: '48 hrs', label: 'Entrega Express' },
             { n: '3', label: 'Sistemas de Impresión' },
             { n: '10+', label: 'Tipos de Producto' },
-            { n: '4.9 ★', label: 'Valoración Google' },
+            { n: '25 años', label: 'De Experiencia' },
           ].map(({ n, label }) => (
             <div key={label}>
               <p className="font-heading text-2xl font-black text-brand">{n}</p>
@@ -242,35 +237,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══ TESTIMONIALS ═══ */}
-      <section className="py-24 bg-beige">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-14">
-            <p className="section-label">Clientes</p>
-            <h2 className="section-title">Lo que dicen de nosotros</h2>
-            <div className="section-divider mx-auto" />
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {testimonials.map((t) => (
-              <div key={t.name} className="card p-8 flex flex-col">
-                <div className="flex gap-0.5 mb-4">
-                  {[...Array(5)].map((_, i) => <span key={i} className="text-amber-400 text-lg">★</span>)}
-                </div>
-                <p className="text-gray-500 text-sm leading-relaxed italic flex-1 mb-6">"{t.quote}"</p>
-                <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-full bg-brand/20 flex items-center justify-center text-brand font-bold text-sm">
-                    {t.name[0]}
-                  </div>
-                  <div>
-                    <p className="font-semibold text-charcoal text-sm">{t.name}</p>
-                    <p className="text-gray-400 text-xs">{t.role}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ═══ MAP ═══ */}
       <MapSection />

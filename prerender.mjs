@@ -17,6 +17,7 @@ const routes = [
   '/tienda/publicidad',
   '/quienes-somos',
   '/blog',
+  '/blog/precio-tarjetas-presentacion-santiago',
   '/blog/que-es-impresion-dtf-textil',
   '/blog/que-son-los-adhesivos-troquelados',
   '/blog/impresion-tinta-uv-que-es',
