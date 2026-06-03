@@ -118,6 +118,94 @@ function injectMeta(html, route) {
   return result
 }
 
+function injectStructuredData(html, route) {
+  // LocalBusiness schema (appears on all pages)
+  const localBusiness = {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    '@id': 'https://www.imprentasalvadordalichile.cl/#organization',
+    name: 'Imprenta Salvador Dali',
+    image: 'https://www.imprentasalvadordalichile.cl/images/cropped-icono-66.png',
+    description: 'Imprenta en Las Condes especializada en impresión láser, offset y tinta UV con entrega express en 48 horas',
+    url: 'https://www.imprentasalvadordalichile.cl',
+    telephone: '+56964123098',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Mayecura 1177',
+      addressLocality: 'Las Condes',
+      addressRegion: 'Región Metropolitana',
+      postalCode: '7570718',
+      addressCountry: 'CL'
+    },
+    sameAs: [
+      'https://www.instagram.com/imprenta_salvador_dali/',
+      'https://g.page/r/Ce61Wvh0x_sYEBM'
+    ],
+    priceRange: '$$'
+  }
+
+  // Product schemas for product pages
+  let productSchemas = []
+  if (route.startsWith('/tienda/') || route.startsWith('/servicios/')) {
+    productSchemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'Product',
+      name: route.includes('stickers') ? 'Stickers Personalizados' :
+            route.includes('tarjeta') ? 'Tarjetas de Presentación' :
+            route.includes('volante') ? 'Volantes' :
+            route.includes('pendon') ? 'Pendones' : 'Impresión Personalizada',
+      description: META_MAP[route]?.desc || 'Producto de impresión personalizado',
+      brand: {
+        '@type': 'Brand',
+        name: 'Imprenta Salvador Dali'
+      },
+      offers: {
+        '@type': 'AggregateOffer',
+        priceCurrency: 'CLP',
+        offerCount: 1,
+        availability: 'https://schema.org/InStock'
+      }
+    })
+  }
+
+  // BreadcrumbList for navigation
+  const breadcrumbs = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: buildBreadcrumbs(route)
+  }
+
+  const allSchemas = [localBusiness, breadcrumbs, ...productSchemas]
+  const schemaScript = `<script type="application/ld+json">${JSON.stringify(allSchemas, null, 2)}</script>`
+
+  return html.replace('</head>', `${schemaScript}\n  </head>`)
+}
+
+function buildBreadcrumbs(route) {
+  const parts = route.split('/').filter(Boolean)
+  const breadcrumbs = [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Inicio',
+      item: 'https://www.imprentasalvadordalichile.cl/'
+    }
+  ]
+
+  let path = ''
+  parts.forEach((part, idx) => {
+    path += `/${part}`
+    breadcrumbs.push({
+      '@type': 'ListItem',
+      position: idx + 2,
+      name: part.charAt(0).toUpperCase() + part.slice(1).replace('-', ' '),
+      item: `https://www.imprentasalvadordalichile.cl${path}`
+    })
+  })
+
+  return breadcrumbs
+}
+
 async function main() {
   console.log('📦 Building client...')
   await build()
@@ -156,6 +244,9 @@ async function main() {
         pageHtml = template.replace('<!--ssr-outlet-->', appHtml)
         pageHtml = injectMeta(pageHtml, route)
       }
+
+      // Always inject structured data (JSON-LD)
+      pageHtml = injectStructuredData(pageHtml, route)
 
       const outDir = path.resolve(__dirname, 'dist', route.slice(1))
       fs.mkdirSync(outDir, { recursive: true })
